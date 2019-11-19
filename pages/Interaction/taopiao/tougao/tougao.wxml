@@ -1,0 +1,62 @@
+<view>
+  <view class='header'>
+      <text class="header-left">淘票标题</text>       <text class='star'>*</text>
+  </view>
+  <view class='biaoti'>
+    <input bindinput='bindinput' placeholder="标题"></input>
+  </view>
+</view>
+<view>
+  <view class='header'>
+      <text class="header-left">淘票价格</text>   
+  </view>
+  <view class='price'>
+    <input bindinput='priceBindinput' placeholder="不填写代表面议"></input>
+  </view>
+</view>
+
+<!-- 投稿类型 -->
+<view class='tougaoleixing'>
+    <view class='header'>
+        <text class="header-left">相关音乐节</text>
+    </view>
+  <view class='biaoti biaoti1'>
+    <picker class='piker' bindchange="bindPickerChange" value="{{index}}" range="{{objectArray}}" range-key='name'>
+      <view class="picker">
+          当前选择：{{objectArray[index].name}}
+      </view>
+    </picker> 
+  </view>
+</view>
+<!-- 投稿类型结束 -->
+<view>
+  <view class='header'>
+      <text class="header-left">淘票内容</text>
+      <text class='star'>*</text>
+  </view>
+  <view class='neirong'>
+    <textarea bindinput='bindtextarea'></textarea>
+  </view>
+</view>
+
+
+
+<view>
+  <view class='header'>
+      <text class="header-left">附加图片</text>
+      <text class='star'>*</text>
+  </view>
+  <view class='duomeiti'>
+    <view class='duomeiti-item' bindtap='addImg' bindtap='updateImg'>
+      <view class='duomeiti-item-left'><icon class="iconfont icon-xiangji"></icon>添加图片</view>
+      <view class='duomeiti-item-right'><icon class="iconfont icon-enter"></icon></view>
+    </view>
+    <!-- <view class='duomeiti-item' bindtap='chooseVideo'>
+      <view class='duomeiti-item-left'><icon class="iconfont icon-shipin"></icon>上传视频</view>
+      <view class='duomeiti-item-right'><icon class="iconfont icon-enter"></icon></view>
+    </view> -->
+  </view>
+</view>
+<view class='submit' style="background:linear-gradient(10deg,#ff69b4,#dc143c);" bindtap='submit'>
+  <text>发布淘票</text>
+</view>

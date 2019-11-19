@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "my-musicitem": "/pages/template/music/musicitem/musicitem"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#72e2ef",
+  "navigationBarTitleText": "资讯",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "my-tuiwen": "/pages/template/tuiwen/tuiwen"
+  }
+}

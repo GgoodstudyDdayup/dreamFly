@@ -1,0 +1,108 @@
+<import src="/wxParse/wxParse.wxml" />
+<view class="box">
+    <view class='title'>{{details.title}}</view>
+    <view class='author'>
+        <view class='author-left'>
+            <image class='authorImg' src='{{details.fabuzhe.head_img}}'></image>
+            <view class='author-tip'>
+                <view class='authorName'>
+                    <text> {{details.fabuzhe.nickname}}</text>
+                    <view class='guanzhu-btn'>
+                    <text 
+                        wx:if="{{details.guanzhu==0}}" 
+                        class='guanzhu' 
+                        data-buser_id='{{details.fabuzhe.user_id}}' 
+                        bindtap='guanzhu'>关注
+                    </text>
+                    <text 
+                        wx:else 
+                        class='guanzhu' 
+                        data-buser_id='{{details.fabuzhe.user_id}}' 
+                        bindtap='qxguanzhu'>取消关注
+                    </text>
+                </view>
+                </view>
+                
+                <view class='fabushijian'>{{details.create_time}}</view>
+
+            </view>
+            
+        </view>
+        <view>
+            <image 
+                wx:if="{{details.music_logo!=null}}" 
+                class='music_logo' 
+                src='{{details.music_logo}}'>
+            </image>
+            <image wx:else class='music_logo' src='/pages/images/dreamfly.png'></image>
+        </view>
+
+    </view>
+    <view class='content'>
+        <image wx:if='{{details.thumbpath}}' src='{{details.thumbpath}}'></image>
+        <video wx:if="{{details.filepath}}" src='{{details.filepath}}'></video>
+    </view>
+    <!-- 富文本解析 -->
+    <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+    <!-- 富文本解析 -->
+
+    <view class='liulan'>
+        <view style='display:flex'>
+            <view class='icon'>
+                <image class='bottomMenu-img' src="/pages/images/liulan.png"></image>
+                <text>浏览({{details.click}})</text>
+            </view>
+            <view class='icon'>
+                <image src='/pages/images/comment.png'></image>评论({{pinglunList.length}})
+            </view>
+            <!-- 点赞组件 -->
+            <my-dianzan 
+                is_zan="{{details.is_zan}}" 
+                zanid="{{details.id}}" 
+                zan_count="{{details.zan_count}} "                                                                      shoucangjiekou="/index/article/SetArticleGood">
+            </my-dianzan>  
+        </view>
+        <!-- 分享按钮组件 -->
+        <my-share 
+            shareType="2"
+            shareId="{{details.id}}" 
+            shareImg="{{details.thumbpath}}" 
+            shareTitle="{{details.title}}" 
+            sharePath="/pages/information/toptweets/details/details?id="
+            codepath="pages/information/toptweets/details/details">
+        </my-share>
+    </view>
+</view>
+<view class='null'></view>
+<view class='liuyan'>
+    <view class='liuyan-top'>
+        <text>精选留言</text>
+        <text data-id='{{details.id}}' bindtap='toPinglun'>我要留言</text>
+    </view>
+    <view class='liulan-bottom'>
+        <view class='liuyan-item' wx:for="{{pinglunList}}" wx:key="item">
+            <view class='liuyanItem-top'>
+                <image src='{{item.head_img}}'></image>
+                <view class='liuyanItemTopRright'>
+                    <view>{{item.nickname}}</view>
+                    <view>{{item.content}}</view>
+                </view>
+            </view>
+            <view class='liuyanTime'>
+                <text>{{item.time1}}</text>
+                <my-dianzan 
+                    style='margin-left:15rpx;'
+                    is_zan="{{item.is_zan}}" 
+                    zanid="{{item.id}}" 
+                    zan_count="{{item.zannum}}" 
+                    shoucangjiekou="/index/article/SetArticleCommentZan">
+                </my-dianzan>
+               
+            </view>
+        </view>
+    </view>
+</view>
+<!-- 返回首页 -->
+<view class='backindex'>
+    <back-index></back-index>
+</view>

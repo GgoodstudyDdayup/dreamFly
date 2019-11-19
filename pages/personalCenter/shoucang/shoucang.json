@@ -1,0 +1,15 @@
+{
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#72e2ef",
+    "navigationBarTitleText": "我的收藏",
+    "navigationBarTextStyle": "white",
+    "usingComponents": {
+        "my-share": "/pages/template/share/share",
+        "my-yinyuejieList": "/pages/personalCenter/shoucang/yinyuejie/yinyuejie",
+        "my-videoall":"/pages/personalCenter/shoucang/video/video",
+        "my-musicList":"/pages/personalCenter/shoucang/music/music",
+        "my-tuiwenList": "/pages/personalCenter/shoucang/tuiwen/toptweets",
+        "my-yedianList": "/pages/personalCenter/shoucang/yedian/yedian"
+    }
+}

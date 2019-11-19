@@ -1,0 +1,2 @@
+<video-list wx:if="{{ isVideoList }}" video="{{ videoList }}" type="{{ type }}"></video-list>
+<view wx:else style="text-align: center;">暂无数据</view>

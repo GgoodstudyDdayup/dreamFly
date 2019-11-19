@@ -1,0 +1,27 @@
+<view class='onev' wx:for="{{dataList}}">
+    <view class='one1'>
+        <view class='one'>{{countDownList[index].day}}天{{countDownList[index].hou}}时{{countDownList[index].min}}分{{countDownList[index].sec}}秒 后结束</view>
+        <view class='ones'>
+            <image style='height:205rpx;width:205rpx;' src='{{item.thumb_path}}'></image>
+        </view>
+        <view class='one2'>
+            <view>
+                <text class='txt1'>{{item.name}}</text>
+            </view>
+            <view class='one3'>
+                <view class='onee'>
+                    <text>已砍￥{{item.kan_money}}</text>
+                </view>
+                <view>
+                    <view wx:if="{{item.is_jieshu}}" class='shixiao'  data-kan_id='{{item.kan_id}}'>
+                        已失效
+                    </view>
+                    <view wx:else  class='kan ' bindtap='toWode' data-kan_id='{{item.kan_id}}'>
+                        继续砍价
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class='link'></view>
+</view>

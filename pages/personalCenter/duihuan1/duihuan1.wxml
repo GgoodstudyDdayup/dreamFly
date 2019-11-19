@@ -1,0 +1,52 @@
+<view class="header">
+    <view class='header-top'>
+        <text>编号:{{userInfo.card_id}}</text>
+        <text wx:if="{{userInfo.level=='1'}}">等级:vip会员</text>
+        <text wx:else>等级:普通会员</text>
+    </view>
+    <view class='touxiang'>
+        <image src="{{userInfo.head_img}}"></image>
+        <view class='name'>{{userInfo.nickname}}</view>
+    </view>
+</view>
+<view class='duipiao-content'>
+    <view class='duipiao-content-top'>
+        <view class='duipiao-content-top1' 
+        style='background:linear-gradient(10deg,#ff69b4,#dc143c);");background-size:100% 100%;'>  <!-- background:url("https://www.dreamflygo.com/img/307.png"); -->
+            音乐节门票免费兑换
+        </view>
+        <view class='yigoupiao'>
+            <view class='yigoupiao-left'>
+                <!-- 已购票的小图标 -->
+                <view wx:for="{{10}}" wx:key="{{index}}">
+                    <view wx:if="{{index<cishu}}" class='yigoupiao-item' style='background:url("https://www.dreamflygo.com/img/piao3.png");background-size:100% 100%;'></view>
+                    <view wx:else class='yigoupiao-item' style='background:url("https://www.dreamflygo.com/img/piao4.png");background-size:100% 100%;color:#ea4479;'>{{index+1}}</view>
+                </view>
+            </view>
+            <view class='yigoupiao-middle' style='color:#ea4479;'>=</view>
+            <view class='yigoupiao-right'>
+                <image src='https://www.dreamflygo.com/img/piao5.png'></image>
+                <view style='color:#ea4479;'>免费</view>
+            </view>
+        </view>
+    </view>
+    <view class='tip' style='color:#ea4479;'>再购票{{10-cishu>=0?10-cishu:0}}次，就能再获得1次免费购票机会</view>
+    <view class='jiantou'>
+        <image src='../../images/jiantou.png'></image>
+    </view>
+    <button  class='goupiao-button' disabled='{{disabled}}' bindtap='toorderlist'>
+        兑换购票
+    </button>
+</view>
+<view class='huise'></view>
+<view class='duipiaocishu'>
+    <view class='duipiaocishu-text1'>恭喜！您已经兑换{{yiduihuan.length}}次门票</view>
+    <view class='duipiaocishu-text2'>
+        <text bindtap='toDuihuanjilu' style='color:#ea4479;'>查看兑换详情</text>
+    </view>
+</view>
+<view class='duipiaocishu'>
+  <view class='duipiaocishu-text1'>1.您的免费门票价值是您所累积购买的10次电音节门票平均票价</view>
+  <view class='duipiaocishu-text1'>2.兑换的门票在订单界面中即可使用</view>
+  <view class='duipiaocishu-text1'>3.免费兑换券长期有效</view>
+</view>

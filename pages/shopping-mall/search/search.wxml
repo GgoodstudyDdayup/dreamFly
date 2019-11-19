@@ -1,0 +1,5 @@
+
+<!-- 音乐节列表 -->
+<view class='list'>
+    <my-yinyuejielist dataList="{{yinyuejie}}" ></my-yinyuejielist>
+</view>

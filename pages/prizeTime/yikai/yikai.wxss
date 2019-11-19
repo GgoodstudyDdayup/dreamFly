@@ -1,0 +1,368 @@
+/* pages/prizeTime/yikai/yikai.wxss */
+.prizeTime {
+  box-sizing: border-box;
+  padding: 32rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+
+.prizeTime view:nth-child(1) {
+  font-size: 32rpx;
+}
+
+.prizeTime view:nth-child(2) {
+  font-size: 30rpx;
+  color: #6d6d6d;
+  background: #f3f3f3;
+  box-sizing: border-box;
+  padding: 10rpx;
+  border-radius: 6rpx;
+}
+
+.prizePic{
+  width: 100%;
+  height: 300rpx;
+  box-sizing: border-box;
+  padding: 0 24rpx 24rpx 24rpx;
+  margin-top: 24rpx;
+}
+
+.prizePic image{
+  width: 100%;
+  height: 100%;
+  border-radius: 10rpx;
+}
+
+.fontSize{
+font-size:28rpx;
+font-weight:600;
+}
+.prizeTitle{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 24rpx 24rpx 24rpx;
+}
+
+.jiage{
+  width: 95%;
+  height: 120rpx;
+  margin: 0 auto;
+  border-bottom: 1rpx solid #e6e6e6;
+  display: flex;
+  justify-content: space-between;
+}
+
+.choujiang{
+  color: #ff6c9a;
+  font-size:28rpx;
+}
+
+.choujiang b:nth-child(1){
+  font-size:33rpx;
+}
+
+.choujiang b:nth-child(2){
+  font-size:40rpx;
+}
+
+.yuanjia{
+  font-size:28rpx;
+  margin-top: 16rpx;
+  font-weight: 600;
+}
+
+.onevie{
+  width: 100%;
+  text-align: center;
+  margin-top: 50rpx;
+}
+
+.one-zhong{
+  height: 120rpx;
+  /* border: 1rpx solid #6d6d6d; */
+  font-size:23rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+/* pages/prizeTime/prizeTime.wxss */
+page{
+  padding-bottom: 0
+}
+.topList {
+  background: #333;
+  display: flex;
+  align-content: center;
+}
+
+.topListSon {
+  box-sizing: border-box;
+  width: 20%;
+  font-size: 26rpx;
+  height: 150rpx;
+  padding: 38rpx 0;
+  border-right: 1rpx solid #4b4b4b;
+  text-align: center;
+  color: #fff;
+}
+
+.topListLin {
+  background: #5bc9d4;
+  box-sizing: border-box;
+  width: 20%;
+  font-size: 26rpx;
+  height: 150rpx;
+  padding: 38rpx 0;
+  border-right: 1rpx solid #4b4b4b;
+  text-align: center;
+  color: #fff;
+}
+
+.fontSize22 {
+  font-size: 22rpx;
+}
+
+.fontSize30 {
+  font-size: 30rpx;
+}
+/* pages/prizeTime/yikai/yikai.wxss */
+.prizeTime {
+  box-sizing: border-box;
+  padding: 32rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+.thr {
+  font-size: 30rpx;
+  color: #6d6d6d;
+  background: #f3f3f3;
+  box-sizing: border-box;
+  padding: 10rpx;
+  border-radius: 6rpx;
+}
+
+.ones{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.two{
+  display: flex;
+  text-align: center;
+}
+.two1{
+  width: 100rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #070c08;
+  border-radius: 9rpx;
+  font-size: 45rpx;
+  font-weight: 200;
+  color: #fff;
+
+}
+.maohao{
+  line-height: 80rpx;
+  color: #999999;
+  font-size: 50rpx;
+  margin:0 5rpx;
+
+}
+.prizePic{
+  width: 100%;
+  height: 300rpx;
+  box-sizing: border-box;
+  padding: 0 24rpx 24rpx 24rpx;
+}
+
+.prizePic image{
+  width: 100%;
+  height: 100%;
+  border-radius: 10rpx;
+}
+
+.fontSize{
+  font-size:28rpx;
+  font-weight:600;
+}
+.prizeTitle{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 24rpx 24rpx 24rpx;
+}
+
+.jiage{
+  width: 95%;
+  height: 120rpx;
+  margin: 0 auto;
+  border-bottom: 1rpx solid #e6e6e6;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.choujiang{
+  color: #ff6c9a;
+  font-size:28rpx;
+  margin-top: 10rpx;
+}
+
+.choujiang b:nth-child(1){
+  font-size:33rpx;
+}
+
+.choujiang b:nth-child(2){
+  font-size:40rpx;
+}
+
+.yuanjia{
+  font-size:28rpx;
+  margin-top: 26rpx;
+  font-weight: 600;
+}
+
+.prize {
+  margin: 0 5%;
+  padding: 25rpx 0;
+  width: 90%;
+  border-bottom: 1rpx solid #eeeeee;
+  color: #888888;
+}
+.activity {
+  width: 100%;
+  text-align: right;
+  font-size: 24rpx;
+}
+.prize-time {
+  width: 100%;
+  text-align: center;
+  font-size: 26rpx;
+}
+.prize-code {
+  width: 100%;
+  padding-top: 20rpx;
+  text-align: center;
+  font-size: 30rpx;
+}
+.code-l {
+  font-weight: 600;
+  margin-bottom: 10rpx;
+}
+.code-r {
+  color: #ff6969;
+  border: 1rpx solid #655d6a;
+  padding: 0 10rpx;
+}
+
+/* 切换栏 */
+.scroll {
+  width: 100%;
+  margin-top: 20rpx;
+  display: flex;
+}
+.navTitleCon {
+  width: 33.3%;
+  display: inline-block;
+  text-align: center;
+  color: #473e3e;
+  font-size: 24rpx;
+}
+.navTitleConTion .title{
+  margin: 0 auto;
+}
+.navBorderTion {
+  z-index: -1;
+  margin: 0 auto;
+  margin-top: -10rpx;
+  width: 74rpx;
+  border-bottom: 20rpx solid #fedc7d;
+}
+/* 商品列表 */
+.goods {
+  margin: 0 5%;
+}
+.goods-item {
+  height: 150rpx;
+  display: flex;
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #eee;
+}
+.item-img,
+.item-img image {
+  width: 150rpx;
+  height: 150rpx;
+}
+.item-info {
+  box-sizing: border-box;
+  padding-left: 15rpx;
+  position: relative;
+  width: 100%;
+  min-height: 150rpx;
+}
+.info-title {
+  display: block;
+  color: #473e3e;
+  font-size: 30rpx;
+  font-weight: 600;
+}
+.info-money {
+  position: absolute;
+  bottom: 0;
+}
+.goodsMoney {
+  color: #888888;
+  font-size: 32rpx;
+}
+.goodsMoney text {
+  font-weight: 600;
+  font-size:40rpx;
+}
+.price-describe,
+.price-former {
+  color: #888888;
+  font-size: 24rpx;  
+}
+.price-former {
+  float: right;
+  padding-top: 20rpx;
+}
+.info-icon,
+.info-icon image {
+  width: 70rpx;
+  height: 60rpx;
+}
+.info-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+
+
+.color-rad {
+  color: #ff5353;
+}

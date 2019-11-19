@@ -1,0 +1,15 @@
+<!-- 评论开始 -->
+<view class='comment'>内容</view>
+<!-- 输入框 -->
+<view class='imp'>
+    <textarea bindinput='getContent'></textarea>
+</view>
+<!-- 多媒体元素 -->
+<view class='bgd'>
+    <view 
+        bindtap="upSubmit" 
+        class='bg' 
+        style='background:linear-gradient(10deg,#ff69b4,#dc143c);");'>
+        <text>提交</text>
+    </view>
+</view>

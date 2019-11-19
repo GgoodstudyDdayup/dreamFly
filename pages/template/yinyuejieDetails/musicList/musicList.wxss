@@ -1,0 +1,42 @@
+/* pages/template/yinyuejieDetails/musicList/musicList.wxss */
+.sc{
+  background: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0 28rpx;  
+}
+.vip{
+  width: 100%;
+  height: 150rpx;
+  display: flex;
+  align-items: center;
+  border-bottom:1rpx solid #e8e8e8;
+}
+.touxiang{
+  margin:25rpx;
+  margin-left: 0; 
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 50%;
+}
+.tu{
+  width: 60rpx;
+  height: 60rpx;
+  margin-left:36rpx;
+
+}
+.music{
+  height: 100rpx;
+  width:460rpx;
+}
+.name{
+  margin-right: 20rpx;
+  font-size: 35rpx;
+}
+.phone{
+  margin-right:100rpx;
+  color:35rpx;
+  font-size:28rpx;
+  margin-top:17rpx;
+}
+.sc icon{font-size: 50rpx}

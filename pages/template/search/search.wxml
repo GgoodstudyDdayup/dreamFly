@@ -1,0 +1,16 @@
+<view class='searchFa'>
+  <view class='search'>
+    <view class='searchInp'>
+      <image style='margin:10rpx 10rpx 0 0;' src='/pages/images/search.png'></image>
+      <input class='input' bindinput='getinput' placeholder='请输入关键字搜索' placeholder-class='sousuo'></input>
+    </view>
+    <view class='sousuoText' bindtap='search'>搜索</view>
+  </view>
+  <view class='chooseYear'>
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <view class="picker">
+          时间：{{array[index]}}年
+        </view>
+      </picker> 
+  </view>
+</view>

@@ -1,0 +1,111 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/shopping-mall/wangqi-choujiang/wangqi-choujiang",
+    "pages/shopping-mall/wode/wode",
+    "pages/huodong/goupiao/goupiao",
+    "pages/huodong/pinglun/pinglun",
+    "pages/information/toptweets/pinglun/pinglun",
+    "pages/Interaction/pengyouquan/pinglun/pinglun",
+    "pages/Interaction/taopiao/details/details",
+    "pages/Interaction/taopiao/pinglun/pinglun",
+    "pages/Interaction/taopiao/tougao/tougao",
+    "pages/Interaction/pengyouquan/tougao/tougao",
+    "pages/personalCenter/duihuan1/duihuan1",
+    "pages/personalCenter/yijian/yijian",
+    "pages/personalCenter/tougao/tougao",
+    "pages/personalCenter/duihuan2/duihuan2",
+    "pages/Interaction/Interaction",
+    "pages/information/information",
+    "pages/shopping-mall/shopping-mall",
+    "pages/personalCenter/personalCenter",
+    "pages/information/details/details",
+    "pages/personalCenter/duihuan1/chooseMusicAll/chooseMusicAll",
+    "pages/personalCenter/myOrder/myOrder",
+    "pages/personalCenter/shoucang/shoucang",
+    "pages/personalCenter/shoucang/video/video",
+    "pages/personalCenter/shoucang/music/music",
+    "pages/personalCenter/shoucang/tuiwen/toptweets",
+    "pages/personalCenter/shoucang/yedian/yedian",
+    "pages/huodong/xiangqing0/xiangqing0",
+    "pages/information/videopage/pinglun/pinglun",
+    "pages/information/videopage/pinglun",
+    "pages/Interaction/pengyouquan/details/details",
+    "pages/information/toptweets/details/details",
+    "pages/information/videopage/details/details",
+    "pages/personalCenter/gerenzhuye/guanzhuren/yifabu",
+    "pages/template/video/live-video/live-video",
+    "pages/shopping-mall/search/search",
+    "pages/verify/verify",
+    "pages/personalCenter/myOrder/QRCode",
+    "pages/personalCenter/myOrder/description",
+    "pages/test/test",
+    "pages/myfriend/myfriend",
+    "pages/video/video",
+    "pages/template/videoList/videoList",
+    "pages/videosearch/videosearch",
+    "pages/template/friendList/friendList",
+    "pages/lucky/lucky",
+    "pages/template/goodsPrice/goodsPrice",
+    "pages/cutPrice/cutPrice",
+    "pages/videoComments/videoComments",
+    "pages/goods-list/goods-list",
+    "pages/goodsDetails/goodsDetails",
+    "pages/details/details",
+    "pages/order/order",
+    "pages/orderList/orderList",
+    "pages/yedianDetails/yedianDetails",
+    "pages/taoTicket/taoTicket",
+    "pages/Interaction/dongtai/Interaction"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "DreamFly电音之旅",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {},
+  "tabBar": {
+    "custom": true,
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "pages/images/index/shop.png",
+        "selectedIconPath": "pages/images/index/shopselect.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/Interaction/Interaction",
+        "iconPath": "pages/images/index/talk.png",
+        "selectedIconPath": "pages/images/index/talkselect.png",
+        "text": "消息"
+      },
+      {
+        "pagePath": "pages/orderList/orderList",
+        "iconPath": "pages/images/index/order.png",
+        "selectedIconPath": "pages/images/index/orderselect.png",
+        "text": "订单"
+      },
+      {
+        "pagePath": "pages/personalCenter/personalCenter",
+        "iconPath": "pages/images/index/mine.png",
+        "selectedIconPath": "pages/images/index/mineselect.png",
+        "text": "个人"
+      },
+      {
+        "pagePath": "pages/information/information",
+        "iconPath": "pages/images/bottom-zixun.png",
+        "selectedIconPath": "pages/images/bottom-zixun-active.png",
+        "text": "资讯"
+      }
+    ]
+  },
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "sitemapLocation": "sitemap.json"
+}

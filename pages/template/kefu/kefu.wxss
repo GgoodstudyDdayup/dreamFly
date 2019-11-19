@@ -1,0 +1,38 @@
+.kefu-all{
+  display: flex;
+}
+.kefu-cebian image{
+  width:78rpx;
+  height:241rpx;
+
+}
+.kefu{
+  width:370rpx;
+  background: #fff;
+  border: 1rpx solid #ccc;
+  padding-bottom:26rpx;
+  margin-left: 5rpx;
+}
+.kefu-title{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  background: #24bff2;
+  font-size:30rpx;
+  color:#fff;
+  padding: 20rpx 10rpx;
+}
+.kefu-title image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.kefu-item{
+  display: flex;
+  align-items: center;
+  padding:10rpx 20rpx;
+}
+.kefu-item image{
+  width:50rpx;
+  height:50rpx;
+  margin-right: 10rpx;
+}

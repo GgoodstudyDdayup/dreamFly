@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": " ",
+  "usingComponents": {
+    "video-list": "../template/videoList/videoList"
+    }
+}

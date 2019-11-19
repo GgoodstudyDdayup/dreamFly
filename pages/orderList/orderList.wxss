@@ -1,0 +1,389 @@
+/* 切换栏 */
+
+.scroll {
+    background: #fff;
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
+    display: flex;
+    /* border-bottom: 1rpx solid #eaeaea; */
+    justify-content: space-between;
+    margin-bottom: 16rpx;
+}
+
+.navTitle {
+    width: 50%;
+    color: #282828;
+    font-size: 26rpx;
+    display: inline-block;
+    height: 50rpx;
+    line-height: 50rpx;
+    text-align: center;
+    padding: 16rpx 0;
+}
+
+.navTitleLine {
+    width: 50%;
+    color: #ea4479;
+    font-size: 30rpx;
+    display: inline-block;
+    height: 55rpx;
+    line-height: 50rpx;
+    text-align: center;
+    padding: 10rpx 0;
+    /* border-bottom: 5rpx solid #fec227; */
+}
+
+.navTitleCon {
+    margin: 0 100rpx;
+    padding-bottom: 20rpx;
+    height: 30rpx;
+    line-height: 30rpx;
+    text-align: center;
+    /* border-right: 1rpx solid #f1f1f1; */
+}
+.navTitleConTion {
+  border-bottom: 5rpx solid #ea4479;
+}
+/* 未付款 */
+.nopay {
+  padding: 0 30rpx;
+}
+.goods {
+ height: 150rpx;
+ width: 100%;
+ margin-bottom: 30rpx;
+}
+/* .goods checkbox {
+  border-radius: 50%;
+} */
+.checkView {
+  display: inline-block;
+  width: 75rpx;
+  height: 45rpx;
+  padding: 55rpx 0;
+  text-align: center;
+  vertical-align: middle;
+}
+.checkbox {
+  width: 35rpx;
+  height: 35rpx;
+  vertical-align: middle;
+  /* margin: 0 20rpx; */
+}
+.goods-img {
+  width: 120rpx;
+  height: 150rpx;
+  vertical-align: middle;
+}
+.goods-right {
+  position: relative;
+  height: 150rpx;
+  width: 70%;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 10rpx;
+}
+.goods-title {
+  color: #473e3e;
+  font-size: 26rpx;
+}
+.goods-right-money {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.money-input {
+  height: 38rpx;
+  display: inline-block;
+}
+.money-input input {
+  display: inline-block;
+  width: 100rpx;
+  border: 1rpx solid #eeeeee;
+  border-radius: 15rpx;
+  text-align: center;
+  /* vertical-align: center; */
+}
+.money-input image {
+  height: 38rpx;
+  width: 38rpx;
+  margin: 0 10rpx 8rpx 10rpx;
+}
+.goodsMoney {
+  float: right;
+  color: #ff5353;
+  font-size: 32rpx;
+}
+.goodsMoney text {
+  font-weight: 600;
+  font-size:40rpx;
+}
+/* 页脚 */
+.footer {
+  position: fixed;
+  bottom: 140rpx;
+  width: 90%;
+  padding: 0 5%;
+  font-size: 30rpx;
+}
+.footer .allselect {
+  margin-bottom: 10rpx;
+}
+.goodsMoney .allMoney {
+  color: #282828;
+  font-weight: 400;
+  font-size: 30rpx;
+}
+.footer button {
+  background-color: #ee8183;
+  color: white;
+  font-size: 28rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  width: 100%;
+  border-radius: 60rpx;
+  border: 0;
+}
+.footer button::after {
+  border: 0;
+}
+
+
+
+
+
+
+
+
+
+
+/* 头部两个开始 */
+
+.activity {
+  display: flex;
+  margin-top: 20rpx;
+}
+
+.activityPart {
+  width: 44%;
+  margin-left: 4%;
+  height: 200rpx;
+  border-radius: 20rpx;
+  overflow: hidden;
+  box-shadow: 0rpx 5rpx 16rpx rgb(146, 146, 146);
+}
+
+.activityPart image {
+  width: 100%;
+  height: 100%;
+}
+
+/* 头部两个结束 */
+
+/* 列表开始 */
+.list{
+  margin-top: 50rpx;
+}
+.shopList {
+  margin: 64rpx;
+  height: 500rpx;
+  box-shadow: 0rpx 5rpx 30rpx rgb(146, 146, 146);
+  position: relative;
+  border-radius: 10rpx;
+}
+
+.shopListPart {
+  width: 110%;
+  height: 300rpx;
+  position: absolute;
+  top: 100rpx;
+  left: -5%;
+  box-shadow: 0rpx 6rpx 16rpx rgb(175, 175, 175);
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+
+.shopListPart image {
+  width: 100%;
+  height: 100%;
+}
+
+.shopListTitle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-size: 24rpx;
+  font-weight: 700;
+  box-sizing: border-box;
+  padding: 24rpx 20rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.shopListTitle :nth-child(1) {
+  width: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.shopListTop {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 10rpx 30rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.shopListTopL {
+  color: #060206;
+  text-align: center;
+}
+
+.year {
+  font-size: 24rpx;
+  letter-spacing: 40rpx;
+}
+
+.line {
+  height: 1rpx;
+  background: #969496;
+  width: 85%;
+}
+
+.day {
+  font-size: 38rpx;
+  font-weight: 700;
+  padding-right: 15%;
+}
+
+.shopListTopR {
+  font-size: 32rpx;
+  line-height: 80rpx;
+}
+
+.shopListTopR image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+  vertical-align: middle;
+}
+
+.shopListBottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 30rpx 20rpx;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.shopListBottomL image {
+  width: 30rpx;
+  height: 30rpx;
+  vertical-align: middle;
+}
+
+.shopListBottomL text {
+  color: #9f9f9f;
+  font-size: 24rpx;
+  margin-right: 16rpx;
+  margin-left: 4rpx;
+}
+
+.shopListBottomR image {
+  margin-left: 20rpx;
+  width: 30rpx;
+  height: 30rpx;
+  vertical-align: middle;
+}
+
+/* 列表结束 */
+/* 搜索开始 */
+
+.searchFa {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20rpx;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    box-shadow: 0rpx 5rpx 10rpx rgb(199, 199, 199);
+    margin-top:40rpx;
+
+}
+
+.search {
+    padding: 10rpx;
+    display: flex;
+    align-items: center;
+    width: 46%;
+}
+
+.search image {
+    width: 35rpx;
+    height: 30rpx;
+}
+
+.input {
+    width: 300rpx;
+    margin-left:10rpx;
+
+}
+
+.searchInp {
+    display: flex;
+    align-items: center;
+    background: #f1f1f1;
+    width: 100%;
+    padding: 6rpx 30rpx;
+    border-radius: 10rpx;
+    box-sizing: border-box;
+}
+
+.sousuo {
+    font-size: 28rpx;
+}
+
+.sousuoText {
+    /* font-size: 34rpx; */
+    color: white;
+    background: #9ddfe5;
+    padding: 5rpx 20rpx;
+    border-radius: 10rpx;
+}
+
+.chooseYear {
+    display: flex;
+    align-items: center;
+    font-size: 28rpx;
+    color: #767676;
+    line-height: 84rpx;
+}
+
+.chooseYear image {
+    width: 30rpx;
+    height: 25rpx;
+    vertical-align: middle;
+    /* margin-right: 20rpx;
+    margin-left: 13rpx; */
+}
+.see_QRcodeView{
+  margin-bottom: -50rpx;
+  background:#ee8183;
+  color:#ffffff;
+  height: 38rpx;
+  line-height: 38rpx;
+  width: 140rpx;
+}
+/* 搜索结束 */
+

@@ -1,0 +1,43 @@
+<!--pages/template/share/share.wxml-->
+<!-- 分享按钮 -->
+<image 
+    class='share' 
+    catchtap="openShareFriend" 
+    data-music_id="{{item.quan_id}}" 
+    data-thumb_path="{{item.img}}" 
+    data-name="{{item.title}}" 
+    src="/pages/images/weixin2.png">
+</image>
+<!-- 分享弹窗 -->
+<view class="share-friend" wx:if="{{shareFriend}}">
+    <view class="share-friend-content">
+        <image class="share-top" wx:if="{{ shareImg }}" src="{{shareImg == '' ? 'https://www.dreamflygo.com/img/xianchang.jpg':( host + shareImg)}}" />
+        <view class="share-bottom">
+            <view class='share-title'>{{shareTitle}}</view>
+            <view class='fenxiang-box'>
+                <view class='fenxiang-item' catchtap='onShareAppMessage'>
+                    <button 
+                        class='share-button' 
+                        open-type='share' 
+                        data-id='{{shareId}}' 
+                        data-img='{{shareImg}}' 
+                        data-title='{{shareTitle}}' 
+                        data-path='{{sharePath}}'>
+                        <image src='/pages/images/weixin.png'></image>
+                    </button>
+                    <view>分享到微信</view>
+                </view>
+                <view wx:if="{{is_shareFriend==1}}" class='fenxiang-item' catchtap='getImg'>
+                    <image src='/pages/images/quan.png'></image>
+                    <view>分享到朋友圈</view>
+                </view>
+            </view>
+            <view 
+                class='close-button' 
+                catchtap='closeShareFriend' 
+                style='background:linear-gradient(10deg,#ff69b4,#dc143c);background-size:100% 100%;'>取消</view>
+        </view>
+    </view>
+</view>
+
+<canvasdrawer painting="{{painting}}" bind:getImage="eventGetImage"/>

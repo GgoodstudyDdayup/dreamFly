@@ -1,0 +1,35 @@
+
+<view class='searchFa'>
+    <view class='search'>
+        <view class='searchInp'>
+            <image src='/pages/images/search.png'></image>
+            <input 
+                class='input' 
+                bindinput='getinput' 
+                placeholder='请输入关键字搜索' 
+                placeholder-class='sousuo'></input>
+        </view>
+    </view>
+    <view class='chooseYear'>
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+            <view class="picker">
+                {{array[index]}}年
+                <image src='/pages/images/drop_down.png'></image>
+            </view>
+        </picker>
+        <!-- <picker 
+            bindchange="bindPickerChangeMonth" 
+            value="{{monthindex}}" 
+            range="{{monthobjectArray}}" 
+            range-key="name">
+            <view class="picker">
+                {{monthobjectArray[monthindex].name}}
+            </view>
+        </picker> -->
+    </view>
+    <view class='sousuoText' bindtap='getVideo'>搜索</view>
+</view>
+<button catchtap='toLive'> 跳转到直播</button>
+<view>
+    <my-video dataList="{{dataList}}" ></my-video>
+</view>

@@ -1,0 +1,44 @@
+<!-- 轮播图 -->
+<swiper class='swiperAll' indicator-dots="{{false}}" autoplay="{{true}}" interval="3000" duration="500">
+    <block wx:for="{{swiper}}" wx:key="navItems">
+        <swiper-item bindtap="toDetails" data-path="{{item.redirect_url}}" class="swiperItem">
+            <image src="{{item.thumpath}}" class="slide-image" mode="aspectFill" />
+        </swiper-item>
+    </block>
+</swiper>
+<!-- tab导航 -->
+<scroll-view class='scroll' scroll-x="true" style="width: 100%">
+    <view 
+        wx:for="{{nav}}" 
+        wx:key="Items" 
+        class='{{tapindex == index ? "navTitleLine" : "navTitle"}}' 
+        bindtap='tapchange' 
+        data-index='{{index}}'>
+        <view class='navTitleCon'>{{item}}</view>
+    </view>
+</scroll-view>
+
+<!-- 音乐节详情 -->
+<my-introduce 
+    wx:if="{{tapindex==0&&is_show==true}}" 
+    details="{{details}}" 
+    tuijian="{{tuijian}}" 
+    userInfo2="{{userInfo2}}">
+</my-introduce>
+<!-- 参与会员 -->
+<my-canyu wx:if="{{tapindex==1}}" huiyuanList="{{huiyuanList}}"></my-canyu>
+<!-- 音乐列表 -->
+<my-musicList wx:if="{{tapindex==2}}" dataList="{{musicList}}"></my-musicList>
+<!-- 留言列表 -->
+<my-pinglun wx:if="{{tapindex==3}}" pinglunList="{{pinglunList}}" music_id="{{music_id}}"></my-pinglun>
+<!-- 返回首页 -->
+<view 
+    wx:if="{{tapindex==0}}" 
+    class='backindex'
+    style='position: fixed;right: 20rpx;top: 950rpx'>
+    <my-backindex></my-backindex>
+</view>
+<!-- 联系我们 -->
+<view class='kefu' wx:if="{{tapindex==0}}">
+    <my-kefu></my-kefu>
+</view>

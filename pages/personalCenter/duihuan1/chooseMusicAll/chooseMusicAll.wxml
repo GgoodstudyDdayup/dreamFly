@@ -1,0 +1,8 @@
+
+    <music-item 
+        wx:for="{{musicList}}" 
+        wx:key="{{index}}" 
+        musicItem="{{item}}" 
+        meanPrice="{{meanPrice}}"
+        orderid="{{order_id}}">
+    </music-item>

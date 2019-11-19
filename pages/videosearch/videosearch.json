@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "音乐节搜索",
+  "usingComponents": {
+    "video-list": "../template/videoList/videoList",
+    "goods-list": "../template/detailsList/detailsList"
+  }
+}

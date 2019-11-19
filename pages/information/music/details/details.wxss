@@ -1,0 +1,111 @@
+.box{
+  padding: 30rpx 25rpx 10rpx 25rpx;
+}
+.title{
+  font-size:45rpx; 
+}
+.logo{
+  margin-top: 20rpx;
+}
+.content{
+  margin-top: 20rpx;
+  position: relative;
+}
+.content video{
+  width: 100%;
+}
+.neirong{
+  margin-top: 20rpx;
+}
+.liulan{
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.icon{
+  display:inline-flex;
+  align-items: center;
+  margin-right: 5rpx;
+}
+.icon image{
+  width: 32rpx;
+  height: 32rpx;
+}
+.share image{
+  width: 32rpx;
+  height: 32rpx;
+}
+.null{
+  height: 10rpx;
+  background: #F1F1F1;
+}
+/* 留言 */
+.liuyan-top{
+  padding: 30rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e6e6e6;
+}
+.liuyan-top text:nth-child(1){
+  font-size: 45rpx;
+  color: black;
+}
+.liuyan-item{
+  padding: 30rpx;
+}
+.liuyanItem-top image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.liuyanItem-top{
+  display: flex;
+
+}
+.liuyanItemTopRright{
+  margin-left: 10rpx;
+}
+.liuyanItemTopRright view:nth-child(2){
+  font-size:35rpx;
+  color:black;
+  margin-top:10rpx;
+}
+.liuyanTime{
+  display: flex;
+  justify-content:space-between; 
+}
+.liuyanTime >text{
+  margin-left: 107rpx;
+}
+.liuyanTime .icon{
+  margin-left: 17rpx;
+}
+/* 音乐组件 */
+.music{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  height: 80rpx;
+  bottom: 0;
+  padding: 0 30rpx;
+  background-color: rgba(0,0,0,0.5)
+}
+.music-left image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.slider{
+  margin: 0;
+}
+.music-top{
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.music-right{
+  margin-left: 30rpx;
+  flex: 1;
+}

@@ -1,0 +1,33 @@
+<view class="video">
+  <view class="video-item">
+    <view class="item-img">
+      <image mode="aspectFill" wx:if="{{yedianDetails.data.thumbpath}}" src="{{ yedianDetails.data.thumbpath }}"></image>
+    </view>
+    <view class="item-info">
+    <view class="item-info1">
+       <text class="info-title">{{ yedianDetails.data.title }}</text>
+      <text class="info-name">简介:{{ yedianDetails.data.description  }}</text>
+    </view>
+   
+      <text class="info-num">热度:{{ yedianDetails.data.click }}</text>
+    
+    </view>
+  </view>
+</view>
+<view  class="back-img">
+  <image mode="aspectFill" wx:if="{{yedianDetails.data.thumbpath}}" src="{{ yedianDetails.data.thumbpath }}"></image>
+</view>
+ <import src="/wxParse/wxParse.wxml" />
+<view class='writ'>
+    <!-- <view class='writing'>
+        <text class='wr-top'>演出介绍</text>
+    </view> -->
+    <!-- <view class='wt-middle'>
+        <image src='{{details.thumb_path}}'></image>
+    </view> -->
+    <!-- 富文本解析 -->
+    <view class='openone'>
+    <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+    </view>
+    <!-- 富文本解析 -->
+</view>

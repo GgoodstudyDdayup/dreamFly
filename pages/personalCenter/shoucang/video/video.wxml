@@ -1,0 +1,6 @@
+
+<view>
+     <!-- 热门视频-->
+    <my-video dataList="{{dataList}}"></my-video>
+</view>
+

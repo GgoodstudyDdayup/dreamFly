@@ -1,0 +1,60 @@
+/* pages/personalCenter/gerenzhuye/index/index.wxss */
+/* 头部开始 */
+page{
+  padding-bottom: 0;
+}
+.avtive-nav{
+  color: #ea4479 ;
+  border-bottom:5rpx solid #ea4479  
+}
+.header{
+    padding: 25rpx;
+}
+.touxiang{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.header-top{
+    display: flex;
+    justify-content: space-between;
+}
+.header-content{
+    text-align: center;    
+}
+.header-img{
+    width: 100rpx;
+    height: 100rpx;
+    border-radius:50%; 
+    margin-top: 50rpx;
+}
+.username{
+    margin-top: 20rpx;
+    font-size: 30rpx;
+    color: black;
+}
+.null{
+    height: 20rpx;
+    background: #f3f3f3;
+}
+.nav{
+    display: flex;
+    
+}
+.navItem{
+    display: inline-block;
+    width: 50%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20rpx 0;
+}
+.navItem text{
+  display: inline-block;
+  width: 100%;
+  border-right: 1px solid #e6e6e6;
+}
+.nav text:nth-child(2){
+    border-left:1px solid #e6e6e6;
+    border-right:1px solid #e6e6e6; 
+}
+/* 头部结束 */

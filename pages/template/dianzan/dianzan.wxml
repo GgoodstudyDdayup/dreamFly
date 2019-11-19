@@ -1,0 +1,5 @@
+<view class='dianzan' catchtap="dianzan" >
+    <image class='zan' wx:if="{{is_zan==1}}" src="/pages/images/zanBG.png"></image>
+    <image class='zan' wx:else src="/pages/images/zan.png"></image>
+    <text>点赞({{zan_count}})</text>
+</view>

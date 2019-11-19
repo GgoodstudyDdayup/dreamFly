@@ -1,0 +1,28 @@
+<view class="headSearch">
+  <view class="headSearch-search" bindtap="toSearch">
+    <view class="headSearch-search-icon">
+      <image src="../images/index/topsearch.png"></image>
+    </view>
+    <input type="text"></input>
+  </view>
+  <!-- <view class="headSearch-right">
+    <navigator url="/pages/video/video?type=电音节">
+      <image src="../images/index/piao.png"></image>
+    </navigator>
+    <navigator url="/pages/video/video?type=电音节">
+      <image src="../images/index/sale.png"></image>
+    </navigator>
+  </view> -->
+</view>
+
+
+<scroll-view wx:if="{{ isDianyin }}" class='scroll' scroll-x="true" style="width: 100%">
+    <view 
+        wx:for="{{nav}}" 
+        wx:key="item" 
+        class='{{index == tabindex ? "navTitleLine" : "navTitle"}}'>
+        <view catchtap='tabchange' data-index='{{index}}' class='{{index == tabindex ? "navTitleConTion" : ""}} navTitleCon'>{{item}}</view>
+    </view>
+</scroll-view>
+
+<goods-list goods="{{ goodsList }}" isdianyin="{{ isDianyin }}" type="{{tabindex}}"></goods-list>

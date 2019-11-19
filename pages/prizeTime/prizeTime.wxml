@@ -1,0 +1,86 @@
+<goods-price wx:if="{{tabindex==1}}" dataList="{{navdata[tabindex]}}"></goods-price>
+<goods-price wx:if="{{tabindex==2}}" dataList="{{navdata[2][clist]}}"></goods-price>
+<view class="prize"  wx:if="{{tabindex==2}}">
+  <view bindtap='toGuize' class="activity">
+    活动规则
+  </view>
+  <view class="prize-time">
+    开奖时间：{{navdata[2][clist].kai_time}}
+  </view>
+  <view class="prize-code">
+    <view class="code-l">中奖号码：</view><view class="code-r">{{navdata[2][clist].jiang_code}}</view>
+  </view>
+</view>
+<view wx:if="{{tabindex==1}}">
+	<my-cjzhong></my-cjzhong>
+</view>
+<view wx:if="{{tabindex==0}}">
+	<my-jjks next_jiang="{{next_jiang}}"></my-jjks>
+</view>
+<scroll-view class="scroll">
+    <block 
+      wx:for="{{nav}}" 
+      wx:key="item" 
+      >
+      <view 
+        catchtap='tabchange' 
+        data-index='{{index}}' 
+        class='{{index == tabindex ? "navTitleConTion" : ""}} navTitleCon'
+      >
+        <view class="title">
+          {{item}}
+          <view class='{{index == tabindex ? "navBorderTion" : ""}}'></view>
+        </view>
+      </view>
+    </block>
+</scroll-view>
+<view class="goods">
+  <view class="goods-item" wx:if="{{tabindex!=2}}">
+    <view class="item-img">
+      <image src="{{navdata[tabindex].thumb_path}}"></image>
+    </view>
+    <view class="item-info">
+      <text class="info-title">{{navdata[tabindex].title}}</text>
+      <text class="info-money">
+        <text class="goodsMoney">￥<text>{{navdata[tabindex].old_money}}</text></text>
+        <text class="price-describe">(抽奖价)</text>
+      </text>
+      <view class="info-icon">
+        <image src="{{imglist[tabindex]}}"></image>
+      </view>
+    </view>
+  </view>
+  <view wx:if="{{tabindex==2}}">
+	  <block
+	    wx:for="{{navdata[2]}}" 
+	    wx:key="item" 
+		
+	    >
+		<view data-index='{{index}}' 
+		catchtap='listchange' class="goods-item">
+		<view class="item-img">
+		  <image src="{{item.thumb_path}}"></image>
+		</view>
+		<view class="item-info">
+		  <text class="info-title">{{item.title}}</text>
+		  <text class="info-money">
+		    <text class="goodsMoney">￥<text>{{item.old_money}}</text></text>
+		    <text class="price-describe">(抽奖价)</text>
+		  </text>
+		  <view class="info-icon">
+		    <image src="{{imglist[tabindex]}}"></image>
+		  </view>
+		</view>
+		</view>
+		</block>
+   
+  </view>
+</view>
+<view wx:if="{{zhezhao_show||show_mask}}" catchtap class='mask'></view>
+<view wx:if="{{zhezhao_show||show_mask}}" class='mypic '>
+  <view style='margin-top:30rpx;'>请先确定哦~</view>
+  <button wx:if="{{zhezhao_show}}" class='shouquan' open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+    微信授权登录
+  </button>
+  <button wx:if="{{show_mask}}" bindgetphonenumber='getPhone' open-type='getPhoneNumber'>获取手机号</button>
+</view>

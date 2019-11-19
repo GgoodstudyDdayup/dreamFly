@@ -1,0 +1,77 @@
+/* pages/yedianDetails/yedianDetails.wxss */
+.openone {
+  padding: 20rpx;
+  height: auto;
+  line-height: 50rpx;
+}
+.video  {
+  width: 80%;
+  padding: 30rpx 10%;
+  height: 260rpx;
+}
+.back-img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 320rpx;
+  z-index: -1;
+  overflow: hidden;
+}
+.back-img image{
+  width: 120%;
+  height: 120%;
+  filter: blur(20rpx);
+}
+.video-item {
+  box-sizing: border-box;
+  height: 250rpx;
+  width: 100%;
+  padding-left: 200rpx;
+  margin-bottom: 30rpx;
+  display: flex;
+}
+.item-img {
+  width: 200rpx;
+  height: 250rpx;
+  float: left;
+  margin-left: -200rpx;
+}
+.item-img image {
+  width: 100%;
+  height: 100%;
+}
+.item-info {
+  position: relative;
+  width: 95%;
+  height: 100%;
+  padding-left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between ;
+}
+.item-info1 {
+  position: relative;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start ;
+
+}
+.info-title {
+  color: white;
+  text-shadow: 0 0 5rpx rgba(0, 0, 0, 0.4);
+  font-weight: 600;
+  font-size: 30rpx;
+}
+.info-name,.info-num {
+   
+  color: white;
+  text-shadow: 0 0 1rpx rgba(0, 0, 0, 0.4);
+  font-weight: 200;
+  font-size: 24rpx;
+  
+}
+.info-name{
+  /* margin-top: -100rpx; */
+}

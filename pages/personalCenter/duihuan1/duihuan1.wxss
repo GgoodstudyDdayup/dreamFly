@@ -1,0 +1,177 @@
+page {
+    padding-bottom: 0;
+}
+
+.header {
+    height: 360rpx;
+    padding: 24rpx;
+    box-sizing: border-box;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    color: black;
+}
+
+.touxiang {
+    text-align: center;
+}
+
+.touxiang image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 30rpx;
+    margin-bottom: 34rpx;
+}
+
+.name {
+    font-size: 36rpx;
+    color: black;
+}
+
+.huiyuanxinxi {
+    padding: 0 24rpx;
+    background: #fafafa;
+    display: flex;
+    justify-content: space-between;
+    line-height: 84rpx;
+}
+
+.duipiao-content {
+    padding: 25rpx 75rpx;
+}
+
+.duipiao-content-top {
+    box-shadow: 0px 0px 5px #ccc;
+}
+
+.duipiao-content-top1 {
+    width: 100%;
+    height: 80rpx;
+    line-height: 80rpx;
+    color: white;
+    text-align: center;
+}
+
+.yigoupiao-item {
+    width: 60rpx;
+    height: 60rpx;
+}
+
+.yigoupiao-item image {
+    width: 100%;
+    height: 100%;
+}
+
+.yigoupiao-left {
+    width: 330rpx;
+    float: left;
+    display: inline-flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.yigoupiao-item {
+    line-height: 60rpx;
+    text-align: center;
+    color: #5bc9d4;
+    font-size: 30rpx;
+    font-weight: 600;
+    margin-bottom: 20rpx;
+}
+
+.duipiao-content-top {
+    border-radius: 10rpx;
+    /* box-shadow: 0px 0px 5px #ccc; */
+}
+
+.yigoupiao-middle {
+    color: #5bc9d4;
+    font-size: 50rpx;
+    margin-left: 35rpx;
+}
+
+.yigoupiao-right {
+    margin-left: 35rpx;
+}
+
+.yigoupiao-right image {
+    width: 60rpx;
+    height: 46rpx;
+}
+
+.yigoupiao-right {
+    color: #5bc9d4;
+}
+
+.yigoupiao {
+    display: flex;
+    align-items: center;
+    padding: 0 30rpx;
+    padding-top: 20rpx;
+    background: #f3f3f3;
+}
+
+.tip {
+    color: #5bc9d4;
+    font-size: 30rpx;
+    margin-top: 20rpx;
+}
+
+.jiantou {
+    margin-top: 20rpx;
+}
+
+.jiantou image {
+    height: 13rpx;
+    width: 100%;
+}
+
+.goupiao-button {
+    line-height: 80rpx;
+    background: #ff6c9a;
+    color: white;
+    text-align: center;
+    margin-top: 15rpx;
+    border-radius: 10rpx;
+}
+
+.duipiaocishu {
+    padding: 24rpx;
+}
+
+.huise {
+    background: #f3f3f3;
+    height: 20rpx;
+}
+
+.duipiaocishu-text1 {
+    font-size: 35rpx;
+    color: black;
+}
+
+.duipiaocishu-text2 {
+    margin-top: 20rpx;
+}
+
+.duipiaocishu-text2 text {
+    color: #5bc9d4;
+}
+
+.footer {
+    height: 310rpx;
+    padding: 50rpx;
+    text-align: center;
+    color: white;
+    margin-top: 30rpx;
+}
+
+.footer-button {
+    height: 80rpx;
+    line-height: 80rpx;
+    margin-top: 42rpx;
+    font-size: 30rpx;
+}

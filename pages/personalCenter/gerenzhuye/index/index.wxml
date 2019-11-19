@@ -1,0 +1,37 @@
+<view class="header">
+    <view class="header-top">
+        <text >编号：{{userInfo2.user_id}}</text>
+        <text wx:if="{{userInfo2.level==1}}">等级：vip会员</text>
+        <text wx:else>等级：普通会员</text>
+    </view>
+    <view class="header-content">
+        <image class="header-img" src="{{userInfo2.head_img}}"></image>
+        <view class="username">{{userInfo2.nickname}}</view>
+    </view>
+</view>
+<view class="null"></view>
+<view class="nav">
+    <view 
+        class='navItem {{index==active?"avtive-nav":""}}' 
+        wx:for="{{tab}}" 
+        wx:key="{{index}}" 
+        data-index='{{index}}' 
+        bindtap='tab'>
+       <text>{{item}}</text>
+    </view>
+</view>
+<!-- 头部结束 -->
+<!-- <my-yitougao 
+    wx:if="{{active==0}}" 
+    dataList="{{yitougaoList}}" 
+    userInfo2="{{userInfo2}}">
+</my-yitougao> -->
+<my-yifabu 
+    wx:if="{{active==0}}" 
+    dataList="{{yifabuList}}" 
+    userInfo2="{{userInfo2}}">
+</my-yifabu>
+<my-yiguanzhu 
+    wx:if="{{active==1}}" 
+    dataList="{{yiguanzhuList}}">
+</my-yiguanzhu>

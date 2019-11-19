@@ -1,0 +1,73 @@
+<import src="/wxParse/wxParse.wxml" />
+
+<view class="box">
+    <view class='title'>{{details.title}}</view>
+    <view class='content'>
+        <video 
+            controls 
+            wx:if="{{details.filepath}}"
+            src='{{details.filepath}}' 
+            poster='{{details.thumbpath}}' 
+            custom-cache="{{false}}">
+        </video>
+    </view>
+        <!-- 富文本解析 -->
+    <view class='fuwenben'>
+        <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+    </view>
+    <!-- 富文本解析 -->
+    <view class='liulan'>
+        <view style='display:flex'>
+            <view class='icon'>
+                <image src='/pages/images/comment.png'></image>评论（{{pinglunList.length}}）</view>
+            <!-- 点赞组件 -->
+            <my-dianzan 
+                is_zan="{{details.is_zan}}" 
+                zanid="{{details.music_id}}" 
+                zan_count="{{details.zan_count}} " 
+                shoucangjiekou="/index/article/SetArticleGood">
+            </my-dianzan>
+        </view>
+        <!-- 分享按钮组件 -->
+        <my-share 
+            shareType="2"
+            shareId="{{details.id}}" 
+            shareImg="{{details.thumbpath}}" 
+            shareTitle="{{details.title}}" 
+            sharePath="/pages/information/videopage/details/details?id="
+            codepath="pages/information/videopage/details/details">
+        </my-share>
+    </view>
+</view>
+<view class='null'></view>
+<view class='liuyan'>
+    <view class='liuyan-top'>
+        <text>精选留言</text>
+        <text data-videoid='{{details.id}}' bindtap='toPinglun'>我要留言</text>
+    </view>
+    <view class='liulan-bottom'>
+        <view class='liuyan-item' wx:for="{{pinglunList}}" wx:key="{{index}}">
+            <view class='liuyanItem-top'>
+                <image src='{{item.head_img}}'></image>
+                <view class='liuyanItemTopRright'>
+                    <view>{{item.nickname}}</view>
+                    <view>{{item.content}}</view>
+                    <view class='addtime'>
+                       <view>{{item.add_time}}</view>
+                        <my-dianzan 
+                            style='margin-left:15rpx;'
+                            is_zan="{{item.is_zan}}" 
+                            zanid="{{item.id}}" 
+                            zan_count="{{item.zannum}}" 
+                            shoucangjiekou="/index/article/SetArticleCommentZan">
+                        </my-dianzan>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<!-- 返回首页 -->
+<view class='backindex'>
+    <back-index></back-index>
+</view>

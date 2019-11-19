@@ -1,0 +1,25 @@
+<view class='scroll'>
+    <view 
+        bindtap='tabchange' 
+        data-index='{{index}}'
+        wx:for="{{nav}}" 
+        wx:key="navItems" 
+        class='{{index == tabindex ? "navTitleLine" : "navTitle"}}'>
+        <view class='navTitleCon'>{{item}}</view>
+    </view>
+</view>
+<view hidden="{{tabindex!=0}}">
+    <my-yinyuejie id="my-yinyuejie"></my-yinyuejie>
+</view>
+<view hidden="{{tabindex!=1}}">
+    <my-video id="my-video"></my-video>
+</view>
+<view hidden="{{tabindex!=2}}">
+    <my-music id="my-music"></my-music>
+</view>
+<view hidden="{{tabindex!=3}}">
+    <my-tuiwen id="my-tuiwen"></my-tuiwen>
+</view>
+<view hidden="{{tabindex!=4}}">
+    <my-yedian id="my-yedian"></my-yedian>
+</view>

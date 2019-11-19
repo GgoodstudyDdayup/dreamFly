@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "淘票详情页",
+  "usingComponents": {
+    "goods-head": "../template/goodsHead/goodsHead"
+  }
+}

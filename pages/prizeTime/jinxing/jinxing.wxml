@@ -1,0 +1,84 @@
+<block wx:if="{{now_jiang!=null}}">
+    <view class='prizeTime'>
+        <view class='ones'>
+            <text style='font-size:35rpx;font-weight: 600;'>开奖</text>
+            <text style='font-size:21rpx; line-height:44rpx;'>倒计时</text>
+        </view>
+        <view class='two'>
+            <view class='two1'>
+                {{clock.hr}}
+            </view>
+            <view class='maohao'>:</view>
+            <view class='two1 two2'>
+                {{clock.min}}
+            </view>
+            <view class='maohao'>:</view>
+            <view class='two1'>
+                {{clock.sec}}
+            </view>
+        </view>
+        <view class='thr' bindtap='toGuize'>活动规则</view>
+    </view>
+
+    <!-- <view class='prizePic'>
+        <image style="width:100%;height:100%" src='{{now_jiang.thumb_path}}'></image>
+    </view>
+
+    <view class='prizeTitle fontSize'>
+        {{now_jiang.title}}
+    </view>
+    <view class='prizeTitle'>
+        {{now_jiang.content}}
+    </view>
+    <view class='jiage'>
+        <view class='choujiang'>
+            <b>￥</b>
+            <b>0</b> 抽奖价
+        </view>
+        <view class='yuanjia'>
+            原价
+            <text style="text-decoration:line-through;">￥{{now_jiang.old_money}}</text>
+        </view>
+    </view> -->
+    <view class='last'>
+        <view class='bg-1' style='background-image:url(https://www.dreamflygo.com/img/dayinji.png)'>
+            <!-- <view wx:if="{{choujiangma==''}}" class='txt2'>点击下方按钮获取抽奖码</view> -->
+            <!-- <block wx:for='{{now_jiang.my_code}}'> -->
+            <view class='choujiangma_all'>
+                <view 
+                    class='choujiangma' 
+                    wx:for='{{now_jiang.my_code}}' 
+                    wx:key="{{index}}"
+                    style='background-image:url(https://www.dreamflygo.com/img/dayinjipiao.png)'>
+                    <image class="userinfo-avatar" src="{{userInfo.head_img}}" mode="cover"></image>
+                    <view class='choujiang-left'>
+                        <view class='text1'>我的</view>
+                        <view class='text1 t2'>抽奖码</view>
+                    </view>
+                    <text class='choujiang-left'>{{item}}</text>
+                </view>
+            </view>
+        </view>
+        <view class='tip'>
+            <view>开奖时间：{{endTime}}</view>
+            <view class='las'>抽奖码是参与抽奖的唯一凭证，抽奖结果将在本页公示，请注意查看。</view>
+        </view>
+    </view>
+    <view class='btn'>
+        <button 
+            wx:if="{{choujiangcishu!=false}}" 
+            bindtap='getChoujiangma' 
+            class='btno'
+            style='background:linear-gradient(10deg,#ff69b4,#dc143c);");'>
+            立即抽奖
+        </button>
+        <button 
+            open-type='share' 
+            class='btno' data-img='{{now_jiang.thumb_path}}' 
+            data-title='快来参加抽奖吧' 
+            bindtap='addcishu'
+            wx:else style='background:linear-gradient(10deg,#ff69b4,#dc143c);'>
+            分享获得更过抽奖码，增加中奖率
+        </button>
+    </view>
+</block>

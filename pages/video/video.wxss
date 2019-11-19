@@ -1,0 +1,47 @@
+/* 切换栏 */
+
+.scroll {
+    background: #fff;
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
+    display: flex;
+    /* border-bottom: 1rpx solid #eaeaea; */
+    justify-content: space-between;
+    margin-bottom: 16rpx;
+}
+
+.navTitle {
+    width: 50%;
+    color: #282828;
+    font-size: 26rpx;
+    display: inline-block;
+    height: 50rpx;
+    line-height: 50rpx;
+    text-align: center;
+    padding: 16rpx 0;
+}
+
+.navTitleLine {
+    width: 50%;
+    color: #fec227;
+    font-size: 30rpx;
+    display: inline-block;
+    height: 55rpx;
+    line-height: 50rpx;
+    text-align: center;
+    padding: 10rpx 0;
+    /* border-bottom: 5rpx solid #fec227; */
+}
+
+.navTitleCon {
+    margin: 0 100rpx;
+    padding-bottom: 20rpx;
+    height: 30rpx;
+    line-height: 30rpx;
+    text-align: center;
+    /* border-right: 1rpx solid #f1f1f1; */
+}
+.navTitleConTion {
+  border-bottom: 5rpx solid #fec227;
+}

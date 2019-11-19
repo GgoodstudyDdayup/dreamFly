@@ -1,0 +1,373 @@
+.shopList {
+  padding: 0 30rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+.shopList-item {
+  /* display: inline-block; */
+  width: 210rpx;
+  margin: 0 10rpx 40rpx 10rpx;
+  position: relative;
+  top: 0;
+}
+.shopList-item .shopList-img {
+  width: 210rpx;
+  height: 280rpx;
+  border-radius: 15rpx;
+  text-align: center;
+  overflow: hidden;
+}
+.shopList-item image {
+  width: 210rpx;
+  height: 280rpx;
+}
+.label-box {
+  position: absolute;
+  height: 40rpx;
+  width: 100rpx;
+  border-radius: 6rpx;
+  top: 20rpx;
+  left: 50%;
+  margin-left: -50rpx;
+  color: white;
+}
+.shopList-item text {
+  font-size: 24rpx;
+  color: #655d6a;
+  font-family: '微软雅黑';
+}
+
+.text1
+{
+overflow: hidden;
+text-overflow: ellipsis; 
+display: -webkit-box; 
+ -webkit-box-orient: vertical;
+-webkit-line-clamp:2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* .swiperAll {
+    width: 100%;
+    overflow: visible;
+    height: 380rpx;
+}
+
+.swiperItem {
+    box-sizing: border-box;
+    border-radius: 20rpx;
+    padding: 0 48rpx;
+}
+
+.slide-image {
+    margin-top: 2%;
+    width: 100%;
+    height: 92%;
+    border-radius: 20rpx;
+    box-shadow: 0rpx 5rpx 10rpx gray;
+}
+
+.h2 {
+    margin-top: 20rpx;
+    font-size: 40rpx;
+    font-weight: bold;
+    text-align: center;
+}
+
+ 横向滚动开始 
+
+.scroll {
+    margin: 20rpx 0 10rpx;
+    background: #fff;
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
+    display: flex;
+}
+
+.navTitle {
+    color: #282828;
+    font-size: 24rpx;
+    display: inline-block;
+    height: 50rpx;
+    line-height: 50rpx;
+    text-align: center;
+    padding: 16rpx 0;
+}
+
+.navTitleLine {
+    color: #5bc9d4;
+    font-size: 32rpx;
+    display: inline-block;
+    height: 55rpx;
+    line-height: 50rpx;
+    text-align: center;
+    padding: 10rpx 0;
+    border-bottom: 5rpx solid #5bc9d4;
+}
+
+.navTitleCon {
+    padding: 0 60rpx;
+    height: 50rpx;
+    line-height: 50rpx;
+    text-align: center;
+    border-left: 1rpx solid f1f1f1;
+    border-right: 1rpx solid #f1f1f1;
+}
+
+横向滚动结束 
+
+.jiaobiao-img {
+    width: 70rpx !important;
+    height: 50rpx !important;
+    position: absolute;
+    top: 164rpx;
+}
+
+ 卡片列表开始 
+
+.cardList {
+    padding: 32rpx 16rpx;
+    background: #fff;
+}
+
+.card {
+    position: relative;
+    height: 350rpx;
+    width: 100%;
+    background-size: 100% 100%;
+    border-radius: 20rpx;
+    overflow: hidden;
+    box-shadow: 0rpx 16rpx 40rpx rgb(194, 194, 194);
+    margin-bottom: 40rpx;
+}
+
+.card image {
+    width: 100%;
+    height: 100%;
+}
+
+.cardType {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 10rpx 20rpx;
+    font-size: 30rpx;
+    color: #fff;
+    text-align: right;
+}
+
+.cardTitle {
+    box-sizing: border-box;
+    padding: 20rpx 20rpx;
+    font-size: 32rpx;
+    font-weight: 700;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+ 卡片列表结束 
+
+ 列表开始 
+
+.window {
+    width: 100%;
+    background: #fefefe;
+    margin-top: 20rpx;
+    padding-bottom: 20rpx;
+}
+
+.windone {
+    width: 100%;
+    padding-bottom: 20rpx;
+    background: #fefefe;
+    margin-top: 20rpx;
+}
+
+.shopList {
+    margin: 0 64rpx 64rpx 64rpx;
+    box-shadow: 0rpx 5rpx 30rpx rgb(146, 146, 146);
+    position: relative;
+    border-radius: 10rpx;
+}
+
+.shopList1 {
+    margin: 0 64rpx 64rpx 64rpx;
+    box-shadow: 0rpx 5rpx 30rpx rgb(146, 146, 146);
+    position: relative;
+    border-radius: 10rpx;
+}
+
+.ones {
+    width: 90%;
+    height: 100rpx;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shopListBottomL {
+    display: flex;
+}
+
+.shopListPart {
+    width: 110%;
+    height: 300rpx;
+    position: absolute;
+    top: 100rpx;
+    left: -5%;
+    box-shadow: 0rpx 6rpx 16rpx rgb(175, 175, 175);
+    border-radius: 10rpx;
+    overflow: hidden;
+}
+
+.shopListPart1 {
+    width: 110%;
+    height: 300rpx;
+    position: absolute;
+    top: 60rpx;
+    left: -5%;
+    box-shadow: 0rpx 6rpx 16rpx rgb(175, 175, 175);
+    border-radius: 10rpx;
+    overflow: hidden;
+}
+
+.shopListPart image, .shopListPart1 image {
+    width: 100%;
+    height: 100%;
+}
+
+.shopListTitle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    font-size: 24rpx;
+    font-weight: 700;
+    box-sizing: border-box;
+    padding: 24rpx 20rpx;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shopListTop {
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 10rpx 30rpx;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shopListTop1 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    top: 70rpx;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.shopListTopL, .shopListTopL1 {
+    color: #060206;
+}
+
+.year {
+    font-size: 24rpx;
+    letter-spacing: 40rpx;
+    margin-left: 2rpx;
+}
+
+.line {
+    height: 1rpx;
+    background: #969496;
+    width: 100%;
+}
+
+.day {
+    font-size: 34rpx;
+    font-weight: 600;
+}
+
+.day1 {
+    font-size: 28rpx;
+}
+
+.shopListTopR {
+    font-size: 32rpx;
+    line-height: 80rpx;
+}
+
+.shopListTopR1 {
+    font-size: 32rpx;
+}
+
+.shopListTopR image, .shopListTopR1 image {
+    width: 40rpx;
+    height: 40rpx;
+    margin-right: 10rpx;
+    vertical-align: middle;
+}
+
+.shopListBottom {
+    padding: 30rpx 20rpx;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shopListBottom1 {
+    padding: 30rpx 20rpx;
+    margin-top: -25rpx;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shopListBottomL image {
+    width: 30rpx;
+    height: 30rpx;
+    vertical-align: middle;
+}
+
+.shopListBottomL text {
+    color: #9f9f9f;
+}
+
+.msgList {
+    box-sizing: border-box;
+    padding: 30rpx;
+    font-size: 22rpx;
+    color: #7d7d7d;
+}
+
+.line {
+    height: 2rpx;
+    background: #e6e6e6;
+    width: 85%;
+} */

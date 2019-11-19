@@ -1,0 +1,20 @@
+<!-- 顶部导航 -->
+<scroll-view class='scroll' scroll-x="true" style="width: 100%">
+    <view 
+        bindtap='{{arr[index]}}' 
+        wx:for="{{nav}}" 
+        wx:key="navItems" 
+        class='{{index == 4 ? "navTitleLine" : "navTitle"}}'>
+        <view class='navTitleCon'>{{item}}</view>
+    </view>
+</scroll-view>
+<!-- 无订单显示下面 -->
+<view wx:if="{{yedian==''}}" class='noOrder'>
+    <icon class='iconfont icon-waihuixingqingzixun'></icon>
+</view>
+<!-- 有订单显示列表 -->
+<view wx:else style='margin-top:50rpx;'>
+    <my-yedianlist dataList="{{yedian}}"></my-yedianlist>
+</view>
+<!-- 底部导航 -->
+<my-dibudaohang my-property="example" />

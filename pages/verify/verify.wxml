@@ -1,0 +1,26 @@
+<!--pages/verify/verify.wxml-->
+<view class='root'>
+  <block wx:if="{{show_input}}">
+    <van-cell-group>
+      <van-field bind:input="getpsw" type="password" value="{{psw}}" placeholder="请输入密码" label="管理员" left-icon="contact" />
+    </van-cell-group>
+    <button bindtap='login' class='my-btn'>登录</button>
+  </block>
+  <block wx:if="{{show_verify}}">
+    <view wx:if="{{show_result}}">
+      <van-cell-group>
+        <van-cell title="音乐节" value="{{music_data.name}}" size="large" />
+        <van-cell title="门票类型" value="{{music_data.mplx}}" size="large" />
+        <van-cell title="门票数量" value="{{music_data.number}}" size="large" />
+        <van-cell title="开始时间" value="{{music_data.time}}" size="large" />
+        <van-cell title="姓名" value="{{music_data.link_name}}" size="large" />
+        <van-cell title="手机号" value="{{music_data.link_tel}}" size="large" />
+      </van-cell-group>
+    </view>
+    <view wx:else>
+      <van-field bind:input="get_order_sn" placeholder="请输入订单号" label="订单号" left-icon="label-o" />
+    </view>
+    <button bindtap='checkorder' class='my-btn'>立即核销</button>
+  </block>
+
+</view>

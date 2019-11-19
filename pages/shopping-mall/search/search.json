@@ -1,0 +1,10 @@
+{
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#72e2ef",
+  "navigationBarTitleText": "搜索结果",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "my-yinyuejielist": "/pages/template/yinyuejieList/yinyuejieList"
+  }
+}

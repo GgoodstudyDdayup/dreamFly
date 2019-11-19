@@ -1,0 +1,12 @@
+{
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#72e2ef",
+    "navigationBarTitleText": "互动",
+    "navigationBarTextStyle": "white",
+    "usingComponents": {
+        "my-dongtai": "/pages/Interaction/dongtai/Interaction",
+        "my-pengyouquan": "/pages/Interaction/pengyouquan/Interaction",
+        "my-taopiao": "/pages/Interaction/taopiao/Interaction"
+    }
+}

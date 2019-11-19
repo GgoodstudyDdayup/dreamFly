@@ -1,0 +1,2 @@
+<my-friend wx:if="{{ isUser }}" friend="{{ friendList }}"></my-friend>
+<view wx:else style="text-align: center;">{{ text }}</view>

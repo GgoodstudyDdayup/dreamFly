@@ -1,0 +1,10 @@
+{
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTitleText": "订单",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "my-yinyuejielist": "/pages/template/yinyuejieList/yinyuejieList"
+  }
+}

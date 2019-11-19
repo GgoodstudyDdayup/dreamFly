@@ -1,0 +1,11 @@
+/* pages/verify/verify.wxss */
+.root{
+  padding: 15rpx;
+}
+.my-btn{
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 50rpx;
+  color: white;
+  background: #ee8183;
+}

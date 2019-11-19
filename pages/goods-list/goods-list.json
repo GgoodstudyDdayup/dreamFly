@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "电音节",
+  "usingComponents": {
+    "goods-list": "../template/detailsList/detailsList"
+  }
+}

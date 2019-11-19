@@ -1,0 +1,13 @@
+<!-- 评论开始 -->
+<view class='comment'>评论内容</view>
+<!-- 输入框 -->
+<view class='imp'>
+  <textarea bindinput='getContent'></textarea>
+</view>
+
+<!-- 评论按钮 -->
+<view class='bgd'>
+  <view bindtap="upSubmit" class='bg' style='background: url("https://www.dreamflygo.com/img/307.png");background-size:100% 100%;'>
+    <text>评论</text>
+  </view>
+</view>

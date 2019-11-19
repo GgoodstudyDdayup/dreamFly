@@ -1,0 +1,29 @@
+<!--miniprogram/custom-tab-bar/index.wxml-->
+<view class="tab-bar">
+    <view class="tab-bar-border"></view>
+    <view wx:for="{{list}}" wx:key="index" class="tab-bar-item" data-path="{{item.pagePath}}" data-index="{{index}}" bindtap="switchTab">
+        <!-- <view wx:if='{{index==2}}' class='yuan-border'></view> -->
+        <image
+          wx:if="{{ index != 1 }}"
+          src="{{selected === index ? item.selectedIconPath : item.iconPath}}">
+        </image>
+
+        <view wx:if="{{ index != 1 }}" seyle="color: {{selected === index ? selectedColor : color}}">
+          {{item.text}}
+        </view>
+
+        <button open-type="contact" class="kefu" wx:else>
+          <image
+            src="{{selected === index ? item.selectedIconPath : item.iconPath}}">
+          </image>
+
+          <view seyle="color: {{selected === index ? selectedColor : color}}">
+            {{item.text}}
+          </view>
+        </button>
+        <!-- <view wx:if="{{ index != 1 }}" tyle="color: {{selected === index ? selectedColor : color}}">
+          {{item.text}}
+        </view> -->
+        <!-- <button wx:else>{{item.text}}</button> -->
+    </view>
+</view>

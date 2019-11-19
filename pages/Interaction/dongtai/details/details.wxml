@@ -1,0 +1,48 @@
+<view class="box">
+  <view class='title'>{{details.title}}</view>
+  <view class='content'>
+    <image src='{{details.img}}'></image>
+    <video controls src='{{details.vedio}}' poster='{{details.img}}' custom-cache='{{false}}'></video>
+  </view>
+  <view>{{details.content}}</view>
+  <view class='liulan'>
+    <view>
+      <view class='icon'><image src='/pages/images/comment.png'></image>评论（{{pinglunList.length}}）</view>
+      <view class='icon'><image src='/pages/images/zan.png'></image>点赞（10）</view>
+    </view>
+    <view class='share'>
+        <image src='/pages/images/fenxiang.png'></image>
+    </view>
+  </view>
+</view>
+<view class='null'></view>
+<view class='liuyan'>
+  <view class='liuyan-top'>
+    <text>精选留言</text>
+    <text data-videoid='{{details.id}}' bindtap='toPinglun'>我要留言</text>
+  </view>
+  <view class='liulan-bottom'>
+    <view class='liuyan-item' wx:for="{{pinglunList}}" wx:key="list">
+      <view class='liuyanItem-top'>
+         <image src='{{item.head_img}}'></image>
+         <view class='liuyanItemTopRright'>
+            <view>{{item.nickname}}</view>
+            <view>{{item.content}}</view>
+         </view>
+      </view>
+      <view class='liuyanTime'>
+        <text>{{item.time1}}</text>
+        <view>
+          <view class='icon'>
+            <image src='/pages/images/comment.png'></image>
+            <text>回复(3)</text>
+          </view>
+          <view class='icon'>
+            <image src='/pages/images/zan.png'></image>
+            <text>点赞(3)</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

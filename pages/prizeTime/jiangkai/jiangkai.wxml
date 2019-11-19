@@ -1,0 +1,28 @@
+<block wx:if="{{next_jiang!=null}}">
+<view class='prizeTime'>
+    <view>
+        参与时间：{{next_jiang.add_time}}
+    </view>
+    <view bindtap='toGuize'>活动规则</view>
+</view>
+<view class='prizePic'>
+    <image src='{{next_jiang.thumb_path}}'></image>
+</view>
+<view class='prizeTitle fontSize'>
+    {{next_jiang.title}}
+</view>
+<view class='prizeTitle' >
+    {{next_jiang.content}}
+</view>
+<view class='jiage'>
+    <view class='choujiang'>
+        <b>￥</b>
+        <b>0</b> 抽奖价</view>
+    <view class='yuanjia'>原价
+        <b style="text-decoration:line-through;">￥{{next_jiang.old_money}}</b>
+    </view>
+</view>
+<view class='btn'>
+    <view class='btno'>即将开始</view>
+</view>
+</block>

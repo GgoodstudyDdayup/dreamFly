@@ -1,0 +1,14 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#72e2ef",
+  "navigationBarTitleText": "音乐节详情",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "my-introduce":"/pages/template/yinyuejieDetails/introduce/introduce",
+    "my-canyu": "/pages/template/yinyuejieDetails/canyu/canyu",
+    "my-musicList": "/pages/template/music/music",
+    "my-pinglun": "/pages/template/yinyuejieDetails/pinglun/pinglun",
+    "my-kefu": "/pages/template/kefu/kefu",
+    "my-backindex": "/pages/template/backindex/backindex"
+  }
+}

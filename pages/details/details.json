@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "详情页",
+  "usingComponents": {
+    "goods-head": "../template/goodsHead/goodsHead",
+    "my-introduce": "/pages/template/yinyuejieDetails/introduce/introduce",
+    "frient-list": "/pages/template/friendList/friendList",
+    "video-list": "/pages/template/videoList/videoList",
+    "my-share": "/pages/template/share/share"
+  }
+}

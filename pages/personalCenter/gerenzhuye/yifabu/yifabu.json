@@ -1,0 +1,10 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#72e2ef",
+  "navigationBarTitleText": "个人主页",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "my-share": "/pages/template/share/share",
+    "my-dianzan": "/pages/template/dianzan/dianzan"
+  }
+}

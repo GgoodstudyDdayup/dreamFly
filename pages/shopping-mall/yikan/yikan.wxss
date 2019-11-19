@@ -1,0 +1,112 @@
+s
+/* 列表开始 */
+
+.onev {
+    width: 100%;
+    height: 270rpx;
+    background: #fff;
+    margin-bottom: 14rpx;
+}
+
+/* 内容开始 */
+
+.one1 {
+    width: 695rpx;
+    height: 210rpx;
+    /* border: 1rpx solid #e6e6e6; */
+    margin: 0 auto;
+    margin-top: 100rpx;
+    display: flex;
+    /* justify-content: space-between; */
+    position: relative;
+}
+
+.one2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.ones {
+    width: 205rpx;
+    height: 205rpx;
+    margin-right: 15rpx;
+    border: 2rpx solid #fafafa;
+}
+
+.one {
+    position: absolute;
+    top: -50rpx;
+    font-size: 30rpx;
+    font-weight: 900;
+}
+
+.one2 text:nth-child(2) {
+    line-height: 35rpx;
+}
+
+.one3 {
+    width: 470rpx;
+    height: 100rpx;
+    margin-top: 50rpx;
+    /* border: 1rpx solid #999999; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.kan {
+    width: 145rpx;
+    height: 65rpx;
+    background: #00c2c2;
+    border-radius: 6rpx;
+    text-align: center;
+    line-height: 65rpx;
+    font-weight: 600;
+    color: #fff;
+}
+.shixiao {
+    width: 145rpx;
+    height: 65rpx;
+    background: #ccc;
+    border-radius: 6rpx;
+    text-align: center;
+    line-height: 65rpx;
+    font-weight: 600;
+    color: #fff;
+}
+.onee {
+    font-size: 28rpx;
+    font-weight: 600;
+    color: #fe4155;
+    margin-bottom: 10rpx;
+}
+
+.txt1 {
+    font-size: 25rpx;
+    color: #000;
+    margin-top: 10rpx;
+    display: inline-block;
+    width: 100%;
+    height: 65rpx;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.txt2 {
+    font-size: 27rpx;
+    color: #000;
+}
+
+.link {
+    width: 720rpx;
+    height: 2rpx;
+    background: #f5f5f5;
+    margin-left: 30rpx;
+    margin-top: 15rpx;
+}
+
+/* 结束 */

@@ -1,0 +1,64 @@
+/* 评论开始 */
+.comment{
+  height: 75rpx;
+  font-size: 30rpx;
+  color: black;
+  display: flex;
+  padding-left: 30rpx;
+  align-items: center;
+  background: #f3f3f3;
+}
+/* 输入框 */
+.imp{
+  height:320rpx;
+  background:#f3f3f3;
+  display:flex;
+  margin:25rpx;
+  border-radius:10rpx;
+  padding:10rpx;
+
+}
+/* 多媒体元素 */
+.computer{
+    height: 75rpx;
+  font-size: 30rpx;
+  color: black;
+  display: flex;
+  padding-left: 30rpx;
+  align-items: center;
+  background: #f3f3f3;
+}
+/* 添加语音 */
+.imaone{
+  height: 100rpx;
+  align-items: center;
+  display: flex;
+  border-bottom: 1rpx solid #f1f1f1;
+}
+.im{
+  margin-left: 30rpx;
+  margin-right: 20rpx;
+}
+.imaone image{
+  height: 30rpx;
+  width: 30rpx;
+}
+.jiantou{
+  margin-left: 510rpx;
+}
+/* 评论 */
+/* 让view标签居中显示 */
+.bgd{
+  height: 200rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* 控制view标签 */
+.bg{
+  line-height: 100rpx;
+  width: 90%;
+  font-size: 30rex;
+  color: white;
+  text-align: center;
+}

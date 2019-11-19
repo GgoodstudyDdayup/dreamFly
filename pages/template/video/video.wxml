@@ -1,0 +1,71 @@
+<view class='video'>
+    <view class='shopList' wx:for="{{dataList}}" wx:key='Item'>
+        <view style='height:390rpx'></view>
+        <view class='shopListPart'>
+            <view class="section tc">
+                <view class='course-pannle-item'>
+                    <view class='video-item'>
+                        <!-- 显示图片 -->
+                        <view class='videoimg' 
+                            data-id="{{item.id}}" 
+                            bindtap='toDetails' 
+                            data-videoId='{{item.id}}' 
+                            style='background:url({{item.thumbpath}});background-size:100% 100%; '>
+                            <!-- <view class='shopListTopL'>
+                                <view class='year'>{{item.time1}}</view>
+                                <view class='line'></view>
+                                <view class='day'>{{item.time2}}</view>
+                            </view> -->
+                            <image class='play-button' 
+                                style='width:100rpx;height:100rpx' 
+                                src='/pages/images/5.png'></image>
+                            <view class='videoTitle'>{{item.title}}</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class='shopListBottom'>
+            <view class='shopListBottomL'>
+                <text>
+            <image src="/pages/images/comment.png"></image>
+            <text>评论({{item.comment_count}})</text>
+                </text>
+                <!-- 我的点赞 -->
+                <my-dianzan 
+                    is_zan="{{item.is_zan}}" 
+                    zanid="{{item.id}}" 
+                    zan_count="{{item.zan_count}}" 
+                    shoucangjiekou="/index/article/SetArticleGood">
+                </my-dianzan>
+            </view>
+            <view class='shopListBottomR'>
+                <!-- 是否收藏 -->
+                <my-shoucang 
+                    is_cang="{{item.is_cang}}" 
+                    shoucangid="{{item.id}}" 
+                    shoucangjiekou="/index/article/SetArticleGood">
+                </my-shoucang>
+                <!-- 分享 -->
+                <my-share 
+                    shareType="2"
+                    shareId="{{item.id}}" 
+                    shareImg="{{item.thumbpath}}" 
+                    shareTitle="{{item.title}}" 
+                    sharePath="/pages/information/videopage/details/details?id="
+                    codepath="pages/information/videopage/details/details">
+                </my-share>
+            </view>
+        </view>
+        <view class='line'></view>
+        <view class='msgList'>
+            <view 
+                wx:for="{{item.comment_list}}" 
+                wx:key="id" 
+                wx:for-item="comment_list" 
+                class='msgListCon'>
+                {{comment_list.nickname}} : {{comment_list.content}}
+            </view>
+        </view>
+    </view>
+</view>

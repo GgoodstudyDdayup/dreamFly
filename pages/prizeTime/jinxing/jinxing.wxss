@@ -1,0 +1,241 @@
+/* pages/prizeTime/prizeTime.wxss */
+
+page {
+    padding-bottom: 0;
+}
+.endTimeView{
+   text-align: center;
+}
+.topList {
+    background: #333;
+    display: flex;
+    align-content: center;
+}
+
+.topListSon {
+    box-sizing: border-box;
+    width: 20%;
+    font-size: 26rpx;
+    height: 150rpx;
+    padding: 38rpx 0;
+    border-right: 1rpx solid #4b4b4b;
+    text-align: center;
+    color: #fff;
+}
+
+.topListLin {
+    background: #5bc9d4;
+    box-sizing: border-box;
+    width: 20%;
+    font-size: 26rpx;
+    height: 150rpx;
+    padding: 38rpx 0;
+    border-right: 1rpx solid #4b4b4b;
+    text-align: center;
+    color: #fff;
+}
+
+.fontSize22 {
+    font-size: 22rpx;
+}
+
+.fontSize30 {
+    font-size: 30rpx;
+}
+
+/* pages/prizeTime/yikai/yikai.wxss */
+
+.prizeTime {
+    box-sizing: border-box;
+    padding: 32rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.thr {
+    font-size: 30rpx;
+    color: #6d6d6d;
+    background: #f3f3f3;
+    box-sizing: border-box;
+    padding: 10rpx;
+    border-radius: 6rpx;
+}
+
+.ones {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.two {
+    display: flex;
+    text-align: center;
+}
+
+.two1 {
+    width: 100rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    background: #070c08;
+    border-radius: 9rpx;
+    font-size: 45rpx;
+    font-weight: 200;
+    color: #fff;
+}
+
+.maohao {
+    line-height: 80rpx;
+    color: #999;
+    font-size: 50rpx;
+    margin: 0 5rpx;
+}
+
+.prizePic {
+    width: 100%;
+    height: 300rpx;
+    box-sizing: border-box;
+    padding: 0 24rpx 24rpx 24rpx;
+}
+
+.prizePic image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10rpx;
+}
+
+.fontSize {
+    font-size: 28rpx;
+    font-weight: 600;
+}
+
+.prizeTitle {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 24rpx 24rpx 24rpx;
+}
+
+.jiage {
+    width: 95%;
+    height: 120rpx;
+    margin: 0 auto;
+    border-bottom: 1rpx solid #e6e6e6;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.choujiang {
+    color: #ff6c9a;
+    font-size: 28rpx;
+    margin-top: 10rpx;
+}
+
+.choujiang b:nth-child(1) {
+    font-size: 33rpx;
+}
+
+.choujiang b:nth-child(2) {
+    font-size: 40rpx;
+}
+
+.yuanjia {
+    font-size: 28rpx;
+    margin-top: 26rpx;
+    font-weight: 600;
+}
+
+.onevie {
+    width: 100%;
+    text-align: center;
+    margin-top: 50rpx;
+}
+
+.one-zhong {
+    height: 120rpx;
+    /* border: 1rpx solid #6d6d6d; */
+    font-size: 23rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 结尾抽奖码 */
+
+.bg-1 {
+    margin: 10rpx auto;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 318rpx;
+}
+
+.last {
+    padding-bottom: 20rpx;
+}
+
+.tip {
+    text-align: center;
+    padding: 0 40rpx;
+    margin-top: 50rpx;
+}
+
+.las {
+    margin-top: 15rpx;
+}
+
+.btn {
+    width: 100%;
+    height: 150rpx;
+    background: #f0f0f0;
+    position: relative;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.btno {
+    width: 660rpx;
+    height: 90rpx;
+    margin: 0 auto;
+    margin-top: 30rpx;
+    border-radius: 6rpx;
+    line-height: 90rpx;
+    text-align: center;
+    color: white;
+    box-shadow: 0rpx 5rpx 10rpx rgb(199, 199, 199);
+    background-size: 100% 100%;
+}
+
+.userinfo-avatar {
+    width: 60rpx;
+    height: 60rpx;
+    /* margin-left: -200rpx; */
+    border-radius: 50%;
+    margin-left: 73rpx;
+}
+
+.txt2 {
+    padding-top: 142rpx;
+}
+
+.active-topListSon {
+    background: #5bc9d4;
+    color: white;
+}
+
+.choujiangma_all {
+    padding-top: 155rpx;
+}
+
+.choujiangma {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 532rpx;
+    height: 178rpx;
+}
+
+.choujiang-left {
+    margin-left: 20rpx;
+}

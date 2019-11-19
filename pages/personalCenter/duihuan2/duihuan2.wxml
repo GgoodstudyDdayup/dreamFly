@@ -1,0 +1,39 @@
+<view class="title">
+    您的订单
+</view>
+<view class="mianfeicishu">
+    <image src="../../images/duihuan2.png" />
+    <text>{{dataList.length}}次免费购票</text>
+</view>
+<view class="jinggao">
+    <icon class="iconfont icon-jinggao" />
+    <text>记住，您的免费购票价值是您所积累的10次购票的平均票价。</text>
+</view>
+<view class="content">
+    <view class="content-item">
+        <!-- <view class="content-item-top">
+            <view class="content-item-top-left">
+                <text>您的免费购票价值是</text>
+                <text>￥300.00</text>
+            </view>
+            <view class="content-item-top-right">
+                <icon class="iconfont icon-enter" />
+            </view>
+        </view> -->
+        <view class="content-item-bottom">
+            <view class="list" wx:for="{{dataList}}" wx:key="{{index}}">
+                <view class="list-top">
+                </view>
+                <view class='list-title'>
+                    {{item.musicname}}
+                </view>
+                <view class="list-bottom">
+                    <text style="font-size:36rpx;">抵扣金额：￥{{item.daijin_money}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<!-- <view class="button-view">
+    <view class="button">兑换购票</view>
+</view> -->

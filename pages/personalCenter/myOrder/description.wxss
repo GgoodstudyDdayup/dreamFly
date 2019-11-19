@@ -1,0 +1,4 @@
+/* pages/personalCenter/myOrder/description.wxss */
+.root{
+  padding: 15rpx;
+}

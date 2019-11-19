@@ -1,0 +1,9 @@
+/* pages/template/dianzan/dianzan.wxss */
+.dianzan{
+    display: flex;
+    align-items: center;
+}
+.zan{
+  width: 30rpx;
+  height: 30rpx;
+}

@@ -1,0 +1,73 @@
+<!-- /* 购买界面开始 */ -->
+<view class='buy'>
+  <view class='one' style='background: url("https://www.dreamflygo.com/img/background.png") 100% 100%'>
+    <image class='imtwo' src='{{details.thumb_path}}'></image>
+    <view class='title-left'>
+      <view class='title'>{{details.name}}</view>
+      <view class='time'>{{details.starTime}}至{{details.endTime}}</view>
+      <!-- <view class='time'>{{details.site}}</view> -->
+      <image class='advance' src='../../images/305.png'></image>
+    </view>
+  </view>
+  <view>
+    <view class='door'>
+      具体地址：{{yinyuejie.site}}
+    </view>
+  </view>
+  <view class='piao'>
+    <view class='pt'>
+      <text>{{ticketname}}：</text>
+    </view>
+    <!-- 加减 -->
+    <view class="stepper">
+      <!-- 减号 -->
+      <text class="{{minusStatus}}" bindtap="bindMinus">-</text>
+      <!-- 数值 -->
+      <view class='number'>
+        <input type="number" bindchange="bindManual" value="{{num}}" />
+      </view>
+      <!-- 加号 -->
+      <text class="normal" bindtap="bindPlus">+</text>
+    </view>
+  </view>
+</view>
+<!-- /* 购买界面结束 */ -->
+<!-- 联系人信息 -->
+<view class='message'>
+  <text>联系人信息</text>
+</view>
+<view class="itemView">
+  <input class="username" value='{{userName}}' selection-start name="userName" placeholder="联系人（请填写与取票人证件相符姓名）" bindinput="userNameInput" />
+  <text class='star'>*</text>
+</view>
+
+<!-- <view class="itemView">
+    <input 
+        class="username" 
+        value='{{address}}' 
+        selection-start name="userName" 
+        placeholder="请输入收货地址" 
+        bindinput="userNameAdress" />
+</view> -->
+<view class="itemView">
+  <input class="username" value='{{userWx}}' placeholder-style=' weight:600rpx' selection-start name="userName" placeholder="请输入联系人的微信号" bindinput="userNameWx" />
+  <text class='star'>*</text>
+</view>
+<view class="itemView">
+  <input class="username" value='{{userPhone}}' selection-start name="userName" placeholder="请输入联系人的电话" bindinput="userNamePhone" />
+  <text class='star'>*</text>
+  <button bindgetphonenumber='getPhone' open-type='getPhoneNumber' class='c-btn'>获取手机号</button>
+</view>
+<view class='note'>*所有门票类型全部现场取票</view>
+<!-- 确认付款了 -->
+<view class='three'>
+  <view>
+    <text class='pp'>{{ticketname}}</text>
+    <text class='yi'>×{{num}}</text>
+  </view>
+  <view class='total' bindtap="pay" style='height:120rpx;width:50%;'>
+    <text class='money'>￥</text>
+    <text class='payment'>{{total}}</text>
+    <text>确认下单</text>
+  </view>
+</view>

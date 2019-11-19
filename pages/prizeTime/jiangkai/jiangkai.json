@@ -1,0 +1,8 @@
+{
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#72e2ef",
+    "navigationBarTitleText": "抽奖",
+    "navigationBarTextStyle": "white",
+  "component": true,
+  "usingComponents": {}
+}

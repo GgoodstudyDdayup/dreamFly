@@ -1,0 +1,541 @@
+.bg {
+  width: 200rpx;
+  line-height: 50rpx;
+  background: white;
+  font-size: 26rpx;
+  color: #85d4dd;
+  text-align: center;
+  border-radius: 7rpx;
+}
+.back-img {
+  height: 430rpx;
+  /* overflow: hidden; */
+}
+.back-img image {
+  width: 120%;
+  height: 120%;
+  margin-left: -15%;
+}
+.topPicBg {
+  width: 100%;
+  height: 314rpx;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.personMsg {
+  width: 90%;
+  height: 380rpx;
+  border-radius: 10rpx;
+  position: absolute;
+  left: 5%;
+  top: 200rpx;
+  box-shadow: 0 0 30rpx rgba(0, 0, 0, 0.4);
+  background-color: white;
+}
+/* .personMsg {
+  width: 94%;
+  height: 280rpx;
+  border-radius: 20rpx;
+  position: absolute;
+  left: 3%;
+  top: 90rpx;
+  overflow: hidden;
+  background-size: 100% 100%;
+  box-sizing: border-box;
+  box-shadow: 0rpx 5rpx 16rpx rgb(192, 191, 191);
+} */
+
+.jibie {
+  font-size: 24rpx;
+  color: #fff;
+  padding: 4rpx 10rpx;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50rpx;
+  margin-left: 20rpx;
+}
+
+.listTop {
+  box-sizing: border-box;
+}
+
+.listTopL image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.userInfo {
+  margin-left: 10rpx;
+  line-height: 50rpx;
+}
+/* 二维码 */
+.qrcode {
+  text-align: center;
+  transition: all 0.5s ease-out;
+}
+.xiala {
+  margin-top: 200rpx;
+}
+.qrcode .qrcode-img {
+  width: 220rpx;
+  height: 220rpx;
+  border: 8rpx solid #fdfdfd;
+  border-radius: 10rpx;
+  box-shadow: 0 0 40rpx rgba(0, 0, 0, 0.4);
+}
+.qrcode view {
+  margin: 0 auto;
+}
+.qrcode view image {
+  width: 30rpx;
+  height: 30rpx;
+  margin: 10rpx auto;
+  display: block;
+}
+.shengji {
+  text-align: center;
+}
+.userInfo-right .shengji image {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20rpx;
+  width: 45rpx;
+  height: 30rpx;
+}
+.userInfo-content {
+  position: relative;
+  padding-top: 100rpx;
+}
+.userInfo-content .userInfo-img {
+  position: absolute;
+  width: 150rpx;
+  height: 150rpx;
+  top: 0;
+  left: 50%;
+  margin: -75rpx 0 0 -75rpx;
+  border-radius: 50%;
+  box-shadow: 0 0 30rpx rgba(0, 0, 0, 0.4);
+}
+
+.userInfo-right {
+  flex: 1;
+}
+
+.getuserinfo {
+  margin: auto;
+  width: 288rpx;
+  margin-top: 50rpx;
+}
+
+.userinfo-nickname {
+  /* transform: translateX(-50%); */
+  color: #473e3e;
+  font-size: 32rpx;
+}
+
+.name {
+  color: #000;
+  font-size: 34rpx;
+  width: 400rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.fontName {
+  color: #fff;
+}
+
+.date {
+  font-size: 28rpx;
+  color: #fff;
+  display: inline-block;
+}
+
+.date image {
+  width: 36rpx;
+  height: 36rpx;
+  vertical-align: middle;
+}
+
+.listbottom {
+  margin-top: -20rpx;
+  width: 100%;
+  height: 160rpx;
+  font-size: 24rpx;
+  color: #473e3e;
+  display: flex;
+  flex-direction:row;
+}
+.listbottom-item {
+  width: 50%;
+  margin-top: 60rpx;
+  text-align: center;
+}
+.listbottom-item:nth-child(2) {
+  border-left: 1px solid #bfbfbf;
+}
+.listbottom-item image {
+  display: block;
+  margin: 10rpx auto 10rpx auto;
+  width: 40rpx;
+  height: 40rpx;
+}
+.empty {
+  height: 90rpx;
+}
+
+.wallet {
+  padding: 32rpx;
+  display: flex;
+  justify-content: space-around;
+}
+
+.walletPart {
+  width: 33%;
+}
+
+.walletPart view:nth-child(1) {
+  font-size: 26rpx;
+  color: #282828;
+  text-align: center;
+}
+
+.walletPart view:nth-child(2) {
+  font-size: 32rpx;
+  color: #5bc9d4;
+  text-align: center;
+  font-weight: 700;
+}
+
+.borderLR {
+  border-left: 1rpx solid #e5e5e5;
+  border-right: 1rpx solid #e5e5e5;
+}
+
+.VIP {
+  height: 40rpx;
+  margin: 0 140rpx 16rpx;
+  border: 2rpx solid #ee8183 ;
+  border-radius: 100rpx;
+  text-align: center;
+  line-height: 40rpx;
+  color: #ee8183;
+  font-weight: 600;
+  font-size: 20rpx;
+  margin-top: 15rpx;
+}
+
+.ad {
+  box-sizing: border-box;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 16rpx;
+  padding-bottom: 16rpx;
+  height: 226rpx;
+  border-top: 10rpx solid #eaeaea;
+  border-bottom: 10rpx solid #eaeaea;
+}
+
+.adbg {
+  height: 180rpx;
+  display: flex;
+}
+
+.huiyuanfuli {
+  color: white;
+  margin-left: 125rpx;
+  margin-top: 56rpx;
+}
+
+.mianfeidui {
+  width: 120rpx;
+  line-height: 50rpx;
+  background: white;
+  font-size: 26rpx;
+  color: #85d4dd;
+  margin-top: 65rpx;
+  text-align: center;
+  margin-left: 22rpx;
+  border-radius: 7rpx;
+}
+
+.mianfeiduihuan {
+  font-size: 34rpx;
+}
+
+.navList {
+  font-size: 32rpx;
+  color: #333;
+  padding: 0 3%;
+}
+
+.navListPartL icon {
+  margin-right: 10rpx;
+}
+
+.navListPart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1rpx solid #f1f1f1;
+}
+
+.navListPartL {
+  box-sizing: border-box;
+  padding: 16rpx;
+}
+
+.navListPartR image {
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+}
+
+.bigBG {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.4;
+}
+
+.service {
+  position: fixed;
+  top: 200rpx;
+  right: 0;
+  /* bottom: 0; */
+  left: 0;
+  height: 420rpx;
+  width: 75%;
+  background: #fff;
+  border-radius: 23rpx;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 32rpx;
+}
+
+.serviceTime {
+  font-size: 28rpx;
+  font-weight: 600;
+  text-align: center;
+}
+
+.serviceList {
+  margin-top: 32rpx;
+  box-sizing: border-box;
+  background: #5bc9d4;
+  color: #fff;
+  font-size: 28rpx;
+  padding: 20rpx 16rpx;
+  border-radius: 10rpx;
+}
+
+.serviceList image {
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+}
+
+.serviceListEmpty {
+  margin-top: 32rpx;
+  box-sizing: border-box;
+  color: #282828;
+  font-size: 28rpx;
+  padding: 20rpx 16rpx;
+  border-radius: 10rpx;
+  border: 1rpx solid #dfdfdf;
+}
+
+.serviceListEmpty image {
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+}
+
+.guanbi {
+  position: absolute;
+  width: 80rpx;
+  height: 80rpx;
+  margin: auto;
+  background: #000;
+  opacity: 0.4;
+  right: 0;
+  left: 0;
+  bottom: -150rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 10rpx;
+}
+
+.guanbi image {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* 修改昵称弹窗 */
+
+.toast-box {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+.toastbg {
+  opacity: 0.2;
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.showToast {
+  position: absolute;
+  opacity: 1;
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 40%;
+}
+
+.toast-title {
+  padding-left: 5%;
+  background-color: #2196f3;
+  color: white;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  border-top-right-radius: 16rpx;
+  border-top-left-radius: 16rpx;
+}
+
+.toast-main {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  background-color: white;
+  text-align: center;
+  border-radius: 20rpx 20rpx 0rpx 0rpx;
+}
+
+.toast-input {
+  margin-left: 5%;
+  margin-right: 5%;
+  border: 1px solid #ddd;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+.toast-button {
+  display: flex;
+}
+
+.button1 {
+  width: 50%;
+}
+
+.button2 {
+  width: 50%;
+}
+
+.button1 button {
+  width: 100%;
+  background-color: white;
+  color: #999;
+  border-radius: 0px;
+  border-bottom-left-radius: 16rpx;
+}
+
+.button2 button {
+  width: 100%;
+  background-color: white;
+  color: black;
+  border-radius: 0px;
+  border-bottom-right-radius: 16rpx;
+}
+
+.picker {
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+.kefu-all {
+  display: flex;
+}
+
+.kefu-cebian image {
+  width: 78rpx;
+  height: 241rpx;
+}
+
+.kefu {
+  width: 500rpx;
+  background: #fff;
+  border: 1rpx solid #ccc;
+  padding-bottom: 26rpx;
+  margin-left: 5rpx;
+}
+
+.kefu-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #24bff2;
+  font-size: 30rpx;
+  color: #fff;
+  padding: 20rpx 10rpx;
+}
+
+.kefu-title image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.kefu-item {
+  display: flex;
+  align-items: center;
+  padding: 10rpx 20rpx;
+}
+
+.kefu-item image {
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 10rpx;
+}
+
+.mask {
+  position: fixed;
+  top: 0rpx;
+  left: 0rpx;
+  z-index: 998;
+  width: 100%;
+  height: 100%;
+  background: #666;
+  opacity: 0.6;
+}
+
+.mypic {
+  position: fixed;
+  top: 260rpx;
+  background: whitesmoke;
+  width: 60%;
+  left: 20%;
+  height: 220rpx;
+  border-radius: 20rpx;
+  z-index: 999;
+  text-align: center;
+}
+
+.mypic button {
+  width: 90%;
+  margin: 30rpx auto;
+}

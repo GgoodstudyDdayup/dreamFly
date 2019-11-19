@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "my-share": "/pages/template/share/share",
+    "my-shoucang": "/pages/template/shoucang/shoucang"
+  }
+}

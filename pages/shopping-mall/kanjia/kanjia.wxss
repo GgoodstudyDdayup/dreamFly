@@ -1,0 +1,66 @@
+page{
+  background: #f1f1f1;
+}
+
+.one{
+  height: 85rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ones1{
+  width: 150rpx;
+  height: 50rpx;
+  border-radius: 6rpx;
+  background: #fff;
+  text-align: center;
+  line-height: 50rpx;
+  color: #999999;
+  margin-left: 24rpx;
+}
+
+.ones2{
+  margin-right: 24rpx;
+  font-size: 26rpx;
+  color: black;
+}
+/* 列表 */
+.item{
+  background: white;
+  padding: 30rpx 25rpx;
+  display: flex;
+  margin-bottom: 20rpx;
+}
+.fengmian{
+  width:150rpx;
+  height:150rpx
+}
+.item-right{
+  flex: 1;
+  margin-left: 25rpx;
+}
+.mas{
+  display: flex;
+  justify-content: space-between;
+  height: 80rpx;
+  margin-top:20rpx;
+
+}
+.money{
+  font-size: 32rpx;
+  color: #ea4479;
+}
+.mas-right{
+  line-height: 80rpx;
+  width: 150rpx;
+  text-align: center;
+  color: white;
+}
+.title{
+  height:54rpx;
+}
+.time{
+  height: 30rpx;
+  text-align: right;
+}

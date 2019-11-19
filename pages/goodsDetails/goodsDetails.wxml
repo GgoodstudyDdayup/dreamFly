@@ -1,0 +1,45 @@
+<!-- <goods-head goodsdetails="{{ goodsDetails }}"></goods-head> -->
+<view class="video">
+  <view class="video-item">
+    <view class="item-img">
+      <image mode="aspectFill" wx:if="{{goodsdetails.img}}" src="{{ goodsdetails.img }}"></image>
+    </view>
+    <view class="item-info">
+      <text class="info-title">{{ goodsdetails.title }}</text>
+      <text class="info-name">{{ goodsdetails.name }}</text>
+      <text class="info-num">数量:{{ goodsdetails.num }}张</text>
+      <text class="info-price">￥{{ goodsdetails.price }}</text>
+    </view>
+  </view>
+</view>
+<view  class="back-img">
+  <image mode="aspectFill" wx:if="{{goodsdetails.img}}" src="{{ goodsdetails.img }}"></image>
+</view>
+<view class="xuzhi">
+  <image src="/pages/images/gou.png"></image>
+  <text>须知</text>
+</view>
+<view class="title">详细介绍</view>
+<view class="content">{{goodsdetails.content}}</view>
+
+<view class="help-record">
+  评论区
+</view>
+<view class="ul">
+  <block wx:for="{{ goodsdetails.commentList }}" wx:key="{{ index }}">
+    <view class="li">
+      <image src="{{ item.head_img }}"></image>
+      <text>{{ item.nickname }}</text>
+    </view>
+    <view class="comment">{{ item.content }}</view>
+  </block>
+</view>
+<!-- <view class="footer">
+  <button style='background:linear-gradient(10deg,#ff69b4,#dc143c);");'>立即购买</button>
+</view> -->
+
+
+<view class="footer">
+  <input type="text" bindinput="inputedit" cursor-spacing="20px" data-item="message" value="{{ message }}"></input>
+  <image bindtap="addVideoComments" src="../images/yifabu.png"></image>
+</view>

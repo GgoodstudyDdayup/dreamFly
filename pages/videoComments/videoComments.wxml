@@ -1,0 +1,29 @@
+<video autoplay class="video" src="{{ videoDetails.filepath || videoDetails.data.filepath }}"></video>
+<view class="goods">
+  <view class="goods-item">
+    <view class="item-info">
+      <text class="info-title">{{ videoDetails.title || videoDetails.data.title }}</text>
+      <view class="info-time">{{ videoDetails.update_time || videoDetails.data.update_time }}</view>
+      <text class="info-add">{{ videoDetails.site || videoDetails.data.site }}</text>
+    </view>
+    <view class="item-img">
+      <image mode="aspectFill" src="{{   ( videoDetails.thumbpath || videoDetails.data.thumbpath) }}"></image>
+    </view>
+  </view>
+</view>
+<view class="help-record">
+  评论区
+</view>
+<view class="ul">
+  <block wx:for="{{ videoComments }}" wx:key="{{ index }}">
+    <view class="li">
+      <image src="{{ item.head_img }}"></image>
+      <text>{{ item.nickname }}</text>
+    </view>
+    <view class="comment">{{ item.content }}</view>
+  </block>
+</view>
+<view class="footer">
+  <input type="text" bindinput="inputedit" cursor-spacing="20px" data-item="message" value="{{ message }}"></input>
+  <image bindtap="addVideoComments" src="../images/yifabu.png"></image>
+</view>

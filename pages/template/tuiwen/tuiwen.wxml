@@ -1,0 +1,65 @@
+<view class='tuiwen'>
+    <view class='shopList' wx:for="{{dataList}}" wx:key="item">
+        <view class='shopListTop'>
+            <view class='shopListTopL'>
+                <view class='year'>{{item.time1}}</view>
+                <view class='line'></view>
+                <view class='day'>{{item.time2}}</view>
+            </view>
+            <!-- <view class='shopListTopR'>
+        <image src="/pages/images/shopping_cart.png"></image>
+        <text>{{item.status}}</text>
+      </view> -->
+        </view>
+        <view style='height:390rpx'></view>
+        <view class='shopListPart' bindtap='todetails' data-id='{{item.id}}'>
+            <image mode='aspectFill' src='{{item.thumbpath}}'></image>
+            <view class='shopListTitle'>
+                <view>{{item.title}}</view>
+                <!-- <view>{{item.address}}</view> -->
+            </view>
+        </view>
+        <view class='shopListBottom'>
+            <view class='shopListBottomL'>
+                <view style='display:inline-block'>
+                    <image src="/pages/images/comment.png"></image>
+                    <text>评论({{item.comment_count}})</text>
+                </view>
+                <!-- 我的点赞 -->
+                <my-dianzan 
+                    is_zan="{{item.is_zan}}" 
+                    zanid="{{item.id}}" 
+                    zan_count="{{item.zan_count}}" 
+                    shoucangjiekou="/index/article/SetArticleGood">
+                </my-dianzan>
+            </view>
+            <view class='shopListBottomR'>
+                <!-- 是否收藏 -->
+                <my-shoucang 
+                    is_cang="{{item.is_cang}}" 
+                    shoucangid="{{item.id}}" 
+                    shoucangjiekou="/index/article/SetArticleGood">
+                </my-shoucang>
+                <!-- 分享 -->
+                <my-share
+                    shareType="2" 
+                    shareId="{{item.id}}" 
+                    shareImg="{{item.thumbpath}}" 
+                    shareTitle="{{item.title}}" 
+                    sharePath="/pages/information/toptweets/details/details?id="
+                    codepath="pages/information/toptweets/details/details">
+                </my-share>
+            </view>
+        </view>
+        <view class='line'></view>
+        <view class='msgList'>
+            <view 
+                wx:for="{{item.comment_list}}" 
+                wx:key="id" 
+                wx:for-item="comment_list" 
+                class='msgListCon'>
+                {{comment_list.nickname}} : {{comment_list.content}}
+            </view>
+        </view>
+    </view>
+</view>

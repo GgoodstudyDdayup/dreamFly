@@ -1,0 +1,21 @@
+<view class='play' wx:if="{{dataList!=''}}">
+    <view class='play-item' >
+        <text>全部播放</text>
+        <image 
+            wx:if="{{$state.backgroundAudioManager.is_play==false}}" 
+            catchtap='allplay' 
+            src='/pages/images/5.png'></image>
+        <image wx:else catchtap='stopplay' src='/pages/images/6.png'></image>
+    </view>
+</view>
+<view class="music-list" wx:if="{{dataList!=''}}">
+    <my-musicitem 
+        wx:for="{{dataList}}" 
+        allmusic="{{dataList}}" 
+        wx:key="{{index}}"
+        musicitem="{{item}}" 
+        bind:myevent="onMyEvent" 
+        itemindex="{{index}}"
+        playingSrc="{{playingSrc}}">
+    </my-musicitem>
+</view>

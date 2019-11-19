@@ -1,0 +1,64 @@
+<view class="goods">
+  <view class="goods-item">
+    <view class="item-info">
+      <text class="info-title">{{ musicData.name }}</text>
+      <view class="info-time">{{ musicData.time }}</view>
+      <text class="info-add">{{ musicData.site }}</text>
+    </view>
+    <view class="item-img">
+      <image mode="aspectFill" wx:if="{{ musicData.thumb_path }}" src="{{ musicData.thumb_path }}"></image>
+    </view>
+  </view>
+</view>
+<view class="xuzhi">
+  <image src="../images/gou.png"></image>
+  <text>须知</text>
+</view>
+<view class="ticket">
+  {{ orderData.number }}张<text>(电子票)</text>
+</view>
+<!-- 联系人信息 -->
+<view class="view1">
+
+<view class='message'>
+  <text>联系人信息</text>
+
+ <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" class='ticketsWayView'>
+    <view>请选择取票方式:</view>
+    <view class="picker" >{{ticketsWay}}</view>
+    <!-- <view class="picker" wx:if="{{userData.sex==1}}">男</view>
+    <view class="picker" wx:else>女</view> -->
+</picker>
+</view>
+<view class="itemView">
+  <input class="username" value='{{userName}}' selection-start name="userName" placeholder="联系人（请填写与取票人证件相符姓名）" bindinput="userNameInput" />
+  <text class='star'>*</text>
+</view>
+
+<view class="itemView" >
+    <input 
+        class="username" 
+        value='{{address}}' 
+        selection-start name="userName" 
+        placeholder="请输入收货地址" 
+        bindinput="userNameAdress" />
+        <text class='star'>*</text>
+</view>
+<view class="itemView">
+  <input class="username" value='{{userWx}}' placeholder-style=' weight:600rpx' selection-start name="userName" placeholder="请输入联系人的微信号" bindinput="userNameWx" />
+  <text class='star'>*</text>
+</view>
+<view class="itemView">
+  <input class="username" value='{{userPhone}}' selection-start name="userName" placeholder="请输入联系人的电话" bindinput="userNamePhone" />
+  <text class='star'>*</text>
+  <button bindgetphonenumber='getPhone' open-type='getPhoneNumber' class='c-btn'>获取手机号</button>
+</view>
+<!--<view class='note'>*所有门票类型全部现场取票</view>-->
+</view>
+
+
+<!-- 底部按钮 -->
+<view class="footer">
+  <view class="money"><text class="goodsMoney">￥<text>{{ price }}</text></text></view>
+  <button class="pay" bindtap="submitOrder" data-isBoolean="{{ true }}"style='background:linear-gradient(10deg,#ff69b4,#dc143c);");'>提交订单</button>
+</view>

@@ -1,0 +1,177 @@
+<!--头部搜索-->
+<view class="headSearch">
+  <view class="headSearch-left" bindtap="showDialog" data-isBoolean="{{ true }}">
+    <image src="../images/caidan.png"></image>
+  </view>
+  <view class="headSearch-search" bindtap="toSearch">
+    <view class="headSearch-search-icon">
+      <image src="../images/index/topsearch.png"></image>
+    </view>
+    <input type="text"></input>
+  </view>
+  <!-- <view class="headSearch-right">
+    <navigator url="/pages/video/video?type=电音节">
+      <image src="../images/index/piao.png"></image>
+    </navigator>
+    <navigator url="/pages/video/video?type=电音节">
+      <image src="../images/index/sale.png"></image>
+    </navigator>
+  </view> -->
+</view>
+<!-- 轮播图 -->
+<swiper class='swiperAll' circular="true" indicator-dots="{{false}}" autoplay="{{true}}" interval="3000" duration="500">
+    <block wx:for="{{lunbo}}" wx:key="navItems">
+        <!-- <swiper-item class="swiperItem" bindtap="toDetails" data-id="{{item.music_id}}">
+            <image src="{{item.thumb_path}}" class="slide-image" mode="aspectFill" />
+        </swiper-item> -->
+        <swiper-item class="swiperItem" bindtap="toDetails" data-path="{{item.redirect_url}}"  data-id="{{item.music_id}}">
+            <image src="{{item.thumpath}}" class="slide-image" mode="aspectFill" />
+        </swiper-item>
+    </block>
+</swiper>
+<!-- 热门精选 -->
+<!-- <view class='h2'>- 热门精选 -</view> -->
+<!-- <scroll-view class='scroll' scroll-x="true">
+    <view bindtap='tab' wx:for="{{nav}}" data-index='{{index}}' class='navTitle {{index == show ? "navTitleLine" : ""}}' wx:key="navItems">
+        <view class='navTitleCon'>{{item}}</view>
+    </view>
+</scroll-view> -->
+<!-- 链接图标 -->
+
+<view class="linkImg">
+  <navigator url="/pages/goods-list/goods-list?type=电音节" class="linkImg-box">
+    <image src="../images/index/search.png"></image>
+    <text>电音节</text>
+  </navigator>
+  <navigator url="/pages/video/video?type=活动" class="linkImg-box">
+  <!-- /pages/template/video/live-video/live-video -->
+    <image src="../images/index/movie.png"></image>
+    <text>现场</text>
+  </navigator>
+  <navigator url="/pages/video/video?type=夜店" class="linkImg-box">
+    <image src="../images/index/club.png"></image>
+    <text>夜店</text>
+  </navigator>
+  <navigator url="/pages/video/video?type=活动" class="linkImg-box">
+    <image src="../images/index/video.png"></image>
+    <text>活动</text>
+  </navigator>
+</view>
+<!-- <view class='null'></view> -->
+<view class='tab' wx:if="{{show==0}}">
+    <!-- 官方推荐列表 -->
+    <view class='window'>
+        <view class='ones'>
+            <view style='font-size:36rpx;font-weight: 600;color: #655d6a'>官方推荐</view>
+            <view style='font-size:24rpx;color:#ea4479;' bindtap="toShoppingMall">更多</view>
+        </view>
+        <my-yinyuejielist video="{{ tuijianVideo }}" listSize="{{6}}" url="/pages/details/details">
+        </my-yinyuejielist>
+    </view>
+    <!-- <view class='null'></view> -->
+    <!-- 热门视频列表 -->
+    <view class='windone'>
+        <view class='ones'>
+            <view style='font-size:36rpx;font-weight: 600;color: #655d6a'>
+                热门活动
+            </view>
+            <view style='font-size:24rpx;color:#ea4479;' bindtap="moreYedian">
+                更多
+            </view>
+        </view>
+        <my-yinyuejielist video="{{ hotVideo }}" listSize="{{6}}" url="/pages/videoComments/videoComments"></my-yinyuejielist>
+    </view>
+</view>
+
+<!-- 热门推文 -->
+<!-- <view class='tab' wx:if="{{show==1}}">
+    <my-tuiwen dataList="{{tuiwen}}"></my-tuiwen>
+</view> -->
+
+<!-- 热门活动-->
+<!-- <view class='tab' wx:if="{{show==2}}">
+    <my-video dataList="{{video}}"></my-video>
+</view> -->
+<!-- 热门音乐-->
+<!-- <view class='tab' wx:if="{{show==3}}">
+    <my-music dataList="{{music}}"></my-music>
+</view> -->
+<!-- 福利-->
+<!-- <view class='tab' wx:if="{{show==4}}">
+    <image class='fuli' bindtap='tokanjia' src='/pages/images/kj.png'></image>
+    <image class='fuli' bindtap='tochoujiang' src='/pages/images/choujiang_03.png'></image>
+</view> -->
+<!-- 设置 -->
+<view class="dialog" wx:if="{{dialog}}">
+  <view class="diaHead">
+    <view class="headSearch-left1">
+      <image src="{{userInfo.head_img || 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572501533080&di=16bef707756df2998979d003bc459177&imgtype=0&src=http%3A%2F%2Fpic.soutu123.cn%2Felement_origin_min_pic%2F01%2F54%2F05%2F335746fd1e7f644.jpg%2521%2Ffw%2F700%2Fquality%2F90%2Funsharp%2Ftrue%2Fcompress%2Ftrue'}}"></image>
+    </view>
+    <text class="head-name">{{ userInfo.nickname || '请先登录' }}</text>
+
+<view wx:if="{{userInfo.level=='1'}}" class="VIPView" > <image src="../images/VIP.png"></image>
+
+</view>
+<view wx:else >[普通会员]</view>
+
+
+  </view>
+  <view class="diaLink clearfix">
+    <navigator url="/pages/taoTicket/taoTicket">
+      <image src="../images/index/taopiao.png"></image>
+      <text>淘票</text>
+    </navigator>
+    <navigator url="/pages/prizeTime/prizeTime">
+      <image src="../images/index/choujiang.png"></image>
+      <text>抽奖</text>
+    </navigator>
+    <navigator url="/pages/shopping-mall/kanjia/kanjia">
+      <image src="../images/index/kanjia.png"></image>
+      <text>砍价</text>
+    </navigator>
+  </view>
+  <ul class="setlist">
+    <navigator url="/pages/personalCenter/duihuan1/duihuan1">
+      <li class="setlist-item">
+        <image src="../images/index/viphei.png"></image>
+        VIP福利
+        <text>会员惊喜连连</text>
+      </li>
+    </navigator>
+    <navigator url="/pages/orderList/orderList" open-type="switchTab">
+      <li class="setlist-item">
+        <image src="../images/index/myorder.png"></image>
+        我的订单
+      </li>
+    </navigator>
+    <!-- <li class="setlist-item">
+      <image src="../images/index/shoucang.png"></image>
+      我的收藏
+    </li> -->
+    <navigator url="/pages/personalCenter/yijian/yijian">
+      <li class="setlist-item">
+        <image src="../images/index/yijian.png"></image>
+        意见反馈
+      </li>
+    </navigator>
+    
+   <navigator url="/pages/Interaction/taopiao/tougao/tougao">
+      <li class="setlist-item">
+        <image src="../images/index/fabutaopiao.png"></image>
+        发布淘票
+      </li>
+       </navigator>
+   
+    <navigator url="/pages/personalCenter/gerenzhuye/index/index?type=1">
+      <li class="setlist-item">
+        <image src="../images/index/myfriend.png"></image>
+        已关注
+      </li>
+    </navigator>
+  </ul>
+</view>
+<view class="button-group {{isIphoneX ?'fix-iphonex-button':''}}"></view>
+
+
+<!-- 遮盖层 -->
+<view class="cover" wx:if="{{dialog}}" bindtap="showDialog" data-isBoolean="{{ false }}"></view>

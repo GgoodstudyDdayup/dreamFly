@@ -1,0 +1,38 @@
+.headImg {
+  height: 340rpx;
+  width: 100%;
+}
+.headImg image {
+  width: 100%;
+  height: 340rpx;
+}
+.price {
+  margin: -20rpx 5% 0 5%;
+  padding-bottom: 20rpx;
+  width: 90%;
+  border-bottom: 1rpx solid #eeeeee;
+}
+.goods-title {
+  color: #4f4747;
+  font-size: 30rpx;
+  font-weight: 600;
+  padding-bottom: 15rpx;
+  display: block;
+}
+.goodsMoney {
+  color: #ff5353;
+  font-size: 32rpx;
+}
+.goodsMoney text {
+  font-weight: 600;
+  font-size:40rpx;
+}
+.price-describe,
+.price-former {
+  color: #888888;
+  font-size: 24rpx;  
+}
+.price-former {
+  float: right;
+  padding-top: 20rpx;
+}

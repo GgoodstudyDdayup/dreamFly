@@ -1,0 +1,32 @@
+<!--pages/personalCenter/myOrder/myOrder.wxml-->
+<scroll-view class='scroll' scroll-x="true" style="width: 100%">
+    <view 
+        bindtap='changeTab' 
+        wx:for="{{nav}}" 
+        wx:key="navItems"
+        data-index='{{index}}' 
+        class='{{index == tabindex ? "navTitleLine" : "navTitle"}}'>
+        <view class='navTitleCon'>{{item}}</view>
+    </view>
+</scroll-view>
+<!-- 无收藏显示下面 -->
+<!-- <view wx:if="{{yinyuejie==''}}" class='noOrder'>
+    <icon class='iconfont icon-waihuixingqingzixun'></icon>
+</view> -->
+<view>
+    <view hidden='{{tabindex!=0}}'>
+        <my-yinyuejieList id="my-yinyuejieList"></my-yinyuejieList>
+    </view>
+    <view hidden='{{tabindex!=1}}'>
+        <my-videoall id="my-videoall"></my-videoall>
+    </view>
+    <view hidden='{{tabindex!=2}}'>
+        <my-musicList id="my-musicList"></my-musicList>
+    </view>
+    <view hidden='{{tabindex!=3}}'>
+        <my-tuiwenList  id="my-tuiwenList"></my-tuiwenList>
+    </view>
+    <view hidden='{{tabindex!=4}}'>
+        <my-yedianList id="my-yedianList"></my-yedianList>
+    </view>
+</view>

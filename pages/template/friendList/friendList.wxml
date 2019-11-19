@@ -1,0 +1,9 @@
+<view class="ul">
+  <view wx:for="{{ friend }}" wx:key="{{ index }}" class="li" style="border-bottom: 1rpx solid #eeeeee" >
+    <image src="{{ item.head_img }}"></image>
+    <text>{{ item.nickname }}</text>
+    <!-- <view wx:if="{{ value }}" class="price">{{ value }}</view> -->
+    <!-- <view wx:else class="watch">添加微信</view> -->
+    <view data-item="{{item}}"  bindtap="addWatch" class="watch">添加微信</view>
+  </view>
+</view>

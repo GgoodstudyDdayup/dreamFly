@@ -1,0 +1,33 @@
+/* 音乐列表 */
+.pinglun{
+    width:30rpx;
+    height:34rpx;
+    vertical-align: middle; 
+}
+
+.music-item{
+    display: flex;
+    padding: 25rpx;
+    border-bottom:1px solid #e6e6e6 ;
+}
+.music-touxiang{
+    width: 90rpx;
+    height: 90rpx;
+    border-radius: 50%;
+}
+.music-content{
+    flex: 1;
+    margin-left: 30rpx;
+}
+.music-massage{
+    display: flex;
+    margin-top: 26rpx;
+}
+.play{
+    display: flex;
+    align-items: center;
+}
+.play image{
+    width: 50rpx;
+    height: 50rpx;
+}

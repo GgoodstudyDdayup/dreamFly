@@ -1,0 +1,21 @@
+<scroll-view class='scroll' scroll-x="true" style="width: 100%">
+    <view 
+        wx:for="{{nav}}" 
+        wx:key="item" 
+        wx:key="forItem" 
+        class='{{index == tabindex ? "navTitleLine" : "navTitle"}}'>
+        <view catchtap='tabchange' data-index='{{index}}' class='navTitleCon'>{{item}}</view>
+    </view>
+</scroll-view>
+<!-- 动态 -->
+<view hidden="{{tabindex!=0}}">
+    <my-dongtai  dataList="{{dongtaiList}}" ></my-dongtai>
+</view>
+<!-- 朋友圈 -->
+<view hidden="{{tabindex!=1}}">
+    <my-pengyouquan  dataList="{{friendList}}" ></my-pengyouquan>
+</view>
+<!-- 淘票 -->
+<view hidden="{{tabindex!=2}}">
+    <my-taopiao  dataList="{{taopiaoList}}" ></my-taopiao>
+</view>

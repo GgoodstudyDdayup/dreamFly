@@ -1,0 +1,2 @@
+<!--pages/template/video/live-video/live-video.wxml-->
+<web-view src="https://www.dreamflygo.com/index/video/video"></web-view>

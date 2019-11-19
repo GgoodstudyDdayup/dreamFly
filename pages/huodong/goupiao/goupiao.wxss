@@ -1,0 +1,193 @@
+/* 购买界面开始 */
+.c-btn{
+  width: 200rpx;
+  height: 55rpx;
+  line-height: 55rpx;
+  background: #5bc9d4;
+  border-radius: 10rpx;
+  color: white;
+  text-align: center;
+  margin: 0px 15rpx;
+  font-size: 9pt;
+  padding-left: 0rpx;
+  padding-right: 0rpx;
+}
+.star{
+  color: red;
+  margin-right: 5rpx;
+  display: inline-block;
+}
+.buy {
+    height: 370rpx;
+    width: 100%;
+    position: relative;
+    border-bottom: 15rpx solid #e6e6e6;
+}
+
+.one {
+    display: flex;
+    height: 170rpx;
+    color: white;
+}
+
+.title {
+    font-size: 30rpx;
+    padding-top: 22rpx;
+}
+
+.time {
+    margin-top: 10rpx;
+    font-size: 25rpx;
+    color: #bdbdb9;
+}
+
+.advance {
+    margin-top: 12rpx;
+    height: 40rpx;
+    width: 90rpx;
+}
+
+.imtwo {
+    height: 200rpx;
+    width: 200rpx;
+    margin-left: 30rpx;
+}
+
+.title-left {
+    margin-left: 20rpx;
+}
+
+.door {
+    margin-left: 30rpx;
+    margin-top: 55rpx;
+    font-weight: bolder;
+    color: black;
+}
+
+.piao {
+    margin-top: 30rpx;
+    display: flex;
+    align-items: center;
+}
+
+.pt {
+    margin-left: 30rpx;
+}
+
+/*主容器*/
+
+.stepper {
+    width: 580rpx;
+    /*给主容器设一个边框*//* border: 1px solid #ccc;  */
+    border-radius: 3rpx;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+/*加号和减号*/
+
+.stepper text {
+    color: #ccc;
+    text-align: center;
+    font-size: 42rpx;
+}
+
+/*数值*/
+
+.stepper input {
+    /* margin: 0 auto;  */
+    text-align: center;
+    font-size: 20rpx;
+    line-height: 40rpx;
+    width: 50rpx;
+}
+
+.input {
+    width: 40rpx;
+    height: 40rpx;
+    margin: 0 20rpx;
+}
+
+/*普通样式*/
+
+.number {
+    border: 1px solid #bdbdb9;
+    margin-left: 10rpx;
+    margin-right: 10rpx;
+}
+
+/*禁用样式*/
+
+/* <!-- 联系人信息 --> */
+
+.message {
+    font-size: 30rpx;
+    margin-top: 25rpx;
+    margin-left: 30rpx;
+    font-weight: bold;
+    color: black;
+    /* height: 80rpx; */
+    padding-bottom: 0;
+}
+
+.itemView {
+    height: 90rpx;
+    width: 90%;
+    display: flex;
+    border: 1rpx solid #e6e6e6;
+    align-items: center;
+    margin-left: 30rpx;
+    border-radius: 10rpx;
+    margin: 30rpx 30rpx;
+    padding-left: 20rpx;
+}
+
+.username {
+    width: 100%;
+}
+
+/* <!-- 确认付款 --> */
+
+.three {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border-top: 50rpx solid #f3f3f3;
+    display: flex;
+    justify-content: space-between;
+    height: 120rpx;
+    align-items: center;
+}
+
+.pp {
+    margin-left: 50rpx;
+}
+
+.yi {
+    width: 15rpx;
+    margin-left: 50rpx;
+    margin-right: 132rpx;
+}
+
+.total {
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background: #5bc9d4;
+}
+
+.payment {
+    font-size: 70rpx;
+    margin: 0 15rpx;
+    margin-top: -20rpx;
+}
+
+.money {
+    font-size: 40rpx;
+}
+.note{
+  color: red;
+  margin-left: 30rpx;
+}

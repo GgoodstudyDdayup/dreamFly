@@ -1,0 +1,10 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#72e2ef",
+  "navigationBarTitleText": "资讯",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "my-share": "/pages/template/share/share",
+    "my-music": "/pages/template/music/music"
+  }
+}

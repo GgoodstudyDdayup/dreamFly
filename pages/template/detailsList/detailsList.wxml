@@ -1,0 +1,26 @@
+
+<view class="video">
+  <!-- <view wx:for="{{ video }}" wx:key="{{ index }}" class="video-item"> -->
+  <view wx:for="{{ goods }}" wx:key="{{ index }}" class="video-item" bindtap="toGoodsDetails" data-musicid="{{ item.music_id }}">
+    <view class="item-img">
+      <!-- <image mode="aspectFill" src="{{ host + item.thumb_path }}"></image> -->
+      <image mode="aspectFill" wx:if="{{ item.thumb_path }}" src="{{ item.thumb_path }}"></image>
+      <image mode="aspectFill" wx:else src="{{ item.thumbpath }}"></image>
+    </view>
+    <view class="item-info">
+      <!-- <text class="info-title">{{ item.name }}</text> -->
+      <text wx:if="{{ item.name }}" class="info-title">{{ item.name }}</text>
+      <text wx:else class="info-title">{{ item.title }}</text>
+<text wx:if="{{ item.time }}" class="info-content">开演时间：{{ item.time }}</text>
+ <text wx:else class="info-content">开演时间：</text> 
+      <!-- <text wx:if="{{ item.ticket_time }}" class="info-content">开演时间：{{ item.ticket_time }}</text>
+      <text wx:elif="{{ item.create_time }}" class="info-content">开演时间：{{ item.create_time }}</text>
+      <text wx:else class="info-content">开演时间：{{ item.time }}</text> -->
+
+      <text wx:if="{{ item.site }}" class="info-site">{{item.site}}</text>
+      <text wx:else class="info-site">地址:无{{}}</text>
+      <!-- <text class="info-content"></text>
+      <text class="info-content">参演艺人：邓紫棋</text> -->
+    </view>
+  </view>
+</view>

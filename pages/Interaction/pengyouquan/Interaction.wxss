@@ -1,0 +1,229 @@
+page {
+    background: #f1f1f1;
+}
+
+/* 横向滚动开始 */
+
+.scroll {
+    background: #fff;
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
+    display: flex;
+    border-bottom: 1rpx solid #eaeaea;
+    justify-content: space-between;
+    margin-bottom: 16rpx;
+}
+
+.navTitle {
+    width: 33%;
+    color: #282828;
+    font-size: 26rpx;
+    display: inline-block;
+    height: 50rpx;
+    line-height: 50rpx;
+    text-align: center;
+    padding: 16rpx 0;
+}
+
+.navTitleLine {
+    width: 33%;
+    color: #5bc9d4;
+    font-size: 30rpx;
+    display: inline-block;
+    height: 55rpx;
+    line-height: 50rpx;
+    text-align: center;
+    padding: 10rpx 0;
+    border-bottom: 5rpx solid #5bc9d4;
+}
+
+.navTitleCon {
+    padding: 0 60rpx;
+    height: 50rpx;
+    line-height: 50rpx;
+    text-align: center;
+    border-left: 1rpx solid #f1f1f1;
+    /* border-right: 1rpx solid #f1f1f1; */
+}
+
+/* 横向滚动结束 */
+
+/* 列表开始 */
+
+.listAll {
+    background: #fff;
+    padding: 0 0 16rpx;
+    margin-bottom: 16rpx;
+    box-shadow: 0 10rpx 10rpx rgb(233, 232, 232);
+}
+
+.listTop {
+    box-sizing: border-box;
+    padding: 16rpx;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+}
+
+.listTopL {
+    display: flex;
+}
+
+.listTopL image {
+    width: 90rpx;
+    height: 90rpx;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.userInfo {
+    margin-left: 10rpx;
+    line-height: 50rpx;
+}
+
+.name {
+    color: #000;
+    font-size: 34rpx;
+    width: 400rpx;
+}
+
+.date {
+    font-size: 28rpx;
+    color: #9c9c9c;
+}
+/* 关注按钮 */
+
+.guanzhu {
+    padding: 0rpx 25rpx;
+    background: #5bc9d4;
+    color: white;
+    font-size: 30rpx;
+    margin-left: 20rpx;
+    border-radius: 20rpx;
+}
+
+.qxguanzhu {
+    padding: 2rpx 25rpx;
+    background: #999;
+    color: white;
+    font-size: 30rpx;
+    margin-left: 20rpx;
+    border-radius: 20rpx;
+}
+.logo {
+    width: 90rpx;
+    height: 90rpx;
+    border-radius: 50%;
+}
+
+.username {
+    max-width: 199rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.picImg {
+    display: flex;
+    justify-content: space-between;
+}
+
+.picImg image {
+    height: 390rpx;
+    width: 49%;
+}
+
+.video {
+    height: 390rpx;
+    width: 49%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video image {
+    width: 100rpx;
+    height: 100rpx;
+}
+
+.picImg image:nth-child(2) {
+    margin-left: 16rpx;
+}
+
+.listTitle {
+    font-size: 36rpx;
+    font-weight: 700;
+    box-sizing: border-box;
+    padding: 16rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.bottomMenu {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24rpx;
+    border-bottom: 1rpx solid #f1f1f1;
+    padding:0 30rpx 16rpx 16rpx;
+
+}
+.bottomMenu-tip{
+    display: flex;
+}
+
+.bottomMenu-img {
+    width: 30rpx;
+    height: 30rpx;
+    margin-right: 6rpx;
+    vertical-align: middle;
+}
+
+.flaR {
+    float: right;
+}
+
+.bottomMenu .mar-r-10 {
+    margin-right: 10rpx;
+}
+
+.btn {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    line-height: 0;
+    border-radius: 0rpx;
+    background: #fff;
+}
+
+button::after {
+    border: none;
+}
+
+.msgList {
+    box-sizing: border-box;
+    padding: 30rpx;
+    font-size: 24rpx;
+    color: #7d7d7d;
+}
+
+/* 发布按钮 */
+
+.fabu {
+    position: fixed;
+    right: 25rpx;
+    top: 900rpx;
+    z-index: 9999;
+}
+
+.fabu image {
+    width: 100rpx;
+    height: 100rpx;
+}
+
+
+
+.w100 {
+    width: 100% !important;
+}

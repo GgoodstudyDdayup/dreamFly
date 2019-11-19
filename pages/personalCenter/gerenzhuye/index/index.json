@@ -1,0 +1,11 @@
+{
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#72e2ef",
+    "navigationBarTitleText": "个人主页",
+    "navigationBarTextStyle": "white",
+    "usingComponents": {
+        "my-yifabu": "/pages/personalCenter/gerenzhuye/yifabu/yifabu",
+        "my-yiguanzhu": "/pages/personalCenter/gerenzhuye/yiguanzhu/yifabu",
+        "my-yitougao": "/pages/personalCenter/gerenzhuye/yitougao/yifabu"
+    }
+}

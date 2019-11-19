@@ -1,0 +1,11 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#ee8183",
+  "navigationBarTitleText": "门票核销",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "van-cell": "../template/vant/cell/index",
+    "van-cell-group": "../template/vant/cell-group/index",
+    "van-field": "../template/vant/field/index"
+  }
+}

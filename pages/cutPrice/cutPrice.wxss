@@ -1,0 +1,42 @@
+.cutButton {
+  margin: 0 5%;
+  width: 90%;
+  height: 100rpx;
+  padding: 30rpx 0;
+  border-bottom: 1rpx solid #eee;
+}
+.cutButton button {
+  line-height: 80rpx;
+  margin: 10rpx 5%;
+}
+.cutButton button::after {
+  border: none;
+}
+.helpCut {
+  float: left;
+  width: 320rpx;
+  height: 80rpx;
+  border-radius: 80rpx;
+  border: none;
+  background-color: #fec227;
+  color: white;
+}
+.buy {
+  float: left;
+  width: 220rpx;
+  height: 80rpx;
+  border-radius: 80rpx;
+  border: 1rpx solid #fec227;
+  color: #fec227;
+  background-color: white;
+}
+
+.help-record {
+  margin-left: 5%;
+  padding: 10rpx;
+  width: 150rpx;
+  border-bottom: 4rpx solid #fec227;
+  color: #4f4747;
+  font-size: 36rpx;
+  font-weight: 600;
+}

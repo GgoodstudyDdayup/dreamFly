@@ -1,0 +1,13 @@
+<!-- 列表开始 -->
+<view class='null'></view>
+<view class='list'>
+  <view class='list-item' wx:for="{{dataList}}" bindtap='toDetails' data-user_id='{{item.user_id}}'>
+    <view class='list-item-left'>
+      <image class='touxiang' src='{{item.head_img}}'></image>
+      <text>{{item.nickname}}</text>
+    </view>
+    <image class='right' src='/pages/images/302.png'></image> 
+  </view>
+</view>
+<!-- 列表结束 -->
+

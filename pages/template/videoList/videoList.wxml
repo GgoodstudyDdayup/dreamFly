@@ -1,0 +1,31 @@
+<view class="video">
+  <view wx:for="{{ video }}" wx:key="{{ index }}" class="video-item"  bindtap="toGoodsDetails" data-item="{{ item }}">
+    <view class="item-img"  >
+      <navigator wx:if="{{ type == 0 }}" url="/pages/videoComments/videoComments?id={{ item.id }}">
+        <image mode="aspectFill" wx:if="{{ item.thumbpath }}" src="{{  item.thumbpath }}"></image>
+        <image mode="aspectFill" src="{{ item.img }}"></image>
+      </navigator>
+            <navigator wx:elif="{{ type == 2 }}" url="/pages/videoComments/videoComments?id={{ item.id }}&type=1">
+        <image mode="aspectFill" wx:if="{{ item.thumbpath }}" src="{{  item.thumbpath }}"></image>
+        <image mode="aspectFill" src="{{ item.img }}"></image>
+      </navigator>
+
+      <navigator wx:else url="/pages/yedianDetails/yedianDetails?id={{ item.id }}">
+        <image mode="aspectFill" wx:if="{{ item.thumbpath }}" src="{{  item.thumbpath }}"></image>
+        <image mode="aspectFill" wx:else src="{{ item.img }}"></image>
+      </navigator>
+
+    </view>
+    <view class="item-info">
+      <text class="info-title">{{ item.title }}</text>
+      <text class="info-content" wx:if="{{ item.create_time }}">发布时间：{{ item.create_time }}</text>
+      <text class="info-content" wx:elif="{{ item.add_time }}" >发布时间：{{ item.add_time }}</text>
+      <text class="info-content" wx:else >发布时间：{{ item.upload_time }}</text>
+
+            <text wx:if="{{ item.site }}" class="info-site">{{item.site}}</text>
+             <text wx:elif="{{ item.tag }}" class="info-site">{{item.tag}}</text>
+      <text wx:else class="info-site">地址:无{{}}</text>
+      <!-- <text class="info-content">参演艺人：邓紫棋</text> -->
+    </view>
+  </view>
+</view>

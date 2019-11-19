@@ -1,0 +1,3 @@
+<view class='content'>
+    <my-yinyuejie dataList="{{dataList}}"></my-yinyuejie>
+</view>

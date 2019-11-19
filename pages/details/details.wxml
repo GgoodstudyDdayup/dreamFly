@@ -1,0 +1,129 @@
+<goods-head goodsdetails="{{ goodsDetails }}"></goods-head>
+<view class="time">
+  <view class="time-title">{{ goodsDetails.data.time }}</view>
+  <text>{{goodsDetails.data.end_time}}结束(以现场为准)</text>
+</view>
+<view class="address">
+  <view class="address-icon">
+    <!-- <map name="" longitude="" latitude=""></map> -->
+    <image mode="aspectFill" src="../images/positionLink.png"></image>
+  </view>
+  <view class="address-title">{{ goodsDetails.data.site }}</view>
+  <text>{{ goodsDetails.data.site }}</text>
+</view>
+<scroll-view class="scroll">
+  <block wx:for="{{nav}}" wx:key="item">
+    <view catchtap='tabchange' data-index='{{index}}' class='{{index == tabindex ? "navTitleConTion" : ""}} navTitleCon'>
+      <view class="title">
+        {{item}}
+        <view class='{{index == tabindex ? "navBorderTion" : ""}}'></view>
+      </view>
+    </view>
+  </block>
+</scroll-view>
+<my-introduce  wx:if="{{ tabindex == 0 }}" content="{{ goodsDetails.data.content }}"></my-introduce>
+<!-- 讨论群组 -->
+<view wx:if="{{ talkList.length != 0 && tabindex == 1 }}" class="goods-title">
+  讨论群组
+  <text>/{{ talkList.length }}人</text>
+</view>
+<view wx:if="{{ tabindex == 1 }}" class='{{ talkList.length > 3 ? openclass : "openone"}}'>
+  <frient-list friend="{{ talkList }}"></frient-list>
+</view>
+<view wx:if="{{ talkList.length > 3 && tabindex == 1 }}">
+  <view wx:if="{{ openclass=='wr-bottom'}}" class='open' bindtap='onopen'>
+    <text style='color:#ea4479;'>展开更多</text>
+  </view>
+  <view wx:else class='open' bindtap='closexiangqing'>
+    <text style='color:#ea4479;'>关闭详情</text>
+  </view>
+</view>
+<!-- 往期视频 -->
+<view wx:if="{{ videoList.length != 0 && tabindex == 2 }}" class="goods-title">往期视频</view>
+<view wx:if="{{ tabindex == 2 }}" class='{{ videoList.length > 3 ? openclass2 : "openone" }}'>
+  <video-list video="{{ videoList }}" type="2"></video-list>
+</view>
+<view wx:if="{{ videoList.length > 3 && tabindex == 2 }}">
+  <view wx:if="{{ openclass2=='wr-bottom'}}" class='open' bindtap='onopen2'>
+    <text style='color:#ea4479;'>展开更多</text>
+  </view>
+  <view wx:else class='open' bindtap='closexiangqing2'>
+    <text style='color:#ea4479;'>关闭详情</text>
+  </view>
+</view>
+<view class="video"  wx:if="{{tabindex == 3 }}">
+  <view wx:for="{{ taoPiaoList }}" wx:key="{{ index }}" class="video-item">
+  <view class="video-itemView" data-item="{{item}}" bindtap="toDetails">
+  
+      <view class="item-img">
+        <image mode="aspectFill" src="{{ item.img }}"></image>
+
+    </view>
+    <view class="item-info">
+      <text class="info-title">{{ item.title }}</text>
+      <text class="info-name" >{{ item.name}}</text>
+      <text class="info-num"  >数量:{{ item.num }}张</text>
+         <text class="info-price" >￥{{ item.price}}</text>
+   
+      <!-- <text class="info-content">参演艺人：邓紫棋</text> -->
+    </view>
+    </view>
+  </view>
+
+</view>
+
+<!-- 底部按钮 -->
+<view class="footer" wx:if="{{ type != 1 }}">
+  <view class="weixin-icon">
+    <my-share 
+        shareId="{{goodsDetails.data.music_id}}" 
+        shareImg="{{goodsDetails.data.thumb_path}}" 
+        shareTitle="{{goodsDetails.data.name}}" 
+        sharePath="/pages/huodong/xiangqing0/xiangqing0?music_id="
+        codepath="pages/huodong/xiangqing0/xiangqing0">
+    </my-share>
+    <!-- <image src="../images/weixin2.png"></image> -->
+  </view>
+  <view class="service-icon"  bindtap="isShowModal" data-isBoolean="{{ true }}" data-modaltype="0">
+    <image src="../images/service.png"></image>
+  </view>
+  <!-- <button class="pay" bindtap="isShowModal" data-isBoolean="{{ true }}" data-modaltype="1">加入购物车/立即购买</button> -->
+    <button class="pay" bindtap="isShowModal" data-isBoolean="{{ true }}" data-modaltype="1" style='background:linear-gradient(10deg,#ff69b4,#dc143c); height: 700rpx");'>立即购买</button>
+</view>
+<!-- 购买对话框 -->
+<view class="{{ isModal ? 'dianjimodal' : 'nomodal' }} modal" style="z-index: {{ modaltype == 1 ? 99 : 8 }};">
+  <block wx:if="{{ modaltype == 1 }}">
+    <view class="modal-title">
+      场次
+      <text>场次时间均为演出当地时间</text>
+    </view>
+    <view class="selecting price select">{{goodsDetails.data.time}}</view>
+    <view class="priceView">
+      <view class="modal-title">票档</view>
+    <view wx:for="{{price}}" wx:key="{{index}}" class="{{ priceSelect == index ? 'selecting' : 'notselecting' }} price select" bindtap="handlePriceSelect" data-index="{{ index }}">
+      {{item.ticket_name}}￥{{item.money}}
+    </view>
+    </view>
+  
+    <view class="modal-title">张数</view>
+    <view class="money-input">
+      <image mode="aspectFill" src="../images/subtract.png" bindtap="minusPrice"></image>
+      <input text="number" disabled value="{{ priceNum }}"></input>
+      <image mode="aspectFill" src="../images/add.png" bindtap="addPrice"></image>
+    </view>
+
+    <view class="buttontwo">
+       <!-- <button class="buttontwo-l">加入购物车</button>  -->
+      <button class="buttontwo-r" bindtap="toorder" style='background:linear-gradient(10deg,#ff69b4,#dc143c);");'>立即购买</button>
+    </view>
+  </block>
+  <block wx:if="{{ modaltype == 0 }}">
+    <view class="erweima" bindlongtap="savePicture">
+      <view>长按保存/添加客服微信号：dreamfly_01</view>
+      <image src="../images/kefu.png">
+      </image>      
+    </view>
+  </block>
+</view>
+<!-- 遮盖层 -->
+<view class="cover" wx:if="{{isModal}}" bindtap="isShowModal" data-isBoolean="{{ false }}"></view>

@@ -1,0 +1,18 @@
+<view class="video">
+  <view class="video-item">
+    <view class="item-img">
+      <image mode="aspectFill" wx:if="{{goodsdetails.data.thumb_path}}" src="{{ goodsdetails.data.thumb_path }}"></image>
+    </view>
+    <view class="item-info">
+      <text class="info-title">{{ goodsdetails.data.name }}</text>
+      <text class="info-content">￥{{ goodsdetails.cate[0].money }}-￥{{ goodsdetails.cate[goodsdetails.cate.length - 1].money }}</text>
+    </view>
+  </view>
+</view>
+<view  class="back-img">
+  <image mode="aspectFill" wx:if="{{goodsdetails.data.thumb_path}}" src="{{ goodsdetails.data.thumb_path }}"></image>
+</view>
+<view class="xuzhi">
+  <image src="../../images/gou.png"></image>
+  <text>须知</text>
+</view>

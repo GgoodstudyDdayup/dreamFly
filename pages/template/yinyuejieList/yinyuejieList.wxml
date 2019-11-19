@@ -1,0 +1,13 @@
+<view class="shopList">
+  <block wx:for="{{video}}" wx:key="{{ index }}" wx:if="{{ index < listSize }}">
+      <view class="shopList-item">
+        <view class="shopList-img">
+          <navigator url="{{ url + '?id=' + item.id + '&musicid=' + item.music_id + '&isindex=true' }}">
+            <image mode="aspectFill" src="{{ item.thumbpath }}"></image>
+          </navigator>
+          <!-- <view class="label-box" style="background-color: #f7a751;">{{ item.tag }}</view> -->
+        </view>
+        <text class="text1"> {{ item.title }}</text>
+      </view>
+  </block>
+</view>

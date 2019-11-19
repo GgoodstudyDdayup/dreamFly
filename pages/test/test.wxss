@@ -1,0 +1,13 @@
+/* pages/test/test.wxss */
+.time{
+  position: fixed;
+  z-index: 998;
+  display: flex;
+  top: 20rpx;
+}
+.item{
+  background: black;
+  color: white;
+  border-radius: 10rpx;
+  padding: 5rpx;
+}

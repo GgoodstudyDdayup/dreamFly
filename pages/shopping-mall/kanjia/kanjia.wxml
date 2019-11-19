@@ -1,0 +1,26 @@
+<view>
+    <view class='one'>
+        <view class='ones1' bindtap='guize'>
+            砍价规则
+        </view>
+        <view class='ones2' bindtap='towdkj'>
+            我的砍价 >
+        </view>
+    </view>
+    <!-- 列表 -->
+    <view class='item' wx:for="{{dataList}}" wx:key="item" bindtap='wode' data-kan_num='{{item.kan_num}}' data-id='{{item.kan_id}}'>
+        <image class='fengmian' src='{{item.thumb_path}}'></image>
+        <view class='item-right'>
+            <view class='title'>{{item.name}}</view>
+            <view class='mas'>
+                <view class='mas-left'>
+                    <view class='money'>￥{{item.old_money}}</view>
+                    <view>剩余{{item.kan_num}}张</view>
+                </view>
+                <view class='mas-right' style='background:linear-gradient(10deg,#ff69b4,#dc143c);");background-size:100% 100%;'>
+                    砍￥{{item.kan_money}}
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

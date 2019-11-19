@@ -1,0 +1,298 @@
+@import "/wxParse/wxParse.wxss";
+
+page {
+    background: #fff;
+}
+
+.emptyH16 {
+    height: 16rpx;
+    background: #f1f1f1;
+}
+
+.YYTiltle {
+    margin: 32rpx;
+    font-size: 46rpx;
+    color: #333;
+}
+
+.logo text {
+    padding: 16rpx 28rpx;
+    background: #b4edeb;
+    font-size: 28rpx;
+    color: #fff;
+    margin-left: 32rpx;
+}
+
+.contentPic image {
+    width: 100%;
+}
+
+.content {
+    padding: 32rpx;
+    box-sizing: border-box;
+    padding-top: 0;
+}
+
+.contentText {
+    font-size: 34rpx;
+    color: #666;
+    margin: 32rpx 0;
+}
+
+/* 底部浏览开始 */
+
+.disSP {
+    display: flex;
+    justify-content: space-between;
+}
+
+.paddingLR32 {
+    padding: 0 32rpx;
+}
+
+.bottomMenu {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24rpx;
+    padding-bottom: 16rpx;
+    color: #9e9e9e;
+    margin-top:20rpx;
+
+}
+.bottomMenu-left{
+    display: flex;
+
+}
+.bottomMenu-item{
+    margin-right: 10rpx;
+}
+.bottomMenu-item image {
+    width: 30rpx;
+    height: 30rpx;
+    margin-right: 6rpx;
+    vertical-align: middle;
+}
+
+.flaR {
+    float: right;
+}
+
+.bottomMenu .mar-r-10 {
+    margin-right: 10rpx;
+}
+
+.btn {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    line-height: 0;
+    border-radius: 0rpx;
+    background: #fff;
+}
+
+button::after {
+    border: none;
+}
+
+/* 底部浏览结束 */
+
+.leavingMessageTop {
+    display: flex;
+    justify-content: space-between;
+    padding: 16rpx 32rpx;
+    box-sizing: border-box;
+    border-bottom: 1rpx solid #f1f1f1;
+}
+
+.leavingMessageTop view:nth-child(1) {
+    font-size: 36rpx;
+    color: #010101;
+}
+
+.leavingMessageTop view:nth-child(2) {
+    font-size: 30rpx;
+    color: #9b9b9b;
+}
+
+/* 评论开始 */
+
+/* 留言 */
+
+.liuyan-top {
+    padding: 30rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.liuyan-top text:nth-child(1) {
+    font-size: 45rpx;
+    color: black;
+}
+
+.liuyan-item {
+    padding: 30rpx;
+    border-bottom:1px solid #e6e6e6;
+
+}
+
+.liuyanItem-top image {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+}
+
+.liuyanItem-top {
+    display: flex;
+}
+
+.liuyanItemTopRright {
+    margin-left: 10rpx;
+}
+
+.liuyanItemTopRright view:nth-child(2) {
+    font-size: 35rpx;
+    color: black;
+    margin-top: 10rpx;
+}
+
+.liuyanTime {
+    display: flex;
+    justify-content: space-between;
+}
+
+.liuyanTime >text {
+    margin-left: 107rpx;
+}
+
+.liuyanTime .icon {
+    margin-left: 17rpx;
+}
+
+.author {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15rpx;
+}
+
+.author-left {
+    display: flex;
+    align-items: center;
+}
+
+.authorImg {
+    width: 70rpx;
+    height: 70rpx;
+    border-radius: 50%;
+}
+
+.music_logo {
+    width: 70rpx;
+    height: 70rpx;
+    border-radius: 50%;
+}
+
+.authorName {
+    margin-left: 20rpx;
+}
+
+.fabushijian {
+    margin-left: 20rpx;
+}
+
+.guanzhu-btn {
+    margin-left: 20rpx;
+}
+
+.guanzhu {
+    display: inline-block;
+    padding: 2rpx 25rpx;
+    background: #5bc9d4;
+    color: white;
+    font-size: 30rpx;
+    border-radius: 20rpx;
+}
+.backindex{
+    position: fixed;
+    top: 830rpx;
+    right: 10rpx;
+}
+
+.video {
+  width: 80%;
+  padding: 30rpx 10%;
+  height: 260rpx;
+}
+.back-img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 320rpx;
+  z-index: -1;
+  overflow: hidden;
+}
+.back-img image{
+  width: 120%;
+  height: 120%;
+  filter: blur(20rpx);
+}
+.video-item {
+  box-sizing: border-box;
+  height: 250rpx;
+  width: 100%;
+  padding-left: 200rpx;
+  margin-bottom: 30rpx;
+  display: flex;
+}
+.item-img {
+  width: 200rpx;
+  height: 250rpx;
+  float: left;
+  margin-left: -200rpx;
+}
+.item-img image {
+  width: 100%;
+  height: 100%;
+}
+.item-info {
+  position: relative;
+  width: 95%;
+  height: 100%;
+  padding-left: 5%;
+  display: flex;
+  flex-direction: column;
+}
+.info-title {
+  color: white;
+  text-shadow: 0 0 5rpx rgba(0, 0, 0, 0.4);
+  font-weight: 600;
+  font-size: 30rpx;
+}
+.info-content {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  text-shadow: 0 0 5rpx rgba(0, 0, 0, 0.4);
+  font-size: 24rpx;
+}
+
+.xuzhi {
+  height: 70rpx;
+  width: 90%;
+  padding: 0 5%;
+  border-radius: 10rpx 10rpx 0 0;
+  margin-top: -10rpx;
+  background-color: #f8f8f8;
+  line-height: 70rpx;
+}
+.xuzhi image {
+  width: 25rpx;
+  height: 25rpx;
+  margin: 0 10rpx;
+}
+.xuzhi text {
+  color: #473e3e;
+  font-size: 24rpx;
+}

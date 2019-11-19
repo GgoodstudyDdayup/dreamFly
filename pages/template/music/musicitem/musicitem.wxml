@@ -1,0 +1,47 @@
+<view class='music-item'>
+    <image class='music-touxiang' src='{{musicitem.thumbpath}}' bindtap='change'></image>
+    <view class='music-content'>
+        <view class='music-title'>{{musicitem.title}}</view>
+        <view class='music-massage'>
+            <!-- <view>
+                <image class='pinglun' src="/pages/images/comment.png"></image>
+                <text>评论({{musicitem.comment_count}})</text>
+            </view> -->
+            <!-- 我的点赞 -->
+            <view >
+                <my-dianzan 
+                    is_zan="{{musicitem.is_zan}}" 
+                    zanid="{{musicitem.id}}" 
+                    zan_count="{{musicitem.zan_count}}"          
+                    shoucangjiekou="/index/article/SetArticleGood">
+                </my-dianzan>
+            </view>
+            <!-- 是否收藏 -->
+            <view style="margin-left:20rpx;">
+                <text>收藏</text>
+                <my-shoucang 
+                    is_cang="{{musicitem.is_cang}}" 
+                    shoucangid="{{musicitem.id}}"               
+                    shoucangjiekou="/index/article/SetArticleGood">
+                    </my-shoucang>
+            </view>
+        </view>
+    </view>
+    <!-- 播放按钮 -->
+    <view class='play'>
+        <image 
+            wx:if="{{$state.backgroundAudioManager.src==musicitem.filepath&&$state.backgroundAudioManager.is_play==true}}"
+            src='{{off}}' 
+            bindtap='stopMusic'>
+        </image>
+        <image 
+            wx:else 
+            src='{{no}}' 
+            bindtap='playMusic' 
+            data-title='{{musicitem.title}}' 
+            data-thumbpath='{{musicitem.thumbpath}}' 
+            data-filepath='{{musicitem.filepath}}'>
+        </image>
+    </view>
+</view>
+    <!-- <view>{{$state.backgroundAudioManager.src}}</view> -->

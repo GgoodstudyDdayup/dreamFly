@@ -1,0 +1,148 @@
+/* pages/template/tuiwen/tuiwen.wxss */
+
+/* 横向滚动开始
+/* 列表开始 */
+
+.shopList {
+    margin: 64rpx;
+    box-shadow: 0rpx 5rpx 30rpx rgb(146, 146, 146);
+    position: relative;
+    border-radius: 10rpx;
+}
+
+.shopListPart {
+    width: 110%;
+    height: 300rpx;
+    position: absolute;
+    top: 100rpx;
+    left: -5%;
+    box-shadow: 0rpx 6rpx 16rpx rgb(175, 175, 175);
+    border-radius: 10rpx;
+    overflow: hidden;
+}
+
+/* #myAudio{
+  width: 100%;
+  height: 50rpx;
+} */
+
+.shopListPart image {
+    width: 100%;
+    height: 100%;
+}
+
+.shopListTitle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    font-size: 24rpx;
+    font-weight: 700;
+    box-sizing: border-box;
+    padding: 24rpx 20rpx;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .shopListTitle :nth-child(1) {
+  width: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+} */
+
+.shopListTop {
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 10rpx 30rpx;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shopListTopL {
+    color: #060206;
+    /* text-align: center; */
+}
+
+.year {
+    font-size: 24rpx;
+    letter-spacing: 40rpx;
+    margin-left: 3rpx;
+}
+
+.line {
+    height: 2rpx;
+    background: #e6e6e6;
+    width: 85%;
+}
+
+.day {
+    font-size: 34rpx;
+    font-weight: 700;
+    padding-right: 15%;
+    text-align:center;
+}
+
+.shopListTopR {
+    font-size: 32rpx;
+    line-height: 80rpx;
+}
+
+.shopListTopR image {
+    width: 40rpx;
+    height: 40rpx;
+    margin-right: 10rpx;
+    vertical-align: middle;
+}
+
+.shopListBottom {
+    padding: 30rpx 20rpx;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shopListBottomL {
+    display: flex;
+    align-items: center;
+}
+
+.shopListBottomL image {
+    width: 30rpx;
+    height: 30rpx;
+    vertical-align: middle;
+}
+
+.shopListBottomL text {
+    color: #9f9f9f;
+    font-size: 24rpx;
+    margin-right: 16rpx;
+    margin-left: 4rpx;
+}
+
+.share {
+    width: 30rpx;
+    height: 30rpx;
+}
+
+.msgList {
+    box-sizing: border-box;
+    padding: 30rpx;
+    font-size: 22rpx;
+    color: #7d7d7d;
+    padding-bottom: 50rpx;
+}
+
+.tuiwen {
+    background: #fff;
+}
+
+/* 列表结束 */
+
+/* 卡片列表结束 */

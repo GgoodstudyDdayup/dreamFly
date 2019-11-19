@@ -1,0 +1,28 @@
+<view class='kefu-all'>
+    <view class='kefu-cebian'>
+       <image wx:if="{{show==true}}" bindtap='close' src='{{img2}}'></image>
+       <image wx:else bindtap='show' src='{{img1}}'></image>
+    </view>
+    <view class='kefu' wx:if="{{show==true}}">
+      <view class='kefu-title'>
+          <!-- <text style='width: 40rpx;'></text> -->
+          <text class='lianxi'>联系客服</text>
+          <!-- <image  bindtap='close' src='/pages/images/close.png'></image> -->
+      </view>
+      <view class='kefu-item'>
+          <image src='/pages/images/wx.png'></image>
+          <text>微信：dreamfly_01</text>
+      </view>
+      <view class='kefu-item'>
+          <image src='/pages/images/email.png'></image>
+          <text>邮箱：plur@dreamflygo.com</text>
+      </view>
+      <view class='kefu-item'>
+          <image src='/pages/images/time.png'></image>
+          <text>工作时间：周一至周五 </text>
+      </view>
+      <view>
+          <text style='margin-top:10rpx;margin-left:76rpx;'>10:00- 19：00</text>
+      </view>
+    </view>
+</view>

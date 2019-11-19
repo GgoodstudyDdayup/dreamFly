@@ -1,0 +1,165 @@
+@import "/wxParse/wxParse.wxss";
+
+.box {
+    padding: 30rpx 25rpx 10rpx 25rpx;
+}
+
+.title {
+    font-size: 45rpx;
+}
+
+.logo {
+    margin-top: 20rpx;
+}
+
+.content {
+    margin-top: 20rpx;
+}
+
+.content image {
+    width: 100%;
+}
+
+.content video {
+    width: 100%;
+}
+
+.neirong {
+    margin-top: 20rpx;
+}
+
+.liulan {
+    margin-top: 20rpx;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 23rpx;
+}
+
+.icon image {
+    width: 32rpx;
+    height: 32rpx;
+}
+
+.share image {
+    width: 32rpx;
+    height: 32rpx;
+}
+
+.null {
+    height: 10rpx;
+    background: #f1f1f1;
+}
+
+/* 留言 */
+
+.liuyan-top {
+    padding: 30rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.liuyan-top text:nth-child(1) {
+    font-size: 45rpx;
+    color: black;
+}
+
+.liuyan-item {
+    padding: 30rpx;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.liuyanItem-top image {
+    width: 90rpx;
+    height: 90rpx;
+    border-radius: 50%;
+}
+
+.liuyanItem-top {
+    display: flex;
+}
+
+.liuyanItemTopRright {
+    margin-left: 10rpx;
+}
+
+.liuyanItemTopRright view:nth-child(2) {
+    font-size: 35rpx;
+    color: black;
+    margin-top: 10rpx;
+}
+
+.liuyanTime {
+    display: flex;
+    justify-content: space-between;
+}
+
+.liuyanTime >text {
+    margin-left: 100rpx;
+}
+
+.liuyanTime .icon {
+    margin-left: 17rpx;
+}
+
+.author {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15rpx;
+}
+
+.author-left {
+    display: flex;
+}
+
+.author-tip {
+}
+
+.authorImg {
+    width: 90rpx;
+    height: 90rpx;
+    border-radius: 50%;
+}
+
+.music_logo {
+    width: 90rpx;
+    height: 90rpx;
+    border-radius: 50%;
+}
+
+.authorName {
+    margin-left: 20rpx;
+    display: flex;
+    color: #000;
+    font-size: 34rpx;
+}
+
+.fabushijian {
+    margin-left: 20rpx;
+    margin-top: 10rpx;
+}
+
+.guanzhu-btn {
+    margin-left: 20rpx;
+}
+
+.guanzhu {
+    display: inline-block;
+    padding: 2rpx 25rpx;
+    background: #5bc9d4;
+    color: white;
+    font-size: 30rpx;
+    border-radius: 20rpx;
+}
+.backindex{
+    position: fixed;
+    top: 800rpx;
+    right: 10rpx;
+}

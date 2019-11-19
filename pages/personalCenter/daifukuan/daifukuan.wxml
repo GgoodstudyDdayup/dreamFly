@@ -1,0 +1,57 @@
+<!--pages/personalCenter/myOrder/myOrder.wxml-->
+<scroll-view class='scroll' scroll-x="true" style="width: 100%">
+    <view wx:for="{{nav}}" wx:key="item" class='{{index == 1 ? "navTitleLine" : "navTitle"}}'>
+        <view class='navTitleCon' bindtap='{{item.methods}}'>{{item.title}}</view>
+    </view>
+</scroll-view>
+
+<view class='order'>
+    <text>代付款</text>
+    <text>{{order.length}}</text>
+</view>
+<!-- 无订单显示图标 -->
+<view wx:if="{{order==''}}" class='noOrder'>
+    <icon class='iconfont icon-waihuixingqingzixun'></icon>
+</view>
+<view wx:else class='orders'>
+    <view class='orderList' wx:for="{{order}}" wx:key="item">
+        <view class='topTime'>
+            <view>{{item.time1}}</view>
+            <view>
+                <icon class='iconfont icon-xiaoxi'></icon>
+            </view>
+        </view>
+        <view class='orderCon'>
+            <view class='orderConPic'>
+                <image src='{{item.thumb_path}}' mode="aspectFill"></image>
+            </view>
+            <view class='ticket'>
+                <view class='ticketO'>
+                    <view>{{item.name}}</view>
+                    <view wx:if="{{item.vip}}">vip门票</view>
+                    <view wx:elif="{{item.music_id==1}}">开通vip</view>
+                    <view wx:else>普通门票</view>
+                </view>
+                <view class='ticketO'>
+                    <view>
+                        <text class='fontSize26 colorR'>￥</text>
+                        <text class='fontSize40 colorR'>{{item.money}}<text style='font-size:23rpx'>(增加3%手续费)</text></text>
+                    </view>
+                    <view>x{{item.number}}</view>
+                </view>
+                <view class='allMoney'>
+                    <view class="allMoney-left">
+                        <text>共{{item.number}}件商品</text>
+                        <text>合计：￥{{item.money*item.number}}</text>
+                    </view>
+                    <span 
+                        bindtap="buy" 
+                        id="{{item.order_id}}" 
+                        class="payButton"
+                        data-index='{{index}}'>付款
+                    </span>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

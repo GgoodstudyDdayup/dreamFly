@@ -1,0 +1,28 @@
+<!-- 精选留言开始 -->
+<view class='message'>
+    <text class='m_left'>精选留言</text>
+    <text class='m_right' bindtap="toPinglun">我要留言</text>
+</view>
+<!-- 精选留言结束 -->
+<!-- 会员信息开始 -->
+<scroll-view class='sc' scroll-y="true">
+    <view wx:for="{{pinglunList}}" wx:key="item" class='vip'>
+        <view class='head_left'>
+            <image src='{{item.head_img}}'></image>
+        </view>
+        <view class='music_right'>
+            <view class='name'>{{item.nickname}}</view>
+            <view class='phone'>{{item.content}}</view>
+            <view class='addtime'>
+                <view>{{item.add_time}}</view>
+                <my-dianzan 
+                    is_zan="{{item.is_zan}}" 
+                    zanid="{{item.id}}" 
+                    zan_count="{{item.zannum}}" 
+                    shoucangjiekou="/index/index/SetCommentZan">
+                </my-dianzan>
+            </view>
+        </view>
+         
+    </view>
+</scroll-view>

@@ -1,0 +1,42 @@
+/* pages/template/yinyuejieDetails/canyu/canyu.wxss */
+
+/* <!-- 会员信息开始 --> */
+
+.sc {
+    background: #fff;
+    overflow: hidden;
+}
+
+.vip {
+    height: 100rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1rpx solid #e8e8e8;
+    padding: 0 28rpx;
+}
+
+.vip-left {
+    display: flex;
+    align-items: center;
+}
+
+.vip image {
+    margin: 20rpx;
+    height: 70rpx;
+    width: 70rpx;
+    border-radius: 50%;
+}
+
+.name {
+    margin-right: 20rpx;
+}
+
+.phone {
+    margin-right: 215rpx;
+}
+.jiantou{
+    width: 50rpx;
+    height: 50rpx;
+}
+

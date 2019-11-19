@@ -1,0 +1,16 @@
+<!-- 会员信息开始 -->
+<view class='sc'>
+    <view 
+        wx:for="{{huiyuanList}}" 
+        wx:key="listItem" 
+        class='vip' 
+        catchtap='togerenzhuye' 
+        data-user_id='{{item.user_id}}'>
+        <view class='vip-left'>
+            <image src='{{item.head_img}}'></image>
+            <text class='name'>{{item.nickname}}</text>
+            <text class='phone'>{{item.phone}}</text>
+        </view>
+        <image class='jiantou' src='/pages/images/302.png'></image>
+    </view>
+</view>

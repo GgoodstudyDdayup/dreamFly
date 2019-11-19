@@ -1,0 +1,67 @@
+<!--pages/personalCenter/tougao/tougao.wxml-->
+<view>
+    <view class='header'>
+        <text class="header-left">标题</text>
+    </view>
+
+    <view class='biaoti'>
+        <input bindinput='bindinput'></input>
+    </view>
+</view>
+<!-- 投稿类型 -->
+<view class='tougaoleixing'>
+    <view class='header'>
+        <text class="header-left">类型</text>
+    </view>
+    <view class='biaoti biaoti1'>
+        <picker 
+            class='piker' 
+            bindchange="bindPickerChange" 
+            value="{{index}}" 
+            range="{{objectArray}}" 
+            range-key='name'>
+            <view class="picker">
+                当前选择：{{objectArray[index].name}}
+            </view>
+        </picker>
+    </view>
+</view>
+<!-- 投稿类型结束 -->
+<view>
+    <view class='header'>
+        <text class="header-left">内容</text>
+    </view>
+    <view class='neirong'>
+        <textarea bindinput='bindtextarea'></textarea>
+    </view>
+</view>
+
+<view>
+    <view class='header'>
+        <text class="header-left">多媒体元素</text>
+    </view>
+    <view class='duomeiti'>
+        <view class='duomeiti-item' bindtap='addImg' bindtap='updateImg'>
+            <view class='duomeiti-item-left'>
+                <icon class="iconfont icon-xiangji"></icon>添加图片</view>
+            <view class='duomeiti-item-right'>
+                <icon class="iconfont icon-enter"></icon>
+            </view>
+        </view>
+        <!-- 图片预览 -->
+        <!-- <view wx:if="{{imgPath!=''}}" class='yulanimg'>
+            <image src='{{imgPath}}'></image>
+        </view> -->
+        <!-- 图片预览结束 -->
+        <view class='duomeiti-item' bindtap='chooseVideo'>
+            <view class='duomeiti-item-left'>
+                <icon class="iconfont icon-shipin"></icon>上传视频</view>
+            <view class='duomeiti-item-right'>
+                <icon class="iconfont icon-enter"></icon>
+            </view>
+        </view>
+    </view>
+</view>
+<view class='submit' style="background-image: url('https://www.dreamflygo.com/img/307.png')" bindtap='submit'>
+    <text>发布动态</text>
+</view>

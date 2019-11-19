@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "砍价",
+  "usingComponents": {
+    "goods-price": "../template/goodsPrice/goodsPrice",
+    "friend-list": "../template/friendList/friendList"
+  }
+}

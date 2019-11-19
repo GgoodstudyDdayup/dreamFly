@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "my-dianzan": "/pages/template/dianzan/dianzan"
+    }
+}

@@ -1,0 +1,11 @@
+<!-- 会员信息开始 -->
+<view class='sc'>
+    <view wx:for="{{musicList}}" wx:key="item" class='vip' data-songId="{{item.sing_id}}" bindtap="songDetails">
+        <image class='touxiang' src='{{item.thumb_path}}'></image>
+        <view class='music'>
+            <text class='name'>{{item.title}}</text>
+            <view class='phone'>{{item.singer}}</view>
+        </view>
+        <icon class="iconfont icon-enter"></icon>
+    </view>
+</view>

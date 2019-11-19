@@ -1,0 +1,47 @@
+<view class="box">
+  <view class='title'>{{details.title}}</view>
+  <view class='content'>
+    <video controls src='{{details.filepath}}' poster='{{details.thumbpath}}' custom-cache='{{false}}'></video>
+  </view>
+  <view class='neirong'>内容</view>
+  <view class='liulan'>
+    <view>
+      <view class='icon'><image src='/pages/images/comment.png'></image>评论（10）</view>
+      <view class='icon'><image src='/pages/images/zan.png'></image>点赞（10）</view>
+    </view>
+    <view class='share'>
+        <image src='/pages/images/fenxiang.png'></image>
+    </view>
+  </view>
+</view>
+<view class='null'></view>
+<view class='liuyan'>
+  <view class='liuyan-top'>
+    <text>精选留言</text>
+    <text data-videoid='{{details.id}}' bindtap='toPinglun'>我要留言</text>
+  </view>
+  <view class='liulan-bottom'>
+    <view class='liuyan-item'>
+      <view class='liuyanItem-top'>
+         <image src='/pages/images/logo.png'></image>
+         <view class='liuyanItemTopRright'>
+            <view>李白</view>
+            <view>第一</view>
+         </view>
+      </view>
+      <view class='liuyanTime'>
+        <text>1小时前</text>
+        <view>
+          <view class='icon'>
+            <image src='/pages/images/comment.png'></image>
+            <text>回复(3)</text>
+          </view>
+          <view class='icon'>
+            <image src='/pages/images/zan.png'></image>
+            <text>点赞(3)</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

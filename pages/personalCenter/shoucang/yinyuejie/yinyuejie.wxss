@@ -1,0 +1,4 @@
+/* pages/personalCenter/shoucang/yinyuejie/yinyuejie.wxss */
+.content{
+    margin-top: 50rpx;
+}

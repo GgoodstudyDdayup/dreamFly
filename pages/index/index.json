@@ -1,0 +1,14 @@
+{
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "DreamFly电音之旅",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "my-yedianlist": "../template/yedianList/yedianList",
+        "my-yinyuejielist": "../template/yinyuejieList/yinyuejieList",
+        "my-tuiwen": "../template/tuiwen/tuiwen",
+        "my-video": "../template/video/video",
+        "my-music": "../template/music/music",
+        "my-hudong": "../Interaction/dongtai/Interaction"
+    }
+}

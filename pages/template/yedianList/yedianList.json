@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "my-dianzan": "/pages/template/dianzan/dianzan",
+    "my-share": "/pages/template/share/share",
+    "my-shoucang": "/pages/template/shoucang/shoucang"
+  }
+}

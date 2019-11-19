@@ -1,0 +1,84 @@
+.title{
+    font-size: 30rpx;
+    padding: 25rpx 24rpx;
+    background: #f3f3f3;
+    color: black;
+}
+.mianfeicishu{
+    display: flex;
+    align-items: center;
+    height: 180rpx;
+    background: #ee8183;
+    padding: 0 24rpx;
+    padding-right: 0;
+}
+.mianfeicishu image{
+    width: 64rpx;
+    height: 50rpx;
+}
+.mianfeicishu text{
+    color: white;
+    margin-left: 20rpx;
+    font-size: 30rpx;
+}
+.jinggao{
+    line-height: 60rpx;
+    padding: 0 24rpx;
+    color: #ff9bb9;
+    font-size: 24rpx;
+}
+.jinggao icon{
+    margin-right: 10rpx;
+    font-size: 30rpx;
+    line-height: 60rpx;
+
+}
+.content-item-top{
+    display: flex;
+    justify-content: space-between;
+    height: 110rpx;
+    align-items: center;
+    padding: 0 24rpx; 
+    color: black;
+    font-size:32rpx;
+}
+.content-item-bottom{
+    padding: 0rpx 24rpx;
+    border-bottom:1px solid #e6e6e6
+}
+.list{
+    box-sizing: border-box;
+    padding-top: 30rpx;
+    padding-bottom: 30rpx;
+
+    border-top:1px solid #e6e6e6; 
+}
+.list-top{
+    display: flex;
+    justify-content: space-between;
+}
+.list-bottom{
+    color: black;
+    margin-top: 20rpx;
+}
+.btn-view{
+  height: 260rpx;
+  padding: 30rpx 24rpx;
+  box-sizing: border-box;
+}
+.button{
+  width: 400rpx;
+  line-height: 80rpx;
+  background: #ff6c9a;
+  color: white;
+  border-radius: 10rpx;
+  text-align: center;
+  font-size: 30rpx;
+  margin: auto;
+}
+.btn-view text{
+  margin-top: 25rpx;
+}
+.button-view{
+  margin-top: 60rpx;
+}

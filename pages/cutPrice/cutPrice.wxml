@@ -1,0 +1,9 @@
+<goods-price></goods-price>
+<view class="cutButton">
+  <button class="helpCut">找人帮砍</button>
+  <button class="buy">我要购买</button>
+</view>
+<view class="help-record">
+  砍价记录
+</view>
+<friend-list value="-￥1380"></friend-list>

@@ -1,0 +1,73 @@
+<!-- 列表开始 -->
+
+<view 
+    class='listAll' 
+    wx:for="{{dataList}}" 
+    wx:key="item" 
+    bindtap='toDetails' 
+    data-id='{{item.id}}'> 
+    <view class='null'></view>
+    <view class='listTop'>
+        <view class='listTopL'>
+            <view style='width:100rpx;height:100rpx;'>
+                <image src='{{userInfo2.head_img}}' mode='aspectFill'></image>
+            </view>
+            <view class='userInfo'>
+                <view class='date'>{{userInfo2.nickname}}</view>
+                <view class='date'>{{item.time1}}</view>
+            </view>
+        </view>
+        <view>
+            <image 
+                wx:if="{{item.logo!=null}}" 
+                class='logo' 
+                src='{{item.logo}}'
+                data-music_id='{{item.music_id}}'
+                catchtap='toMusic'></image>
+            <image wx:else class='logo' src='/pages/images/dreamfly.png'></image>
+        </view>
+    </view>
+    <view class='picImg' >
+        <image wx:if='{{item.thumbpath}}' src='{{item.thumbpath}}'></image>
+    </view>
+    <view class='listTitle'>
+        {{item.title}}
+    </view>
+    <view class='bottomMenu'>
+        <view class="bottomMenu-content">
+            <view class='bottomMenu-item'>
+                <image class='xin' src="/pages/images/liulan.png"></image>
+                <text>浏览({{item.click}})</text>
+            </view>
+            <view class='bottomMenu-item'>
+                <image class='xin' src="/pages/images/comment.png"></image>
+                <text>回复({{item.comment_list.length}})</text>
+            </view>
+            <!-- 我的点赞 -->
+            <my-dianzan 
+                is_zan="{{item.is_zan}}" 
+                zanid="{{item.quan_id}}" 
+                zan_count="{{item.zan_count}}" 
+                shoucangjiekou="/index/hudong/SetQuanGood">
+            </my-dianzan>
+        </view>
+        <!-- 分享按钮组件 -->
+        <my-share 
+            shareId="{{item.quan_id}}" 
+            shareImg="{{item.img}}" 
+            shareTitle="{{item.title}}" 
+            sharePath="/pages/Interaction/pengyouquan/details/details?id="
+            codepath="pages/information/toptweets/details/details">
+        </my-share>
+    </view>
+    <view class='msgList'>
+        <view 
+            class='msgListCon' 
+            wx:for="{{item.comment_list}}" 
+            wx:key="forItem" 
+            wx:for-item="comment_list">
+            {{comment_list.nickname}} : {{comment_list.content}}
+        </view>
+    </view>
+</view>
+<!-- 列表结束 -->

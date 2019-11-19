@@ -1,0 +1,54 @@
+
+<goods-price dataList="{{details}}"></goods-price>
+<view class="cutButton">
+  <button class="helpCut"  open-type="share" data-name='{{details.name}}' data-fengmian='{{details.thumb_path}}' data-user_id='{{userInfo.user_id}}' data-id='{{details.kan_id}}' data-kan_money="100">找人帮砍</button>
+  <button class="buy"  bindtap='toorder' data-piaojia='{{details.end_money}}' data-is_vip='0' data-music_id='{{details.music_id}}'>我要购买</button>
+</view>
+<view class='windows'>
+  <view class='thr flex'>
+    <view style='font-size:28rpx;font-weight: 600;'>
+      砍价记录
+    </view>
+    <view style='color:#999;'>
+      {{helpArrs.length}}人砍价 
+    </view>
+  </view>
+  <view>
+    <view class='jilu' wx:if="{{my_kan}}">
+		<view class="jilu_f">
+      <image src='{{my_kan.head_img}}' style='width:80rpx;height:80rpx;margin-right:20rpx ;border-radius:50%;'>
+      </image>
+      <text class='kan-name'>{{my_kan.nickname}}</text>
+	  </view>
+      <b style="font-weight: 600;color:#888888;">-￥{{my_kan.this_money}}</b>
+    </view>
+    <view class='jilu' wx:for="{{helpArrs}}" wx:if="{{helpArrs}}" wx:key="{{index}}">
+     <view class="jilu_f">
+	  <image src='{{item.head_img}}' style='width:80rpx;height:80rpx;margin-right:20rpx;border-radius:50%;'></image>
+      <text class='kan-name'>{{item.nickname}}</text>
+      </view>
+	  <b style="font-weight: 600;color:#888888;">-￥{{item.this_money}}</b>
+    </view>
+  </view>
+</view>
+<friend-list value="-￥1380"></friend-list>
+
+
+<!-- 返回首页 -->
+<view class='backindex' style='position: fixed;right: 20rpx;top: 300rpx'>
+  <my-backindex></my-backindex>
+</view>
+<!-- <view class='zhezhao' wx:if="{{zhezhao_show||show_mask}}">
+  <button class='shouquan' open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+    微信授权登录
+  </button>
+  <button bindgetphonenumber='getPhone' open-type='getPhoneNumber'>获取手机号</button>
+</view> -->
+<view wx:if="{{zhezhao_show||show_mask}}" bindtap='cancel' class='mask'></view>
+<view wx:if="{{zhezhao_show||show_mask}}" class='mypic '>
+  <view style='margin-top:30rpx;'>请先确定哦~</view>
+  <button wx:if="{{zhezhao_show}}" class='shouquan' open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+    微信授权登录
+  </button>
+  <button wx:if="{{show_mask}}" bindgetphonenumber='getPhone' open-type='getPhoneNumber'>获取手机号</button>
+</view>

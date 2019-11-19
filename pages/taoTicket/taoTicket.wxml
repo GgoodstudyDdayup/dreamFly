@@ -1,0 +1,20 @@
+<view class="video">
+  <view wx:for="{{ videoList }}" wx:key="{{ index }}" class="video-item">
+  <view class="video-itemView" data-item="{{item}}" bindtap="toDetails">
+  
+      <view class="item-img">
+        <image mode="aspectFill" src="{{ item.img }}"></image>
+
+    </view>
+    <view class="item-info">
+      <text class="info-title">{{ item.title }}</text>
+      <text class="info-name" >{{ item.name}}</text>
+      <text class="info-num"  >数量:{{ item.num }}张</text>
+         <text class="info-price" >￥{{ item.price}}</text>
+   
+      <!-- <text class="info-content">参演艺人：邓紫棋</text> -->
+    </view>
+    </view>
+  </view>
+
+</view>

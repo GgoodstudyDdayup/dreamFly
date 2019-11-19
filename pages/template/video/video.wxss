@@ -1,0 +1,322 @@
+/* 横向滚动开始 */
+
+.scroll {
+    background: #fff;
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
+    display: flex;
+}
+
+.navTitle {
+    color: #282828;
+    font-size: 26rpx;
+    display: inline-block;
+    height: 50rpx;
+    line-height: 50rpx;
+    text-align: center;
+    padding: 16rpx 0;
+    border-bottom: 1rpx solid #eaeaea;
+}
+
+.navTitleLine {
+    color: #5bc9d4;
+    font-size: 30rpx;
+    display: inline-block;
+    height: 50rpx;
+    line-height: 50rpx;
+    text-align: center;
+    padding: 16rpx 0;
+    border-bottom: 5rpx solid #5bc9d4;
+}
+
+.navTitleCon {
+    padding: 0 41.6rpx;
+    height: 50rpx;
+    line-height: 50rpx;
+    text-align: center;
+    border-left: 1rpx solid f1f1f1;
+    border-right: 1rpx solid #f1f1f1;
+}
+
+/* 横向滚动结束 */
+
+/* 搜索开始 */
+
+.searchFa {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0rpx 5rpx 10rpx rgb(199, 199, 199);
+}
+
+.search {
+    padding: 10rpx;
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+
+.search image {
+    width: 30rpx;
+    height: 30rpx;
+}
+
+.input {
+    width: 300rpx;
+}
+
+.searchInp {
+    display: flex;
+    background: #f1f1f1;
+    width: 70%;
+    padding: 6rpx 30rpx;
+    border-radius: 10rpx;
+}
+
+.sousuo {
+    font-size: 28rpx;
+}
+
+.sousuoText {
+    color: #69edef;
+    font-size: 36rpx;
+    margin-left: 16rpx;
+    font-weight: bold;
+}
+
+.chooseYear {
+    font-size: 28rpx;
+    color: #767676;
+    line-height: 84rpx;
+}
+
+.chooseYear image {
+    width: 30rpx;
+    height: 25rpx;
+    vertical-align: middle;
+    margin-right: 20rpx;
+    margin-left: 13rpx;
+}
+
+/* 搜索结束 */
+
+/* 列表开始 */
+
+.video {
+    padding-bottom: 50rpx;
+}
+
+.shopList {
+    position: relative;
+    margin: 64rpx;
+    box-shadow: 0rpx 5rpx 30rpx rgb(146, 146, 146);
+    border-radius: 10rpx;
+    /* background: #0f0; */
+}
+
+.shopListPart {
+    width: 110%;
+    height: 420rpx;
+    position: absolute;
+    top: 0rpx;
+    left: -5%;
+    box-shadow: 0rpx 6rpx 16rpx rgb(175, 175, 175);
+    border-radius: 10rpx;
+    overflow: hidden;
+}
+
+/* #myVideo{
+  width: 100%;
+  height: 420rpx;
+} */
+
+/* .shopListPart image {
+  width: 100%;
+  height: 100%;
+} */
+
+.shopListTitle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    font-size: 24rpx;
+    font-weight: 700;
+    box-sizing: border-box;
+    padding: 24rpx 20rpx;
+    display: flex;
+    justify-content: space-between;
+    /* background: #69edef; */
+}
+
+/* .shopListTitle :nth-child(1) {
+  width: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+} */
+
+.shopListTop {
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: -60rpx;
+    padding: 10rpx 30rpx;
+    display: flex;
+    justify-content: space-between;
+    z-index: 99;
+}
+
+.shopListTopL {
+    color: #fff;
+    width: 223rpx;
+    margin-left: 20rpx;
+    padding-top: 20rpx;
+}
+
+.year {
+    font-size: 24rpx;
+    letter-spacing: 40rpx;
+}
+
+.line {
+    height: 2rpx;
+    background: #e6e6e6;
+    width: 85%;
+}
+
+.day {
+    font-size: 38rpx;
+    font-weight: 700;
+    padding-right: 15%;
+    text-align: center
+}
+
+.shopListTopR {
+    font-size: 32rpx;
+    line-height: 80rpx;
+}
+
+.shopListTopR image {
+    width: 40rpx;
+    height: 40rpx;
+    margin-right: 10rpx;
+    vertical-align: middle;
+}
+
+.shopListBottom {
+    padding: 30rpx 0;
+    box-sizing: border-box;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    /* background: #00a2e9; */
+    position: absolute;
+    top: 420rpx;
+    left: 5%;
+    border-bottom: 1rpx solid #eaeaea;
+}
+
+.shopListBottomL {
+    display: flex;
+}
+
+.shopListBottomL image {
+    width: 30rpx;
+    height: 30rpx;
+    vertical-align: middle;
+}
+
+.shopListBottomL text {
+    color: #9f9f9f;
+    font-size: 24rpx;
+    margin-right: 16rpx;
+    margin-left: 4rpx;
+}
+
+.msgList {
+    margin-top: 120rpx;
+    box-sizing: border-box;
+    padding: 30rpx;
+    font-size: 22rpx;
+    color: #7d7d7d;
+}
+
+/* 列表结束 */
+
+/* 卡片列表结束 */
+
+/* 底部导航栏颜色 */
+
+.on_cor text {
+    color: #00a2e9;
+}
+
+.on_cor icon {
+    color: #00a2e9;
+}
+
+.video-item {
+    position: relative;
+    width: 100%;
+    height: 420rpx;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+}
+
+.video-cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.video-play-btn {
+    position: absolute;
+    width: 60rpx;
+    height: 60rpx;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.video-duration {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: #fff;
+}
+
+.videoimg {
+    width: 100%;
+    height: 420rpx;
+    position: relative;
+}
+
+.videoTitle {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    bottom: 0;
+    line-height: 80rpx;
+    color: white;
+    padding: 0 20rpx;
+}
+
+.play-button {
+    display: block;
+    margin: auto;
+    /* margin-top: 55rpx; */
+    position: relative;
+    top: 150rpx;
+}

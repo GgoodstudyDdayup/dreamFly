@@ -1,0 +1,24 @@
+.null{
+    height: 20rpx;
+    background:#f3f3f3;
+}
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 25rpx;
+}
+
+.list-item-left image {
+    width: 90rpx;
+    height: 90rpx;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 20rpx;
+}
+
+.right {
+    width: 70rpx;
+    height: 70rpx;
+}

@@ -1,0 +1,62 @@
+<goods-price></goods-price>
+<view class="prize">
+  <view class="activity">
+    活动规则
+  </view>
+  <view class="prize-time">
+    开奖时间：2019-06-05
+  </view>
+  <view class="prize-code">
+    <text class="code-l">中奖号码：</text><text class="code-r">351687631574863</text>
+  </view>
+</view>
+<scroll-view class="scroll">
+    <block 
+      wx:for="{{nav}}" 
+      wx:key="item" 
+      >
+      <view 
+        catchtap='tabchange' 
+        data-index='{{index}}' 
+        class='{{index == tabindex ? "navTitleConTion" : ""}} navTitleCon'
+      >
+        <view class="title">
+          {{item}}
+          <view class='{{index == tabindex ? "navBorderTion" : ""}}'></view>
+        </view>
+      </view>
+    </block>
+</scroll-view>
+<view class="goods">
+  <view class="goods-item">
+    <view class="item-img">
+      <image src="http://oss.tan8.com/resource/attachment/2019/201907/5dc13ae87934acf12a9c2c8c559da2a8_thumb.png"></image>
+    </view>
+    <view class="item-info">
+      <text class="info-title">邓紫棋全国巡回演唱会-郑州站</text>
+      <text class="info-money">
+        <text class="goodsMoney">￥<text>380.00</text></text>
+        <text class="price-describe">(抽奖价)</text>
+      </text>
+      <view class="info-icon">
+        <image src="../images/end.png"></image>
+      </view>
+    </view>
+  </view>
+
+  <view class="goods-item">
+    <view class="item-img">
+      <image src="http://oss.tan8.com/resource/attachment/2019/201907/5dc13ae87934acf12a9c2c8c559da2a8_thumb.png"></image>
+    </view>
+    <view class="item-info">
+      <text class="info-title">邓紫棋全国巡回演唱会-长城站</text>
+      <text class="info-money color-red">
+        <text class="goodsMoney">￥<text>380.00</text></text>
+        <text class="price-describe">(抽奖价)</text>
+      </text>
+      <view class="info-icon">
+        <image src="../images/ing.png"></image>
+      </view>
+    </view>
+  </view>
+</view>

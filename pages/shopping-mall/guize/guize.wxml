@@ -1,0 +1,7 @@
+<import src="/wxParse/wxParse.wxml" />
+<view class="main">
+  <view class="title">活动规则</view>
+  <view class='content-item'>
+    <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+  </view>
+</view>

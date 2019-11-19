@@ -1,0 +1,71 @@
+<view>
+    <block wx:for="{{dataList}}" wx:key="navItems">
+        <view class='shopList1'>
+            <view class='shopListTop1'>
+                <view class='shopListTopL1'>
+                    <view class='day1' style='color:#fff;'></view>
+                </view>
+            </view>
+            <view style='height:390rpx'></view>
+            <view class='shopListPart1' data-id='{{item.id}}' bindtap="toDetails">
+                <image mode='aspectFill' src='{{item.thumbpath}}'></image>
+                <view class='jiaobiao'>
+                    <image 
+                        wx:if="{{index==0}}" 
+                        class='jiaobiao-img' 
+                        src='/pages/images/index1.png'></image>
+                    <image 
+                        wx:elif="{{index==1}}" 
+                        class='jiaobiao-img' 
+                        src='/pages/images/index2.png'></image>
+                </view>
+                <view class='shopListTitle'>
+                    <view>{{item.title}}</view>
+                </view>
+            </view>
+            <view class='shopListBottom1'>
+                <view style='display:flex;align-item:center'>
+                    <view class='shopListBottomL'>
+                        <image src="/pages/images/comment.png"></image>
+                        <text>评论({{item.comment_count}})</text>
+                    </view>
+                    <!-- 我的点赞 -->
+                    <my-dianzan 
+                        is_zan="{{item.is_zan}}" 
+                        zanid="{{item.id}}" 
+                        zan_count="{{item.zan_count}}" 
+                        shoucangjiekou="/index/article/SetArticleGood">
+                    </my-dianzan>
+                </view>
+                <view class='shopListBottomR'>
+                    <!-- 收藏 -->
+                    <my-shoucang 
+                        is_cang="{{item.is_cang}}" 
+                        shoucangid="{{item.id}}" 
+                        
+                        shoucangjiekou="/index/article/SetArticleGood">
+                    </my-shoucang>
+                    <!-- 分享按钮组件 -->
+                    <my-share 
+                        shareType="2"
+                        shareId="{{item.id}}" 
+                        shareImg="{{item.thumbpath}}" 
+                        shareTitle="{{item.title}}" 
+                        sharePath="/pages/information/details/details?id="
+                        codepath="pages/information/details/details">
+                    </my-share>
+                </view>
+            </view>
+            <view class='line'></view>
+            <view class='msgList'>
+                <view 
+                    wx:for="{{item.comment_list}}" 
+                    wx:key="id" 
+                    wx:for-item="comment_list" 
+                    class='msgListCon'>
+                    {{comment_list.nickname}} : {{comment_list.content}}
+                </view>
+            </view>
+        </view>
+    </block>
+</view>

@@ -1,0 +1,321 @@
+/* pages/template/yinyuejieDetails/introduce/introduce.wxss */
+
+/* 购买界面开始 */
+
+.buy {
+  padding-bottom: 52rpx;
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid #e6e6e6;
+  background: white;
+  margin-top: 30rpx;
+}
+
+.one {
+  display: flex;
+  height: 170rpx;
+  width: 100%;
+  color: white;
+}
+
+.one-right {
+  margin-left: 20rpx;
+}
+
+.title {
+  font-size: 30rpx;
+  margin-top: 30rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 95%;
+}
+
+.time {
+  font-size: 25rpx;
+  color: #bdbdb9;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 95%;
+}
+
+.advance {
+  margin-top: 12rpx;
+  height: 40rpx;
+  width: 90rpx;
+}
+
+.imtwo {
+  height: 170rpx;
+  width: 230rpx;
+  margin-left: 23rpx;
+}
+
+.door {
+  margin-left: 30rpx;
+  margin-top: 55rpx;
+  font-weight: bolder;
+  color: black;
+}
+
+.ordinary {
+  float: left;
+  height: 50rpx;
+  line-height: 50rpx;
+  box-sizing: border-box;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  margin-top: 20rpx;
+  background: #f4f0f5;
+  margin-left: 26rpx;
+  font-size: 25rpx;
+}
+
+/* .v{
+  color: #ff6c9a;
+} */
+
+/* 立即购买开始 */
+
+.lj {
+  height: 100rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 15rpx solid #e6e6e6;
+  background: white;
+}
+
+.fenxiang {
+  margin-left: 60rpx;
+  display: inline-flex;
+  align-items: center;
+}
+
+.heart {
+  display: flex;
+  align-items: center;
+  margin-left: 70rpx;
+}
+
+.heart image {
+  height: 50rpx;
+  width: 50rpx;
+  margin-right: 10rpx;
+  vertical-align: middle;
+}
+
+.ljright {
+  display: flex;
+  align-items: center;
+  height: 70rpx;
+  width: 320rpx;
+  margin-left: 70rpx;
+}
+
+.ljright image {
+  height: 30rpx;
+  width: 30rpx;
+  margin-left: 70rpx;
+  vertical-align: middle;
+}
+
+.ljright text {
+  margin-left: 30rpx;
+  color: #fff;
+  font-weight: bold;
+}
+
+.ljright1 {
+  background-color: #bdbdb9;
+  display: flex;
+  align-items: center;
+  height: 70rpx;
+  width: 320rpx;
+  margin-left: 70rpx;
+}
+
+.ljright1 image {
+  height: 30rpx;
+  width: 30rpx;
+  margin-left: 70rpx;
+  vertical-align: middle;
+}
+
+.ljright1 text {
+  margin-left: 30rpx;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* 图文详情开始 */
+
+.writ {
+  /* height:630rpx; */
+  margin-top: 50rpx;
+}
+
+.wr-top {
+  color: #473e3e;
+  font-size: 36rpx;
+  font-weight: 600;
+  margin-left: 5%;
+  margin-top: 30rpx;
+}
+
+.wt-middle {
+  padding: 20rpx;
+  padding-bottom: 0;
+  height: 400rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wt-middle image {
+  height: 400rpx;
+  width: 100%;
+}
+
+/* 未展开的样式 */
+
+.wr-bottom {
+  height: 78rpx;
+  line-height: 50rpx;
+  overflow: hidden;
+  padding: 20rpx;
+}
+
+.wr-bottom image {
+  width: 100% !important;
+}
+
+/* 点击展开的样式 */
+
+.openone {
+  padding: 20rpx;
+  height: auto;
+  line-height: 50rpx;
+}
+
+.openone image {
+  width: 100% !important;
+}
+
+/* 控制展开详情的样式 */
+
+.open {
+  height: 100rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fec728;
+  border-top: 1rpx solid #eee;
+}
+
+/* 相关推荐开始 */
+
+.relevant {
+  height: 100rpx;
+  align-items: center;
+  /* background:red; */
+  display: flex;
+  font-weight: bold;
+  color: black;
+  font-size: 40rpx;
+  justify-content: center;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+/* 图片 */
+
+.swiperA {
+  height: 250rpx;
+  overflow: hidden;
+  background: #fff;
+  white-space: nowrap;
+}
+
+.swiper {
+  margin: 20rpx 0 10rpx;
+  /* background:#fff; */
+  height: 100rpx;
+  display: inline-block;
+}
+
+.img1 {
+  position: relative;
+  margin-top: 2%;
+  width: 300rpx;
+  height: 200rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+
+.isy {
+  background: rgba(0, 0, 0, 0.4);
+  width: 300rpx;
+  margin-left: 30rpx;
+  top: 164rpx;
+  position: absolute;
+  height: 70rpx;
+  color: white;
+}
+
+.isyone {
+  font-size: 25rpx;
+  margin-top: 5rpx;
+}
+
+.isytwo {
+  font-size: 20rpx;
+  margin-left: 10rpx;
+}
+
+.img2 {
+  position: relative;
+  margin-top: 2%;
+  width: 300rpx;
+  height: 200rpx;
+  margin-right: 30rpx;
+}
+
+.christmas {
+  background: rgba(0, 0, 0, 0.4);
+  width: 300rpx;
+  margin-left: 361rpx;
+  top: 170rpx;
+  position: absolute;
+  height: 70rpx;
+  color: white;
+}
+
+.christmasone {
+  font-size: 25rpx;
+  margin-top: 5rpx;
+  margin-left: 10rpx;
+}
+
+.img3 {
+  position: relative;
+  margin-top: 2%;
+  width: 300rpx;
+  height: 200rpx;
+}
+
+.end {
+  background: rgba(0, 0, 0, 0.4);
+  width: 300rpx;
+  margin-left: 690rpx;
+  top: 164rpx;
+  position: absolute;
+  height: 70rpx;
+  color: white;
+}
+
+.active {
+  background: #5bc9d4;
+  color: white;
+}

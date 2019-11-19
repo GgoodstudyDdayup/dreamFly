@@ -1,0 +1,4 @@
+<!-- 已收藏 -->
+<image class='shoucang' wx:if="{{is_cang}}" bindtap="collect" src="/pages/images/yishoucang.png" ></image>
+<!-- 未收藏 -->
+<image class='shoucang' wx:else bindtap="collect" src="/pages/images/heart.png" ></image>

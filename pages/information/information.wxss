@@ -1,0 +1,40 @@
+/* 横向滚动开始 */
+
+.scroll {
+    background: #fff;
+    display: flex;
+}
+
+.navTitle {
+    flex: 1;
+    color: #282828;
+    font-size: 26rpx;
+    display: inline-block;
+    height: 50rpx;
+    line-height: 50rpx;
+    text-align: center;
+    padding: 16rpx 0;
+    border-bottom: 1rpx solid #eaeaea;
+}
+
+.navTitleLine {
+    flex: 1;
+    color: #282828;
+    font-size: 26rpx;
+    display: inline-block;
+    height: 50rpx;
+    line-height: 50rpx;
+    text-align: center;
+    padding: 16rpx 0;
+    border-bottom: 5rpx solid #5bc9d4;
+}
+
+.navTitleCon {
+    height: 50rpx;
+    line-height: 50rpx;
+    text-align: center;
+    border-right: 1rpx solid #eaeaea;
+}
+
+
+/* 横向滚动结束 */

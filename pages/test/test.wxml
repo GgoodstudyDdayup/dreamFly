@@ -1,0 +1,12 @@
+<!--pages/test/test.wxml-->
+<view class='root'>
+  <view class='time'>
+    <text style=' font-weight: bolder;'>蔬菜已经上架：</text>
+    <text class='item'>{{day}}天</text>
+    <text>：</text>
+    <text class='item'>{{hour}}小时</text>
+    <text>：</text>
+    <text class='item'>{{minute}}分钟</text>
+  </view>
+
+</view>

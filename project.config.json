@@ -1,0 +1,206 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"enhance": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.6.4",
+	"appid": "wx4439dab361e349e7",
+	"projectname": "%E9%9F%B3%E4%B9%90%E8%8A%82110602",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"scripts": {},
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 20,
+			"list": [
+				{
+					"id": 0,
+					"name": "订单",
+					"pathName": "pages/huodong/goupiao/goupiao",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "音乐节兑票",
+					"pathName": "pages/personalCenter/duihuan1/chooseMusicAll/chooseMusicAll",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "砍价",
+					"pathName": "pages/shopping-mall/wode/wode",
+					"query": "user_id=112&id=9&kan_money=100&name=EDC Korea",
+					"scene": 1096
+				},
+				{
+					"id": 4,
+					"name": "qr",
+					"pathName": "pages/personalCenter/myOrder/QRCode",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 5,
+					"name": "核销",
+					"pathName": "pages/verify/verify",
+					"query": "scene=275",
+					"scene": 1011
+				},
+				{
+					"id": 6,
+					"name": "我的订单列表",
+					"pathName": "pages/orderList/orderList",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "抽奖",
+					"pathName": "pages/prizeTime/prizeTime",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/personalCenter/personalCenter",
+					"query": "",
+					"scene": 1001
+				},
+				{
+					"id": -1,
+					"name": "订单",
+					"pathName": "pages/shopping-mall/shopping-mall",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的好友",
+					"pathName": "pages/myfriend/myfriend",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "视频页",
+					"pathName": "pages/video/video",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "视频搜索",
+					"pathName": "pages/videosearch/videosearch",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "抽奖",
+					"pathName": "pages/lucky/lucky",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "砍价",
+					"pathName": "pages/cutPrice/cutPrice",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "视频带评论",
+					"pathName": "pages/videoComments/videoComments",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 16,
+					"name": "商品列表页",
+					"pathName": "pages/goods-list/goods-list",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "商品详情页",
+					"pathName": "pages/goodsDetails/goodsDetails",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "详情页",
+					"pathName": "pages/details/details",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "订单页",
+					"pathName": "pages/order/order",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/prizeTime/prizeTime",
+					"pathName": "pages/prizeTime/prizeTime",
+					"scene": null
+				}
+			]
+		}
+	}
+}

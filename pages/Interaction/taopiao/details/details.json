@@ -1,0 +1,11 @@
+{
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#72e2ef",
+    "navigationBarTitleText": "详情",
+    "navigationBarTextStyle": "white",
+    "usingComponents": {
+        "my-share": "/pages/template/share/share",
+        "my-dianzan": "/pages/template/dianzan/dianzan",
+        "back-index": "/pages/template/backindex/backindex"
+    }
+}

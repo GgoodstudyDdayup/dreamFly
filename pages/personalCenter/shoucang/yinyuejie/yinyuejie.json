@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "my-yinyuejie":"/pages/template/yinyuejieList/yinyuejieList"
+    }
+}

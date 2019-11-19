@@ -1,0 +1,15 @@
+<view class="goodsinfo">
+  <view class="headImg">
+    <image mode="aspectFill" src="{{dataList.thumb_path}}"></image>
+  </view>
+  <view class="price">
+    <text class="goods-title">
+      {{dataList.title}}
+    </text>
+    <view>
+      <text class="goodsMoney">￥<text>{{dataList.old_money}}</text></text>
+      <text class="price-describe">(抽奖价)</text>
+      <text class="price-former">原价 ￥ {{dataList.old_money}}</text>
+    </view>
+  </view>
+</view>

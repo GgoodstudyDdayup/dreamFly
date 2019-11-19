@@ -1,0 +1,40 @@
+<!-- 无订单显示下面 -->
+<view wx:if="{{order==''}}" class='noOrder'>
+    <icon class='iconfont icon-waihuixingqingzixun'></icon>
+</view>
+<!-- 有订单显示下面 -->
+<view wx:else class='orders'>
+    <view class='orderList' wx:for="{{order}}" wx:key="item">
+        <view class='topTime'>
+            <view>{{item.pay_time}}</view>
+        </view>
+        <view class='orderCon'>
+            <view class='orderConPic'>
+                <image src='{{item.thumb_path}}' mode="aspectFill"></image>
+            </view>
+            <view class='ticket'>
+                <view class='ticketO'>
+                    <view>{{item.music_name}}</view>
+                </view>
+                <view class='ticketO'>
+                    <view>
+                        <text class='fontSize26 colorR'>￥</text>
+                        <text class='fontSize40 colorR'>{{item.money}}</text>
+                    </view>
+                    <view 
+                        class='{{item.is_checked==true?"checkbox1":"checkbox"}}' 
+                        catchtap='checked' 
+                        data-order_id='{{item.order_id}}'
+                        data-index='{{index}}'>
+                    </view>
+                </view>
+                <view class='allMoney'>
+                    <text>共{{item.number}}件商品</text>
+                    <text>合计：￥{{item.money*item.number}}</text>
+                    <!-- <text class='payButton1'>已支付</text> -->
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<button class='btn' disabled='{{is_disable}}' bindtap='toChooseMusic'>兑换音乐节门票</button>

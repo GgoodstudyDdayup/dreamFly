@@ -1,0 +1,176 @@
+<!--pages/personalCenter/myOrder/myOrder.wxml-->
+<scroll-view class='scroll' scroll-x="true" style="width: 100%">
+  <view wx:for="{{nav}}" wx:key="item" class='{{index == show ? "navTitleLine" : "navTitle"}}'>
+    <view class='navTitleCon' bindtap='{{item.methods}}'>{{item.title}}</view>
+  </view>
+</scroll-view>
+
+<!-- 全部订单 -->
+<block wx:if="{{show==0}}">
+  <view class='order'>
+    <text>全部订单数</text>
+    <text>{{order.length}}</text>
+  </view>
+  <view wx:if="{{order==''}}" class='noOrder'>
+    <icon class='iconfont icon-waihuixingqingzixun'></icon>
+  </view>
+  <view wx:else class='orders'>
+    <view class='orderList' wx:for="{{order}}" wx:key="item">
+      <view class='topTime'>
+        <view>{{item.add_time}}</view>
+        <view>
+         <view data-id=' {{item.order_id}} ' bindtap='see_QRcode' wx:if="{{item.is_pay==1}}">查看二维码</view>
+        </view>
+      </view>
+      <view class='orderCon'>
+        <view class='orderConPic'>
+          <image src='{{item.thumb_path}}' mode="aspectFill"></image>
+        </view>
+        <view class='ticket'>
+          <view class='ticketO'>
+            <view>{{item.name}}</view>
+            <view wx:if="{{item.vip}}">vip门票</view>
+            <view wx:elif="{{item.music_id==1}}">开通vip</view>
+            <view wx:else>普通门票</view>
+          </view>
+          <view class='ticketO'>
+            <view>
+              <text class='fontSize26 colorR'>￥</text>
+              <text class='fontSize40 colorR'>{{item.money}}<text style='font-size:23rpx'>(增加3%手续费)</text></text>
+            </view>
+            <view>x{{item.number}}</view>
+          </view>
+          <view class='allMoney'>
+            <text>共{{item.number}}件商品</text>
+            <text>合计：￥{{item.c_sum}}</text>
+            <text wx:if="{{item.is_pay==0||item.is_pay==-1}}" bindtap="buy" data-index='{{index}}' id="{{item.order_id}}" class='payButton'>立即购买</text>
+            <text class='payButton' style='background:#4caf50' wx:elif="{{item.is_pay==1}}">已支付</text>
+            <text class='payButton' style='background:red' wx:elif="{{item.is_pay==-2}}">退款中
+                    </text>
+            <text class='payButton' wx:elif="{{item.is_pay==-3}}" style='background:#FFCC33'>已退款
+                    </text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</block>
+<!-- 待付款 -->
+<block wx:if="{{show==1}}">
+  <view class='order'>
+    <text>待付款</text>
+    <text>{{order1.length}}</text>
+  </view>
+  <!-- 无订单显示图标 -->
+  <view wx:if="{{order1==''}}" class='noOrder'>
+    <icon class='iconfont icon-waihuixingqingzixun'></icon>
+  </view>
+  <view wx:else class='orders'>
+    <view class='orderList' wx:for="{{order1}}" wx:key="item">
+      <view class='topTime'>
+        <view>{{item.time1}}</view>
+        <view>
+          <!-- <icon class='iconfont icon-xiaoxi'></icon> -->
+        </view>
+      </view>
+      <view class='orderCon'>
+        <view class='orderConPic'>
+          <image src='{{item.thumb_path}}' mode="aspectFill"></image>
+        </view>
+        <view class='ticket'>
+          <view class='ticketO'>
+            <view>{{item.name}}</view>
+            <view wx:if="{{item.vip}}">vip门票</view>
+            <view wx:elif="{{item.music_id==1}}">开通vip</view>
+            <view wx:else>普通门票</view>
+          </view>
+          <view class='ticketO'>
+            <view>
+              <text class='fontSize26 colorR'>￥</text>
+              <text class='fontSize40 colorR'>{{item.money}}<text style='font-size:23rpx'>(增加3%手续费)</text></text>
+            </view>
+            <view>x{{item.number}}</view>
+          </view>
+          <view class='allMoney'>
+            <view class="allMoney-left">
+              <text>共{{item.number}}件商品</text>
+              <text>合计：￥{{item.c_sum}}</text>
+            </view>
+            <span bindtap="buy" id="{{item.order_id}}" class="payButton" data-index='{{index}}'>付款
+            </span>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</block>
+<!-- 有效单 -->
+<block wx:if="{{show==2}}">
+  <view class='order'>
+    <text>有效单</text>
+    <text>{{order2.length}}</text>
+  </view>
+  <!-- 无订单显示下面 -->
+  <view wx:if="{{order2==''}}" class='noOrder'>
+    <icon class='iconfont icon-waihuixingqingzixun'></icon>
+  </view>
+  <view wx:else class='orders'>
+    <view class='orderList' wx:for="{{order2}}" wx:key="item" >
+      <view class='topTime'>
+        <view>{{item.pay_time}}</view>
+        <view data-id=' {{item.order_id}} ' bindtap='see_QRcode'>
+          <!-- <icon class='iconfont icon-xiaoxi'></icon> -->
+          查看二维码
+        </view>
+      </view>
+      <view class='orderCon' catchtap='toDetails'>
+        <view class='orderConPic'>
+          <image src='{{item.thumb_path}}' mode="aspectFill"></image>
+        </view>
+        <view class='ticket'>
+          <view class='ticketO'>
+            <view>{{item.name}}</view>
+            <view wx:if="{{item.vip}}">vip门票</view>
+            <view wx:elif="{{item.music_id==1}}">开通vip</view>
+            <view wx:else>普通门票</view>
+          </view>
+          <view class='ticketO'>
+            <view>
+              <text class='fontSize26 colorR'>￥</text>
+              <text class='fontSize40 colorR'>{{item.money}}<text style='font-size:23rpx'>(增加3%手续费)</text></text>
+            </view>
+            <view>x{{item.number}}</view>
+          </view>
+          <view class='allMoney'>
+            <view>
+              <text>共{{item.number}}件商品</text>
+              <text style='margin-left:10rpx;'>合计:￥{{item.c_sum}}</text>
+            </view>
+            <!-- <text class='payButton1'>已支付</text> -->
+            <view>
+              <!-- <text wx:if="{{item.is_pay==1}}" class='payButton1' style='background:#c20505' catchtap='tuikuan' data-index='{{index}}
+                            data-id=' {{item.order_id}} '>申请退款</text> -->
+                        <text 
+                            wx:if="{{item.is_pay==-2}}" 
+                            class='payButton1 ' 
+                            style='background:#c20505 '>退款中</text>
+                        <text wx:elif="{{item.is_pay==-3}}"class='payButton1 ' style='background:#c20505 '>已退款</text>
+                        <text wx:elif="{{item.is_pay==1}}"class='payButton1 ' style='background:#4caf50'>已支付</text>
+                       
+                    </view>
+                </view>
+            </view>
+        </view>
+        <!-- <view class='haibao ' bindtap='toDetails ' data-fengmian='{{item.thumb_path}} ' data-time='{{item.time1}} '>
+      <text class='payButton1 '>查看详情</text>
+  </view> -->
+    </view>
+</view>
+</block>
+<!-- <view wx:bindtap='hide_mask' wx:if="{{show_mask}}" class='mask '>
+</view>
+<view wx:if="{{show_mask}}" class='mypic '>
+  <image src='{{qr_code}} '></image>
+  <view>请妥善保管二维码</view>
+  <view>凭二维码和证件取票</view>
+</view> -->

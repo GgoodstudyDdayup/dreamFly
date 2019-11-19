@@ -1,0 +1,95 @@
+
+<!--pages/details/details.wxml-->
+<import src="/wxParse/wxParse.wxml" />
+
+<view class='YYTiltle'>
+    {{details.title}}
+</view>
+
+<!-- <view class='logo'>
+  <text>logo</text>
+</view> -->
+<view class='content'>
+    <view class='contentPic'>
+        <image src='{{details.thumbpath}}'></image>
+    </view>
+    <!-- 富文本解析 -->
+    <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+    <!-- 富文本解析 -->
+    <view class='bottomMenu'>
+        <view class='bottomMenu-left'>
+            <view class='bottomMenu-item'>
+                <image src="/pages/images/liulan.png" style='margin-left:0;'></image>
+                <text>浏览({{details.click}})</text>
+            </view>
+            <view class='bottomMenu-item'>
+                <image src="/pages/images/comment.png"></image>
+                <text>评论({{pinglunList.length}})</text>
+            </view>
+            <!-- 我的点赞 -->
+            <my-dianzan 
+                is_zan="{{details.is_zan}}" 
+                zanid="{{details.id}}" 
+                zan_count="{{details.zan_count}}" 
+                shoucangjiekou="/index/article/SetArticleGood">
+            </my-dianzan>
+        </view>
+        <view>
+            <!-- 收藏 -->
+            <my-shoucang 
+                is_cang="{{details.is_cang}}" 
+                shoucangid="{{details.id}}" 
+                shoucangjiekou="/index/article/SetArticleGood">
+            </my-shoucang>
+            <my-share 
+                shareType="2"
+                shareId="{{details.id}}" 
+                shareImg="{{details.thumbpath}}" 
+                shareTitle="{{details.title}}" 
+                sharePath="/pages/information/details/details?id=">
+            </my-share>
+        </view>
+    </view>
+</view>
+<view class='emptyH16'></view>
+<view class='liuyan'>
+    <view class='liuyan-top'>
+        <text>精选留言</text>
+        <text data-id='{{details.id}}' bindtap='toPinglun'>我要留言</text>
+    </view>
+    <view class='liulan-bottom'>
+        <view class='liuyan-item' wx:for="{{pinglunList}}" wx:key="{{index}}">
+            <view class='liuyanItem-top'>
+                <image src='{{item.head_img}}'></image>
+                <view class='liuyanItemTopRright'>
+                    <view>{{item.nickname}}</view>
+                    <view>{{item.content}}</view>
+                </view>
+            </view>
+            <view class='liuyanTime'>
+                <text>{{item.time1}}</text>
+                <my-dianzan 
+                    style='margin-left:15rpx;'
+                    is_zan="{{item.is_zan}}" 
+                    zanid="{{item.id}}" 
+                    zan_count="{{item.zannum}}" 
+                    shoucangjiekou="/index/article/SetArticleCommentZan">
+                </my-dianzan>
+                <!-- <view>
+                    <view class='icon'>
+                        <image src='/pages/images/comment.png'></image>
+                        <text>回复(3)</text>
+                    </view>
+                    <view class='icon'>
+                        <image src='/pages/images/zan.png'></image>
+                        <text>点赞(3)</text>
+                    </view>
+                </view> -->
+            </view>
+        </view>
+    </view>
+</view>
+<!-- 返回首页 -->
+<view class='backindex'>
+    <back-index></back-index>
+</view>

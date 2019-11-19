@@ -1,0 +1,109 @@
+<!--详情 -->
+ <import src="/wxParse/wxParse.wxml" />
+<!--<view class='buy'>
+    <view class='one' style='background: url("https://www.dreamflygo.com/img/background.png") 100% 100%'>
+        <image class='imtwo' src='{{details.thumb_path}}'></image>
+        <view class="one-right">
+            <view class='title'>{{details.name}}</view>
+            <view class='time'>日期：{{details.starTime}}至{{details.endTime}}</view>
+            <view class='time'>地点：{{details.site}}</view>
+            <view wx:if="{{details.is_xiaoshou==true}}">
+                <image class='advance' src='../../images/305.png'></image>
+            </view>
+        </view>
+    </view>
+    <view style='overflow:hidden' wx:if="{{details.is_ticket==2}}">
+        <view class='door'>
+            门票类型
+        </view>
+        <view 
+            class='ordinary {{tapindex == index ?"active":""}}' 
+            wx:for="{{details.menpiaores}}" 
+            wx:key="{{index}}"
+            data-index='{{index}}'
+            bindtap='chooseTicket'>
+            <text class='or'>{{item.name}}</text>
+            <text class='v'>￥{{item.prise}}</text>
+            <text wx:if="{{item.number<=0}}" class='v' style='margin-left:10rpx'>(售罄)</text>
+        </view>
+    </view>
+</view>
+<!-- 立即购买开始 --
+<view class='lj'>
+    <view class="fenxiang" bindtap='openShareFriend'>
+        <!-- 分享按钮组件 --
+        <my-share 
+            shareId="{{details.music_id}}" 
+            shareImg="{{details.thumb_path}}" 
+            shareTitle="{{details.name}}" 
+            sharePath="/pages/huodong/xiangqing0/xiangqing0?music_id="
+            codepath="pages/huodong/xiangqing0/xiangqing0">
+        </my-share>
+        <text style='margin-left:10rpx'>分享</text>
+    </view>
+    <!-- 收藏组件 --
+    <view class="fenxiang">
+        <my-shoucang 
+            is_cang="{{details.cang}}" 
+            shoucangid="{{details.music_id}}" 
+            shoucangjiekou="/index/index/Good"></my-shoucang>
+        <text style='margin-left:10rpx'>收藏</text>
+    </view>
+
+    <!-- 判读购买状态按钮 --
+    <block wx:if="{{details.is_ticket==2}}">
+        <view wx:if="{{is_xiaoshou==true&&details.is_pay=='销售中'}}" 
+            class='ljright' 
+            bindtap="toGoupiao" 
+            style='background: url("https://www.dreamflygo.com/img/307.png") ;background-size:100% 100%;'>
+
+            <image src='/pages/images/buy.png'></image>
+            <text>立即购买</text>
+        </view>
+        <!-- 不可购买状态按钮 --
+        <view wx:else class='ljright1'>
+            <image src='/pages/images/buy.png'></image>
+            <text>立即购买</text>
+        </view>
+    </block>
+</view> -->
+<!-- 图文详情开始 -->
+<view class='writ'>
+    <view class='writing'>
+        <text class='wr-top'>演出介绍</text>
+    </view>
+    <!-- <view class='wt-middle'>
+        <image src='{{details.thumb_path}}'></image>
+    </view> -->
+    <!-- 富文本解析 -->
+    <view class='{{openclass}}' wx:if="{{ content }}">
+    <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+    </view>
+    <!-- 富文本解析 -->
+</view>
+<view>
+    <view wx:if="{{openclass=='wr-bottom'}}" class='open' bindtap='onopen'>
+        <text style='color:#ea4479;'>展开更多</text>
+    </view>
+    <view wx:else class='open' bindtap='closexiangqing'>
+        <text style='color:#ea4479;'>关闭详情</text>
+    </view>
+</view>
+<!-- 相关推荐开始 -->
+<!-- <view class='relevant'>
+    <text>- 相关推荐 -</text>
+</view>
+<scroll-view class='swiperA' scroll-x="{{true}}" bindscroll="scroll">
+    <view 
+        class="swiper" 
+        wx:for="{{tuijian}}" 
+        wx:key="Items" 
+        bindtap='toDetails' 
+        data-id='{{item.music_id}}'>
+        <image class='img1' src="{{item.thumb_path}}" mode="aspectFill" />
+        <view class='isy'>
+            <view class='christmasone'>{{item.name}}</view>
+            <view class='isytwo'>{{item.time1}}</view>
+        </view>
+    </view>
+</scroll-view> -->

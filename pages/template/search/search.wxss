@@ -1,0 +1,63 @@
+/* pages/template/search/search.wxss */
+/* 搜索开始 */
+
+.searchFa {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0rpx 5rpx 10rpx rgb(199, 199, 199);
+}
+
+.search {
+  padding: 10rpx;
+  display: flex;
+  align-items: center;
+  width: 70%;
+}
+
+.search image {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.input {
+  width: 300rpx;
+}
+
+.searchInp {
+  display: flex;
+  background: #f1f1f1;
+  width: 70%;
+  padding: 6rpx 30rpx;
+  border-radius: 10rpx;
+}
+
+.sousuo {
+  font-size: 28rpx;
+}
+
+.sousuoText {
+  color: #69edef;
+  font-size: 36rpx;
+  margin-left: 16rpx;
+  font-weight: bold;
+}
+
+.chooseYear {
+  font-size: 28rpx;
+  color: #767676;
+  line-height: 84rpx;
+  margin-right:20rpx;
+
+}
+
+.chooseYear image {
+width:30rpx;
+height:25rpx;
+vertical-align:middle;
+margin-right:20rpx;
+margin-left:13rpx;
+
+}
+
+/* 搜索结束 */

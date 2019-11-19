@@ -1,0 +1,85 @@
+/* <!-- 会员信息开始 --> */
+
+.sc {
+    background: #fff;
+    overflow: hidden;
+    width: 100%;
+}
+
+.vip {
+    display: flex;
+    border-bottom: 1rpx solid #e8e8e8;
+    padding: 25rpx;
+}
+
+.head_left image {
+    height: 70rpx;
+    width: 70rpx;
+    border-radius: 50%;
+}
+
+.music_right {
+    flex: 1;
+    margin-left: 25rpx;
+}
+
+.name {
+    font-size: 25rpx;
+    color: #999;
+}
+
+.phone {
+    font-size:35rpx;
+    color:black;
+    margin-top:10rpx;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    font-size: 20rpx;
+    margin-right: 20rpx;
+    color: #999;
+    margin-top: 25rpx;
+}
+
+.title image {
+    height: 30rpx;
+    width: 30rpx;
+}
+
+.shijian {
+    margin-right: 280rpx;
+}
+
+.zan {
+    margin-left: 20rpx;
+    margin-right: 10rpx;
+}
+
+/* <!-- 会员信息结束 --> */
+
+/* <!-- 精选留言开始 --> */
+
+.message {
+    height: 90rpx;
+    display: flex;
+    padding: 0 27rpx;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1rpx solid #e8e8e8;
+}
+
+.m_left {
+    font-size: 28rpx;
+}
+
+.m_right {
+    font-size: 28rpx;
+    color: #999;
+}
+.addtime{
+    display: flex;
+    justify-content: space-between;
+    margin-top:10rpx;
+}

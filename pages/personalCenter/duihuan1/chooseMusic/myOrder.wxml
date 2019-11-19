@@ -1,0 +1,81 @@
+<view class='orderList' >
+    <view class='topTime'>
+        <view>{{musicItem.time}}至</view>
+        <view>{{musicItem.end_time}}</view>
+    </view>
+    <view class='orderCon'>
+        <view class='orderConPic'>
+            <image src='{{musicItem.thumb_path}}' mode="aspectFill"></image>
+        </view>
+        <view class='ticket'>
+            <view class='ticketO'>
+                <view>{{musicItem.name}}</view>
+            </view>
+            <view class='piaobox'>
+                <view class='choosePiao'>
+                    <view 
+                        class='{{piaoindex==index?"piaoactive":"piao"}}' 
+                        wx:for="{{musicItem.menpiaores}}"
+                        wx:key="{{index}}"
+                        data-index='{{index}}'
+                        data-yuan_money='{{item.money}}'
+                        data-xian_money='{{item.money-meanPrice<=0?0:item.money-meanPrice}}'
+                        catchtap='choosepiao'>
+                        <text>{{item.name}}</text>
+                        <text style="text-decoration:line-through">￥{{item.money}} </text>
+                        <text> ￥{{item.money-meanPrice<=0?0:item.money-meanPrice}}</text>
+                    </view>
+                </view>
+                <view class='duihuan' catchtap='duihuan'>兑换</view>
+            </view>
+        </view>
+    </view>
+</view>
+<!-- 联系人信息 -->
+<view class='linkperson' wx:if="{{is_Showform}}">
+    <view class='message-all'>
+        <view class='message'>
+            <text>联系人信息</text>
+        </view>
+        <view class="itemView">
+            <input  
+                class="username" 
+                value='{{userName}}' 
+                selection-start 
+                name="userName" 
+                placeholder="联系人" 
+                bindinput="userNameInput" />
+        </view>
+        <view class="itemView">
+            <input 
+                class="username" 
+                value='{{userPhone}}' 
+                selection-start 
+                name="userName" 
+                placeholder="请输入联系人的电话" 
+                bindinput="userNamePhone" />
+        </view>
+        <view class="itemView">
+            <input 
+                class="username" 
+                value='{{address}}' 
+                selection-start name="userName" 
+                placeholder="请输入用收货地址" 
+                bindinput="userNameAdress" />
+        </view>
+        <view class="itemView">
+            <input 
+                class="username" 
+                value='{{userWx}}' 
+                placeholder-style=' weight:600rpx' 
+                selection-start 
+                name="userName" 
+                placeholder="请输入用联系人的微信号" 
+                bindinput="userNameWx" />
+        </view>
+        <view class='btn'>
+            <button class='close' catchtap='close'>取消</button>
+            <button class='submit' catchtap='submit'>确定</button>
+        </view>
+    </view>
+</view>

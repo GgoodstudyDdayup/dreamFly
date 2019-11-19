@@ -1,0 +1,12 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText": "个人主页",
+  "navigationBarTextStyle": "black",
+    "usingComponents": {
+      "my-share": "/pages/template/share/share",
+        "my-yifabu": "/pages/personalCenter/gerenzhuye/yifabu/yifabu"
+        
+    }
+ 
+}

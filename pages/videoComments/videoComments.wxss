@@ -1,0 +1,117 @@
+.video {
+  height: 500rpx;
+  width: 100%;
+}
+.goods {
+  margin: 0 5%;
+}
+.goods-item {
+  height: 210rpx;
+  display: flex;
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #eee;
+}
+.item-img {
+  box-shadow: 0 5rpx 10rpx rgba(0, 0, 0, 0.3);
+}
+.item-img,
+.item-img image {
+  width: 150rpx;
+  height: 210rpx;
+}
+.item-info {
+  box-sizing: border-box;
+  padding-right: 15rpx;
+  position: relative;
+  width: 100%;
+  min-height: 150rpx;
+}
+.info-title {
+  display: block;
+  color: #473e3e;
+  font-size: 30rpx;
+  font-weight: 600;
+}
+.info-time,
+.info-add {
+  color: #888;
+  font-size: 30rpx;
+  padding-top: 10rpx;
+}
+
+/* 评论区 */
+.help-record {
+  margin-left: 5%;
+  padding: 10rpx;
+  padding-top: 30rpx;
+  width: 108rpx;
+  border-bottom: 4rpx solid #ea4479;
+  color: #4f4747;
+  font-size: 36rpx;
+  font-weight: 600;
+}
+.ul {
+  padding: 0 5%;
+  width: 90%;
+}
+.li {
+  box-sizing: border-box;
+  padding-left: 90rpx;
+  padding-right: 120rpx;
+  width: 100%;
+  height: 135rpx;
+  line-height: 135rpx;
+  color: #4f4747;
+  font-size: 24rpx;
+}
+.li image {
+  width: 90rpx;
+  height: 90rpx;
+  float: left;
+  border-radius: 50%;
+  margin-left: -90rpx;
+  margin-top: 18rpx;
+}
+.li text {
+  padding-left: 20rpx;
+}
+.comment {
+  width: 100%;
+  color: #888;
+  font-size: 28rpx;
+  padding-bottom: 15rpx;
+  border-bottom: 1rpx solid #eeeeee;
+}
+
+/* 页脚评论 */
+.footer {
+  position: fixed;
+  bottom: 0;
+  box-sizing: border-box;
+  padding: 20rpx 80rpx 20rpx 5%;
+  width: 90%;
+  height: 60px;
+  line-height: 75rpx;
+  background-color: white;
+}
+.footer input {
+  box-sizing: border-box;
+  float: left;
+  width: 100%;
+  height: 73rpx;
+  border: 1rpx solid #655d6a;
+  border-radius: 75rpx;
+  padding-left: 30rpx;
+}
+.footer text {
+  float: right;
+  margin-right: -70rpx;
+  color: #4f4747;
+}
+.footer image {
+  float: right;
+  margin-right: -100rpx;
+  display: block;
+  width: 60rpx;
+  height: 60rpx;
+}

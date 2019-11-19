@@ -1,0 +1,10 @@
+{
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+        "my-yinyuejie": "/pages/information/yinyuejie/information",
+        "my-video": "/pages/information/videopage/video",
+        "my-music": "/pages/information/music/music",
+        "my-tuiwen": "/pages/information/toptweets/toptweets",
+        "my-yedian": "/pages/information/nightclub/nightclub"
+    }
+}
