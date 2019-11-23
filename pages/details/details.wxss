@@ -4,46 +4,53 @@
   padding: 20rpx 0;
   border-bottom: 1rpx solid #eee;
 }
+
 .time-title {
   font-size: 26rpx;
   color: #473e3e;
   font-weight: 600;
   padding: 10rpx 20rpx;
 }
-.time text,
-.address text {
+
+.time text, .address text {
   padding: 0 20rpx;
   font-size: 24rpx;
   color: #888;
 }
+
 .address {
   width: 90%;
   padding: 20rpx 5%;
   border-bottom: 10rpx solid #f8f8f8;
 }
+
 .address-title {
   font-size: 26rpx;
   color: #473e3e;
   font-weight: 600;
   padding: 10rpx 20rpx;
 }
+
 .address-icon {
   float: right;
   padding-top: 30rpx;
   width: 40rpx;
   height: 45rpx;
 }
+
 .address-icon image {
   width: 100%;
   height: 100%;
 }
 
 /* 切换栏 */
+
 .scroll {
   width: 100%;
   margin-top: 20rpx;
   display: flex;
 }
+
 .navTitleCon {
   width: 25%;
   display: inline-block;
@@ -51,17 +58,21 @@
   color: #473e3e;
   font-size: 24rpx;
 }
-.navTitleConTion .title{
+
+.navTitleConTion .title {
   margin: 0 auto;
 }
+
 .navBorderTion {
   z-index: -1;
   margin: 0 auto;
-  margin-top: -10rpx;
+  margin-top: 6rpx;
   width: 60rpx;
-  border-bottom: 20rpx solid #ea4479;
+  border-bottom: 7rpx solid #ea4479;
 }
+
 /* 详情 */
+
 .goods-title {
   color: #473e3e;
   font-size: 36rpx;
@@ -69,6 +80,7 @@
   margin-left: 5%;
   margin-top: 30rpx;
 }
+
 .goods-title text {
   color: #888;
   font-size: 22rpx;
@@ -83,7 +95,6 @@
   overflow: hidden;
   padding: 20rpx;
 }
-
 
 /* 点击展开的样式 */
 
@@ -103,10 +114,10 @@
   justify-content: center;
   color: #ee8183;
   border-top: 1rpx solid #eee;
-  
 }
 
 /* 底部按钮 */
+
 .footer {
   position: fixed;
   bottom: 0;
@@ -118,6 +129,7 @@
   padding-left: 260rpx;
   background-color: white;
 }
+
 .weixin-icon {
   float: left;
   width: 60rpx;
@@ -125,10 +137,12 @@
   margin-left: -220rpx;
   margin-top: 15rpx;
 }
+
 .weixin-icon image {
   width: 100%;
   height: 100%;
 }
+
 .service-icon {
   float: left;
   width: 50rpx;
@@ -136,10 +150,12 @@
   margin-left: -100rpx;
   margin-top: 15rpx;
 }
+
 .service-icon image {
   width: 100%;
   height: 100%;
 }
+
 .pay {
   width: 100%;
   height: 80rpx;
@@ -149,11 +165,13 @@
   font-size: 30rpx;
   color: white;
 }
+
 .pay::after {
   border: none;
 }
 
 /* 选择规格 */
+
 .modal {
   position: fixed;
   bottom: 0;
@@ -165,6 +183,7 @@
   border-radius: 20rpx 20rpx 0 0;
   transition: all 0.3s ease-out;
 }
+
 .modal1 {
   position: fixed;
   bottom: 0;
@@ -176,64 +195,79 @@
   border-radius: 20rpx 20rpx 0 0;
   transition: all 0.3s ease-out;
 }
+
 /* 未点击 */
+
 .nomodal {
   margin-bottom: -1750rpx;
 }
+
 .dianjimodal {
   margin-bottom: 0;
 }
+
 .modal-title {
   color: #473e3e;
   font-size: 30rpx;
   font-weight: 600;
   padding: 20rpx 0;
 }
+
 .modal-title text {
   color: #888;
   font-size: 24rpx;
   margin-left: 10rpx;
   font-weight: 400;
 }
-.priceView{
-    display: flex;
+
+.priceView {
+  display: flex;
   flex-direction: column;
 }
+
 .select {
   display: inline-block;
   padding: 10rpx 30rpx;
   border-radius: 10rpx;
   margin: 0 10rpx;
 }
+
 /* 未选择 */
+
 .notselecting {
   margin-top: 4px;
   color: #888;
   background-color: #eee;
 }
+
 /* 已选择 */
+
 .selecting {
-   margin-top: 4px;
+  margin-top: 4px;
   color: white;
   background-color: #ee8183;
 }
 
 /* 二维码 */
+
 .erweima {
   width: 100%;
   line-height: 60rpx;
   text-align: center;
 }
+
 .erweima view {
   color: #888;
   font-size: 26rpx;
   margin: 0 auto;
 }
+
 .erweima image {
   width: 250rpx;
   height: 250rpx;
   margin-bottom: 100rpx;
 }
+
 .price {
   display: inline-block;
 }
@@ -242,14 +276,16 @@
   height: 38rpx;
   display: inline-block;
 }
+
 .money-input input {
   display: inline-block;
   width: 100rpx;
-  border: 1rpx solid #eeeeee;
+  border: 1rpx solid #eee;
   border-radius: 15rpx;
   text-align: center;
   /* vertical-align: center; */
 }
+
 .money-input image {
   height: 38rpx;
   width: 38rpx;
@@ -261,14 +297,17 @@
   height: 80rpx;
   margin: 30rpx 0;
 }
+
 .buttontwo button {
   height: 80rpx;
   line-height: 80rpx;
   border-radius: 80rpx;
 }
+
 .buttontwo button::after {
   border: none;
 }
+
 .buttontwo-l {
   float: left;
   width: 38%;
@@ -276,13 +315,16 @@
   color: #ee8183;
   background-color: white;
 }
+
 .buttontwo-r {
   float: right;
   width: 100%;
   color: white;
   background-color: #ee8183;
 }
+
 /* 遮盖 */
+
 .cover {
   position: fixed;
   top: 0;
@@ -290,41 +332,43 @@
   z-index: 6;
   width: 100%;
   height: 100%;
-  background-color: #000000;
+  background-color: #000;
   opacity: 0.6;
   cursor: default;
 }
-
 
 .video {
   margin-top: 30rpx;
   width: 90%;
   padding: 0 5%;
-
 }
+
 .video-item {
   height: 250rpx;
   margin-bottom: 30rpx;
   display: flex;
-   justify-content: flex-start
+  justify-content: flex-start;
 }
 
 .item-img {
-   width: 30%;
+  width: 30%;
   height: 100%;
 }
-.video-itemView{
-     width: 100%;
-    height: 250rpx;
+
+.video-itemView {
+  width: 100%;
+  height: 250rpx;
   margin-bottom: 30rpx;
   display: flex;
-   justify-content: flex-start
+  justify-content: flex-start;
 }
+
 .item-img image {
   width: 100%;
   height: 100%;
   border-radius: 10rpx;
 }
+
 .item-info {
   width: 68%;
   height: 100%;
@@ -332,17 +376,20 @@
   display: flex;
   flex-direction: column;
 }
+
 .info-title {
   color: #473e3e;
   font-weight: 600;
   font-size: 30rpx;
   height: 80rpx;
 }
-.info-name,.info-num,.info-price {
+
+.info-name, .info-num, .info-price {
   margin-top: 20rpx;
-  color: #888888;
+  color: #888;
   font-size: 24rpx;
 }
+
 .info-price {
-   color: #ee8183 ;
+  color: #ee8183;
 }

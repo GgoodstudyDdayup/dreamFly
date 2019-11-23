@@ -55,9 +55,9 @@ Page({
     //     })
     //   }
     // } else
-    if (options.type == "活动" || options.type == "热门活动") {
+    if (options.type == "现场" || options.type == "热门活动") {
       wx.setNavigationBarTitle({
-        title: "活动"
+        title: "现场"
       })
       this.getVideoList({
         url: '/index/article/GetArticleHuo',

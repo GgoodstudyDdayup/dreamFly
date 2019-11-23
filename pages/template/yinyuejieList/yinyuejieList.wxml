@@ -11,3 +11,6 @@
       </view>
   </block>
 </view>
+<view style="height:60rpx;padding:0 40rpx">
+  <!-- <view style="border-bottom:1px solid #dfdfdf"></view> -->
+</view>

@@ -210,6 +210,7 @@ Page({
       url: app.globalData.host + '/index/index/SaveLunbo',
       data: {},
       success: (res) => {
+        console.log(res)
         for (var i = 0; i < res.data.length; i++) {
           // 格式化数据
           // res.data[i].filepath = app.globalData.host + res.data[i].filepath;

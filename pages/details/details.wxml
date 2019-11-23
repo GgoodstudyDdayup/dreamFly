@@ -80,7 +80,9 @@
         shareImg="{{goodsDetails.data.thumb_path}}" 
         shareTitle="{{goodsDetails.data.name}}" 
         sharePath="/pages/huodong/xiangqing0/xiangqing0?music_id="
-        codepath="pages/huodong/xiangqing0/xiangqing0">
+        codepath="pages/huodong/xiangqing0/xiangqing0"
+        id = 'toast'>
+        
     </my-share>
     <!-- <image src="../images/weixin2.png"></image> -->
   </view>

@@ -27,7 +27,8 @@ Page({
     priceNum: 1,
     type: 0,
     modaltype: '',
-    taoPiaoList:[]
+    taoPiaoList:[],
+    shareFriend:false
   },
   // 
   getTaoPiaoList: function () {
@@ -222,7 +223,7 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    this.toast = this.selectComponent('#toast')
   },
 
   /**
@@ -264,7 +265,8 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-
+    this.toast.closeShareFriend()
+    console.log(111)
   },
   //  保存图片
   savePicture:function(){

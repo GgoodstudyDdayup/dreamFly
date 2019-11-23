@@ -16,7 +16,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-    shareFriend: false, //分享好友弹窗
+    // shareFriend: false, //分享好友弹窗
     canvaShow: false,
     painting: {}, //绘制canvas的数据
     host: app.globalData.host
@@ -69,6 +69,7 @@ Component({
           wx.downloadFile({
             url: umgurl,
             success: (res) => {
+              console.log(res)
               console.log('非音乐节分享下载之后：', res.tempFilePath)
               wx.hideLoading()
               wx.previewImage({
@@ -105,6 +106,7 @@ Component({
         wx.downloadFile({
           url: umgurl,
           success: (res) => {
+            console.log(res)
             console.log('下载之后：', res.tempFilePath)
             wx.hideLoading()
             wx.previewImage({
@@ -236,5 +238,7 @@ Component({
     this.setData({
       is_shareFriend: app.globalData.is_shareFriend
     })
-  }
+  },
+  
+  
 })
