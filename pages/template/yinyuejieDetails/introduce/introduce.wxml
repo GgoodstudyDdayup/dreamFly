@@ -82,12 +82,12 @@
     <!-- 富文本解析 -->
 </view>
 <view>
-    <view wx:if="{{openclass=='wr-bottom'}}" class='open' bindtap='onopen'>
+    <!-- <view wx:if="{{openclass=='wr-bottom'}}" class='open' bindtap='onopen'>
         <text style='color:#ea4479;'>展开更多</text>
     </view>
     <view wx:else class='open' bindtap='closexiangqing'>
         <text style='color:#ea4479;'>关闭详情</text>
-    </view>
+    </view> -->
 </view>
 <!-- 相关推荐开始 -->
 <!-- <view class='relevant'>

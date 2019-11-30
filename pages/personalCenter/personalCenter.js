@@ -18,6 +18,11 @@ Page({
     xiala: false, // 下拉二维码
     erWeiMa: ''
   },
+  vipUrl(){
+    wx.navigateTo({
+      url: '../personalCenter/duihuan1/duihuan1',
+    })
+  },
   // 请求个人详细信息
   getDetailsUserInfo: function() {
     wx.request({

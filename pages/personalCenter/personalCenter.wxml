@@ -17,8 +17,9 @@
 <view wx:if="{{userInfo2.level=='0'}}" class='VIP' bindtap='creatorder'>开通VIP会员</view>
 
 
-  <view wx:else>
+  <view wx:else bindtap="vipUrl">
                 <image src="../images/VIP.png"></image>
+                <text style="color:#dfdfdf">(点击详情)</text>
   </view>            
 
             </view>
