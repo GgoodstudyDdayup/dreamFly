@@ -75,9 +75,9 @@
 .navBorderTion {
   z-index: -1;
   margin: 0 auto;
-  margin-top: -10rpx;
+  margin-top: 5rpx;
   width: 74rpx;
-  border-bottom: 20rpx solid #ea4479;
+  border-bottom: 7rpx solid #ea4479
 }
 /* 商品列表 */
 .goods {

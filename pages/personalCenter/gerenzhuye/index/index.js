@@ -40,6 +40,7 @@ Page({
                 user_id: app.globalData.user_id
             },
             success: (res) => {
+              console.log(res)
                 var list = res.data.list;
                 for (var i = 0; i < list.length; i++) {
                     list[i].time1 = utils.formatTime(list[i].add_time, 'Y-M-D');

@@ -13,7 +13,6 @@ Page({
   },
   // 获取视频列表
   getVideoList: function (data) {
-
     wx.request({
       url: app.globalData.host + data.url,
       method: 'post',
@@ -97,7 +96,6 @@ Page({
 
   },
   toDetails: function (e) {
-
     console.log(e)
     wx.navigateTo({
       url: '/pages/goodsDetails/goodsDetails?item=' + JSON.stringify(e.currentTarget.dataset.item),

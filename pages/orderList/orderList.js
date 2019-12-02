@@ -56,6 +56,11 @@ Page({
     })
 
   },
+  taopiao(){
+    wx.navigateTo({
+      url: '../Interaction/taopiao/tougao/tougao',
+    })
+  },
   // 获取用户订单
   getUserOrder: function() {
     

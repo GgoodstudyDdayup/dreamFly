@@ -1,33 +1,28 @@
 <scroll-view class='scroll' scroll-x="true" style="width: 100%">
-    <view 
-        wx:for="{{nav}}" 
-        wx:key="item" 
-        class='{{index == tabindex ? "navTitleLine" : "navTitle"}}'>
-        <view catchtap='tabchange' data-index='{{index}}' class='{{index == tabindex ? "navTitleConTion" : ""}} navTitleCon'>{{item}}</view>
-    </view>
+  <view wx:for="{{nav}}" wx:key="item" class='{{index == tabindex ? "navTitleLine" : "navTitle"}}'>
+    <view catchtap='tabchange' data-index='{{index}}' class='{{index == tabindex ? "navTitleConTion" : ""}} navTitleCon'>{{item}}</view>
+  </view>
 </scroll-view>
 <view class="nopay" wx:if="{{ tabindex === 0 }}">
   <view wx:for="{{ payList }}" wx:key="{{ index }}" style="margin-bottom: 30rpx;">
     <view class="checkView" bindtap="checkboxChange" data-index="{{ index }}">
-      <image 
-        src="{{ item.checked ? '../images/selection.png' : '../images/noselection.png'}}"
-        class="checkbox"
-      />
+      <image src="{{ item.checked ? '../images/selection.png' : '../images/noselection.png'}}" class="checkbox" />
     </view>
     <image class="goods-img" mode="aspectFill" src="{{ item.thumb_path }}"></image>
-      <view class="goods-right">
-        <text class="goods-title">{{ item.name }}</text>
-        <view class="goods-right-money">
-          <view class="money-input">
-            <!-- <image mode="aspectFill" src="../images/subtract.png" bindtap="reduce" data-index="{{ index }}"></image> -->
-            <!-- <input value="{{ item.number }}" disabled></input> -->
-            <!-- <image  mode="aspectFill" src="../images/add.png" bindtap="add" data-index="{{ index }}"></image> -->
-          </view>
-          <text class="goodsMoney">￥<text>{{ item.totalMoney || item.money }}</text></text>
+    <view class="goods-right">
+      <text class="goods-title">{{ item.name }}</text>
+      <view class="goods-right-money">
+        <view class="money-input">
+          <!-- <image mode="aspectFill" src="../images/subtract.png" bindtap="reduce" data-index="{{ index }}"></image> -->
+          <!-- <input value="{{ item.number }}" disabled></input> -->
+          <!-- <image  mode="aspectFill" src="../images/add.png" bindtap="add" data-index="{{ index }}"></image> -->
         </view>
+        <text class="goodsMoney">￥<text>{{ item.totalMoney || item.money }}</text></text>
       </view>
+    </view>
   </view>
-</view><view class="nopay" wx:else>
+</view>
+<view class="nopay" wx:else>
   <view wx:for="{{ payList }}" wx:key="{{ index }}" style="margin-bottom: 30rpx;">
     <!-- <image 
       src="{{ item.checked ? '../images/selection.png' : '../images/noselection.png'}}" 
@@ -37,22 +32,25 @@
       class="checkbox"
     /> -->
     <image class="goods-img" mode="aspectFill" src="{{item.thumb_path }}"></image>
-      <view class="goods-right">
-        <text class="goods-title">{{ item.name }}</text>
+    <view class="goods-right">
+      <text class="goods-title">{{ item.name }}</text>
 
-        <view class="goods-right-money">
-          <view class="money-input">
-            <!-- <image mode="aspectFill" src="../images/subtract.png" bindtap="reduce" data-index="{{ index }}"></image> -->
-            <!-- <input value="{{ item.number }}" disabled></input> -->
-            <!-- <image  mode="aspectFill" src="../images/add.png" bindtap="add" data-index="{{ index }}"></image> -->
-          </view>
-                      <view class="see_QRcodeView" data-id=' {{item.order_id}} ' bindtap='see_QRcode'>查看二维码</view>
-          <text class="goodsMoney">￥<text>{{item.money }}</text></text>
+      <view class="goods-right-money">
+        <view class="money-input">
+          <!-- <image mode="aspectFill" src="../images/subtract.png" bindtap="reduce" data-index="{{ index }}"></image> -->
+          <!-- <input value="{{ item.number }}" disabled></input> -->
+          <!-- <image  mode="aspectFill" src="../images/add.png" bindtap="add" data-index="{{ index }}"></image> -->
         </view>
+        <view style="display:flex">
+          <view class="see_QRcodeView" data-id=' {{item.order_id}} ' bindtap='see_QRcode'>查看二维码</view>
+          <view class="see_QRcodeView" style="margin-left:20rpx" data-id='{{item.order_id}}' bindtap='taopiao'>去淘票</view>
+        </view>
+        <text class="goodsMoney">￥<text>{{item.money }}</text></text>
       </view>
+    </view>
   </view>
 </view>
-<view class="footer"  wx:if="{{ tabindex === 0 }}">
+<view class="footer" wx:if="{{ tabindex === 0 }}">
   <view class="allselect">
     <!-- <image 
       src="{{ isSelectAll ? '../images/selection.png' : '../images/noselection.png'}}" 

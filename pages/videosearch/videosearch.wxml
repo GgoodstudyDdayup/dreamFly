@@ -1,27 +1,30 @@
 <!--pages/videosearch/videosearch.wxml-->
-<view class="search">
-  <!-- <view class="position">
+
+  <view class="search">
+    <!-- <view class="position">
     < <picker mode="region" bindchange="bindRegionChange" value="{{region}}">
       <view class="picker">
         <image src="../images/position.png"></image>{{region}}
       </view>
     </picker> 
   </view> -->
-  <view class="headSearch-search">
-    <view class="headSearch-search-icon"  bindtap="addVideoComments">
-      <image src="../images/index/topsearch.png" ></image>
+    <view class="headSearch-search">
+      <view class="headSearch-search-icon" bindtap="addVideoComments">
+        <image src="../images/index/topsearch.png"></image>
+      </view>
+      <input bindinput="inputedit" data-item="message" confirm-type="search" value="{{ message }}" type="text" bindconfirm="toSearch"></input>
     </view>
-    <input bindinput="inputedit" data-item="message"  confirm-type="search" value="{{ message }}" type="text" bindconfirm="toSearch"></input>
   </view>
-</view>
-<view class="tabselect">
-  <scroll-view class='scroll' scroll-x="true" style="width: 100%">
-    <view class="tabselect-item">
-      <view>热门<image src="../images/xia.png"></image></view>
-      <picker mode="date" fields="month" bindchange="bindRegionChange" value="{{value}}">{{region}}<image src="../images/xia.png"></image></picker>
-    </view>
-</scroll-view>
-</view>
+  <view class="tabselect">
+    <scroll-view class='scroll' scroll-x="true" style="width: 100%">
+      <view class="tabselect-item">
+        <!-- <view>热门<image src="../images/xia.png"></image></view> -->
+        <picker mode="date" fields="month" bindchange="bindRegionChange" value="{{value}}">{{region}}
+          <image src="../images/xia.png"></image>
+        </picker>
+      </view>
+    </scroll-view>
+  </view>
 <goods-list wx:if="{{goodsList}}" goods="{{ goodsList }}"></goods-list>
 <view wx:else style="text-align: center;">
   暂无数据
