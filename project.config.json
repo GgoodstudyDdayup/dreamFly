@@ -198,6 +198,21 @@
 					"id": -1,
 					"name": "pages/prizeTime/prizeTime",
 					"pathName": "pages/prizeTime/prizeTime",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/details/details",
+					"pathName": "pages/details/details",
+					"query": "scene=132",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/details/details",
+					"pathName": "pages/details/details",
+					"query": "scene=134",
 					"scene": null
 				}
 			]

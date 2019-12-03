@@ -21,7 +21,9 @@ Component({
     painting: {}, //绘制canvas的数据
     host: app.globalData.host
   },
-
+  onLoad(){
+    console.log(this.data.codepath)
+  },
   /**
    * 组件的方法列表
    */
@@ -53,10 +55,11 @@ Component({
       })
       //对于非音乐节的分享调用此接口
       console.log('that:', that);
-      console.log(that.data.shareType)
+      console.log(this.data.codepath)
+      console.log(this.data.shareId)
       if (that.data.shareType) {
         let p1 = new Promise((resolve, reject) => {
-          var url = "https://www.dreamflygo.com/index/code/sharequanimg?page=" + this.data.codepath + "&scene=" + this.data.shareId + "&type=" + this.data.shareType
+          var url = "https://www.dreamflygo.com/index/code/sharequanimg?page=" + 'pages/details/details' + "&scene=" + this.data.shareId + "&type=" + this.data.shareType
           wx.request({
             url,
             success(res) {
@@ -86,7 +89,7 @@ Component({
       }
       // 对于音乐节的分享
       let p1 = new Promise((resolve, reject) => {
-        var url = "https://www.dreamflygo.com/index/code/shareimg?page=" + this.data.codepath + "&scene=" + this.data.shareId
+        var url = "https://www.dreamflygo.com/index/code/shareimg?page=" + 'pages/details/details' + "&scene=" + this.data.shareId
         wx.request({
           url,
           success(res) {

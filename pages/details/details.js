@@ -36,7 +36,7 @@ Page({
       url: this.data.host + '/index/tao/getMusicTao',
       method: 'get',
       data: {
-        music_id: this.data.music_id
+        music_id: this.data.music_id || this.data.scene,
       },
       success: (res) => {
        
@@ -57,7 +57,7 @@ Page({
       url: this.data.host + '/index/Ticket/getMusicDetail',
       method: 'get',
       data: {
-        music_id: this.data.music_id
+        music_id: this.data.music_id || this.data.scene
       },
       success: res => {
         console.log('获取详情')
@@ -78,7 +78,7 @@ Page({
       url: this.data.host + '/index/ticket/getGroupList',
       method: 'post',
       data: {
-        music_id: this.data.music_id,
+        music_id: this.data.music_id || this.data.scene,
         page: 1
       },
       success: res => {
@@ -97,7 +97,7 @@ Page({
       url: this.data.host + '/index/ticket/getVideoReform',
       method: 'post',
       data: {
-        music_id: this.data.music_id,
+        music_id: this.data.music_id || this.data.scene,
         page: 1
       },
       success: res => {
@@ -206,6 +206,7 @@ Page({
     this.setData({
       music_id: options.musicid,
       type: options.type || 0,
+      scene:options.scene
     })
     this.getDetails()
     this.getTalkGroup()
