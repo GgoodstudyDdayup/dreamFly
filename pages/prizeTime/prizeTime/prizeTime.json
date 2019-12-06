@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "抽奖",
+  "usingComponents": {
+    "goods-price": "../template/goodsPrice/goodsPrice",
+	"my-ykj": "/pages/prizeTime/yikai/yikai",
+	"my-cjzhong": "/pages/prizeTime/jinxing/jinxing",
+	"my-jjks": "/pages/prizeTime/jiangkai/jiangkai"
+  }
+}

@@ -12,7 +12,7 @@
     </view>
   </view>
 </view>
-<view  class="back-img">
+<view class="back-img">
   <image mode="aspectFill" wx:if="{{goodsdetails.img}}" src="{{ goodsdetails.img }}"></image>
 </view>
 <view class="xuzhi">
@@ -25,15 +25,18 @@
 <view class="help-record">
   评论区
 </view>
-<view class="ul">
-  <block wx:for="{{ goodsdetails.commentList }}" wx:key="{{ index }}">
-    <view class="li">
-      <image src="{{ item.head_img }}"></image>
-      <text>{{ item.nickname }}</text>
-    </view>
-    <view class="comment">{{ item.content }}</view>
-  </block>
-</view>
+<scroll-view scroll-y="true" style="height:700rpx;" scroll-into-view="{{bottomView}}">
+  <view class="ul">
+    <block wx:for="{{ goodsdetails.commentList }}" wx:key="{{ index }}">
+      <view class="li">
+        <image src="{{ item.head_img }}"></image>
+        <text>{{ item.nickname }}</text>
+        <view class="comment" id="bottom{{ index }}">{{ item.content }}</view>
+      </view>
+    </block>
+  </view>
+</scroll-view>
+
 <!-- <view class="footer">
   <button style='background:linear-gradient(10deg,#ff69b4,#dc143c);");'>立即购买</button>
 </view> -->

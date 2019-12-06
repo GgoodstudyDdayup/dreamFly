@@ -4,8 +4,8 @@
 
 .share {
     margin-left: 20rpx;
-    width: 40rpx;
-    height: 40rpx;
+    width: 50rpx;
+    height: 45rpx;
     vertical-align: middle;
 }
 

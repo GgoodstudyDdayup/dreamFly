@@ -54,6 +54,7 @@ Page({
                 user_id: app.globalData.user_id,
             },
             success: (res) => {
+              console.log(res)
                 var data = res.data.data
                 if (data<10){
                     this.setData({

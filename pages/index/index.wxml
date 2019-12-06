@@ -123,11 +123,11 @@
       <image src="../images/index/taopiao.png"></image>
       <text>淘票</text>
     </navigator>
-    <navigator url="/pages/prizeTime/prizeTime">
+    <navigator url="../prizeTime/prizeTime" >
       <image src="../images/index/choujiang.png"></image>
       <text>抽奖</text>
     </navigator>
-    <navigator url="/pages/shopping-mall/kanjia/kanjia">
+    <navigator url="/pages/shopping-mall/kanjia/kanjia" >
       <image src="../images/index/kanjia.png"></image>
       <text>砍价</text>
     </navigator>
@@ -164,7 +164,7 @@
       </li>
        </navigator>
    
-    <navigator url="/pages/personalCenter/gerenzhuye/index/index?type=1">
+    <navigator url="/pages/personalCenter/gerenzhuye/index/index?type=1" >
       <li class="setlist-item">
         <image src="../images/index/myfriend.png"></image>
         已关注

@@ -32,17 +32,18 @@ Page({
     app.globalData.zixunTab = 0
     wx.navigateTo({
       url: '/pages/goods-list/goods-list?type=官方推荐',
-      success(){
+      success() {
         // app.globalData.zixunTab = 0
       }
     })
   },
+  
   // 跳转到视频搜索页 
-  toSearch: function () {
+  toSearch: function() {
     wx.navigateTo({
       url: '/pages/videosearch/videosearch',
       success: () => {
-        
+
       }
     })
   },
@@ -58,7 +59,7 @@ Page({
   },
   // 跳转到音乐节详情页
   toDetails: function(e) {
-    console.log('e:',e);
+    console.log('e:', e);
     // pages / details / details
     if (e.currentTarget.dataset.path.length > 1) {
       wx.navigateTo({
@@ -199,7 +200,7 @@ Page({
   // },
   // 弹出设置
   showDialog: function(e) {
-    this.setData ({
+    this.setData({
       dialog: Boolean(e.currentTarget.dataset.isboolean)
     })
     // console.log(e)
@@ -214,7 +215,7 @@ Page({
         for (var i = 0; i < res.data.length; i++) {
           // 格式化数据
           // res.data[i].filepath = app.globalData.host + res.data[i].filepath;
-          res.data[i].thumpath =  res.data[i].thumpath;
+          res.data[i].thumpath = res.data[i].thumpath;
         }
         this.setData({
           lunbo: res.data
@@ -223,7 +224,7 @@ Page({
     })
   },
   // 获取官方推荐
-  getTJVideo: function () {
+  getTJVideo: function() {
     wx.request({
       url: app.globalData.host + '/index/article/GetArticle',
       method: 'post',
@@ -240,7 +241,7 @@ Page({
     })
   },
   // 获取热门活动
-  getHotVideo: function () {
+  getHotVideo: function() {
     wx.request({
       url: app.globalData.host + '/index/article/GetArticleRe',
       method: 'post',
@@ -276,7 +277,7 @@ Page({
     // app.onLaunch()
     // app.getDetailsUserInfo().then(res => {
     //   console.log(res)
-      // app.globalData.userInfo2 = res
+    // app.globalData.userInfo2 = res
     // })
   },
 
@@ -284,19 +285,19 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function() {
-   
+
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {
+  onShow: function() {
     // 请求数据
 
 
-      this.getHotVideo();
-      this.getTJVideo();
-    
+    this.getHotVideo();
+    this.getTJVideo();
+
     // wx.getSetting({
     //   success: res => {
     //     console.log(res.authSetting['scope.userInfo'])
@@ -318,11 +319,11 @@ Page({
     }
 
     // if (app.globalData.user_id != null) {
-      // this.requestData();
-      // this.getyedian();
-      // this.getTuiwen();
-      // this.getvideo();
-      // this.getmusic()
+    // this.requestData();
+    // this.getyedian();
+    // this.getTuiwen();
+    // this.getvideo();
+    // this.getmusic()
     // }
 
   },

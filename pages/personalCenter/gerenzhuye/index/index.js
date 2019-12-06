@@ -2,7 +2,6 @@
 var app = getApp()
 var utils = require('../../../../utils/util.js');
 Page({
-
     /**
      * 页面的初始数据
      */
@@ -92,7 +91,24 @@ Page({
                 })
             }
         })
-        
+      wx.request({
+          url: app.globalData.host + '/index/tao/GetTaoList',
+        data: {
+          user_id: app.globalData.user_id
+        },
+        success: (res) => {
+          console.log(res.data)
+          this.setData({
+            yifabuList:res.data
+          })
+          // for (var i = 0; i < res.data.length; i++) {
+          //   res.data[i].time1 = utils.formatTime(res.data[i].add_time, 'Y-M-D');
+          // }
+          // this.setData({
+          //   yiguanzhuList: res.data
+          // })
+        }
+      })
 
     },
 

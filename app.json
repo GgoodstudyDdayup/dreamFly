@@ -1,6 +1,12 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/prizeTime/prizeTime",
+    "pages/shopping-mall/kanjia/kanjia",
+    "pages/personalCenter/gerenzhuye/index/index",
+    "pages/personalCenter/gerenzhuye/yiguanzhu/yifabu",
+    "pages/personalCenter/gerenzhuye/yifabu/yifabu",
+    "pages/personalCenter/gerenzhuye/yitougao/yifabu",
     "pages/shopping-mall/wangqi-choujiang/wangqi-choujiang",
     "pages/shopping-mall/wode/wode",
     "pages/huodong/goupiao/goupiao",
