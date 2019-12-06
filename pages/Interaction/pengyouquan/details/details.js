@@ -69,6 +69,7 @@ Page({
                 user_id: app.globalData.user_id
             },
             success: (res) => {
+              console.log(res)
                 res.data.filepath = app.globalData.host + res.data.filepath;
                 res.data.thumbpath = app.globalData.host + res.data.thumbpath;
                 res.data.add_time = utils.formatTime(res.data.add_time, 'Y-M-D');

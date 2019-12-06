@@ -133,7 +133,6 @@ Component({
       url: app.globalData.host + '/index/shop/GetJiangList',
       data: {
         user_id: app.globalData.user_id
-        
       },
       success: (res) => {
         console.log(res)
