@@ -6,6 +6,7 @@
 }
 .headSearch view {
   float: left;
+  
 }
 .headSearch-left {
   width: 88rpx;

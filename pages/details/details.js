@@ -189,11 +189,12 @@ Page({
   toorder: function() {
     const user_id = app.globalData.userInfo2.user_id
     const music_id = this.data.music_id
+    const scene = this.data.scene
     const number = this.data.priceNum
     const money = this.data.priceMoney.money
     const ticket_id = this.data.priceMoney.ticket_id
     wx.navigateTo({
-      url: `../order/order?user_id=${user_id}&music_id=${music_id}&number=${number}&money=${money}&ticket_id=${ticket_id}`,
+      url: `../order/order?user_id=${user_id}&music_id=${music_id || scene}&number=${number}&money=${money}&ticket_id=${ticket_id}`,
     })
   },
 
