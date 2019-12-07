@@ -20,14 +20,14 @@
 </view>
 <!-- 轮播图 -->
 <swiper class='swiperAll' circular="true" indicator-dots="{{false}}" autoplay="{{true}}" interval="3000" duration="500">
-    <block wx:for="{{lunbo}}" wx:key="navItems">
-        <!-- <swiper-item class="swiperItem" bindtap="toDetails" data-id="{{item.music_id}}">
+  <block wx:for="{{lunbo}}" wx:key="navItems">
+    <!-- <swiper-item class="swiperItem" bindtap="toDetails" data-id="{{item.music_id}}">
             <image src="{{item.thumb_path}}" class="slide-image" mode="aspectFill" />
         </swiper-item> -->
-        <swiper-item class="swiperItem" bindtap="toDetails" data-path="{{item.redirect_url}}"  data-id="{{item.music_id}}">
-            <image src="{{item.thumpath}}" class="slide-image" mode="aspectFill" />
-        </swiper-item>
-    </block>
+    <swiper-item class="swiperItem" bindtap="toDetails" data-path="{{item.redirect_url}}" data-id="{{item.music_id}}">
+      <image src="{{item.thumpath}}" class="slide-image" mode="aspectFill" />
+    </swiper-item>
+  </block>
 </swiper>
 <!-- 热门精选 -->
 <!-- <view class='h2'>- 热门精选 -</view> -->
@@ -39,40 +39,48 @@
 <!-- 链接图标 -->
 
 <view class="linkImg">
-  <navigator url="/pages/goods-list/goods-list?type=电音节" class="linkImg-box">
+  <navigator url="/pages/goods-list/goods-list?type=电音节" class="card-img">
+    <text class="card-title">电音节</text>
+    <text class="card-article">再不疯就老了</text>
     <image src="../images/index/search.png"></image>
-    <text>电音节</text>
   </navigator>
-  <navigator url="/pages/video/video?type=现场" class="linkImg-box">
+  <!-- <navigator url="/pages/video/video?type=现场" class="linkImg-box"> -->
   <!-- /pages/template/video/live-video/live-video -->
-    <image src="../images/index/movie.png"></image>
+  <!-- <image src="../images/index/movie.png"></image>
     <text>现场</text>
-  </navigator>
-  <navigator url="/pages/video/video?type=夜店" class="linkImg-box">
+  </navigator> -->
+  <navigator url="/pages/video/video?type=夜店" class="card-img">
+    <text class="card-title">夜店</text>
+    <text class="card-article">一个夜故事</text>
     <image src="../images/index/club.png"></image>
-    <text>夜店</text>
   </navigator>
-  <navigator url="/pages/template/video/live-video/live-video?type=直播" class="linkImg-box">
+  <navigator url="/pages/taoTicket/taoTicket" class="card-img">
+    <text class="card-title">淘票</text>
+    <text class="card-article">选一个看看吧</text>
+    <image src="../images/index/club.png"></image>
+  </navigator>
+  <!-- <navigator url="/pages/template/video/live-video/live-video?type=直播" class="linkImg-box"> -->
   <!-- <navigator url="/pages/video/video?type=活动" class="linkImg-box"> -->
-  
-    <image src="../images/index/video.png"></image>
+
+  <!-- <image src="../images/index/video.png"></image>
     <text>活动</text>
-  </navigator>
+  </navigator> -->
 </view>
 <!-- <view class='null'></view> -->
-<view class='tab' wx:if="{{show==0}}">
-    <!-- 官方推荐列表 -->
-    <view class='window'>
-        <view class='ones'>
-            <view style='font-size:36rpx;font-weight: 600;color: #655d6a'>官方推荐</view>
-            <view style='font-size:24rpx;color:#ea4479;' bindtap="toShoppingMall">更多</view>
-        </view>
-        <my-yinyuejielist video="{{ tuijianVideo }}" listSize="{{6}}" url="/pages/details/details">
-        </my-yinyuejielist>
+<view class='tab'  wx:if="{{show==0}}">
+  <!-- 官方推荐列表 -->
+  <view class='window'>
+    <view class='ones'>
+      <view style='font-size:36rpx;font-weight: 600;color: #655d6a'>官方推荐</view>
+      <view style='font-size:24rpx;color:#ea4479;' bindtap="toShoppingMall">更多</view>
     </view>
-    <!-- <view class='null'></view> -->
-    <!-- 热门视频列表 -->
-    <view class='windone'>
+    <my-yinyuejielist video="{{ tuijianVideo }}" listSize="{{6}}" url="/pages/details/details">
+    </my-yinyuejielist>
+  </view>
+  
+  <!-- <view class='null'></view> -->
+  <!-- 热门视频列表 -->
+  <!-- <view class='windone'>
         <view class='ones'>
             <view style='font-size:36rpx;font-weight: 600;color: #655d6a'>
                 热门活动
@@ -82,7 +90,7 @@
             </view>
         </view>
         <my-yinyuejielist video="{{ hotVideo }}" listSize="{{6}}" url="/pages/videoComments/videoComments"></my-yinyuejielist>
-    </view>
+    </view> -->
 </view>
 
 <!-- 热门推文 -->
@@ -111,10 +119,11 @@
     </view>
     <text class="head-name">{{ userInfo.nickname || '请先登录' }}</text>
 
-<view wx:if="{{userInfo.level=='1'}}" class="VIPView" > <image src="../images/VIP.png"></image>
+    <view wx:if="{{userInfo.level=='1'}}" class="VIPView">
+      <image src="../images/VIP.png"></image>
 
-</view>
-<view wx:else >[普通会员]</view>
+    </view>
+    <view wx:else>[普通会员]</view>
 
 
   </view>
@@ -123,11 +132,11 @@
       <image src="../images/index/taopiao.png"></image>
       <text>淘票</text>
     </navigator>
-    <navigator url="../prizeTime/prizeTime" >
+    <navigator url="../prizeTime/prizeTime">
       <image src="../images/index/choujiang.png"></image>
       <text>抽奖</text>
     </navigator>
-    <navigator url="/pages/shopping-mall/kanjia/kanjia" >
+    <navigator url="/pages/shopping-mall/kanjia/kanjia">
       <image src="../images/index/kanjia.png"></image>
       <text>砍价</text>
     </navigator>
@@ -156,15 +165,15 @@
         意见反馈
       </li>
     </navigator>
-    
-   <navigator url="/pages/Interaction/taopiao/tougao/tougao">
+
+    <navigator url="/pages/Interaction/taopiao/tougao/tougao">
       <li class="setlist-item">
         <image src="../images/index/fabutaopiao.png"></image>
         发布淘票
       </li>
-       </navigator>
-   
-    <navigator url="/pages/personalCenter/gerenzhuye/index/index?type=1" >
+    </navigator>
+
+    <navigator url="/pages/personalCenter/gerenzhuye/index/index?type=1">
       <li class="setlist-item">
         <image src="../images/index/myfriend.png"></image>
         已关注
@@ -177,3 +186,4 @@
 
 <!-- 遮盖层 -->
 <view class="cover" wx:if="{{dialog}}" bindtap="showDialog" data-isBoolean="{{ false }}"></view>
+<view  style="height:300rpx"></view>

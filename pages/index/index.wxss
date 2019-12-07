@@ -1,66 +1,102 @@
 page {
-    background: #fff;
+  background: #fff;
 }
 
 .swiperAll {
-    width: 100%;
-    overflow: visible;
-    height: 330rpx;
+  width: 100%;
+  overflow: visible;
+  height: 330rpx;
 }
 
+.card-img {
+  width: 324rpx;
+  height: 150rpx;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  align-items: center;
+  border-radius: 10rpx;
+  margin-bottom: 25rpx;
+  border-top: 1px solid #dfdfdf;
+box-shadow:  0 1px 1px 0 rgba(0,0,0,0.2), 0 2px 2px 0 rgba(0,0,0,0.19);
+}
+
+.card-img image {
+  width: 120rpx !important;
+  height: 120rpx !important;
+  position: relative;
+  left: 195rpx;
+  bottom: 50rpx
+}
+.card-title{
+  width: 125rpx;
+  position: relative;
+  display: inline-block;
+  top: 8rpx;
+  left: 16rpx;
+  font-size: 35rpx;
+  font-weight: bold;
+  color: #333
+}
 .swiperItem {
-    box-sizing: border-box;
-    border-radius: 20rpx;
-    padding: 0 48rpx;
+  box-sizing: border-box;
+  border-radius: 20rpx;
+  padding: 0 48rpx;
 }
 
 .slide-image {
-    margin-top: 2%;
-    width: 100%;
-    height: 92%;
-    border-radius: 20rpx;
-    box-shadow: 0rpx 5rpx 10rpx gray;
+  margin-top: 2%;
+  width: 100%;
+  height: 92%;
+  border-radius: 20rpx;
+  box-shadow: 0rpx 5rpx 10rpx gray;
 }
 
 .h2 {
-    margin-top: 20rpx;
-    font-size: 40rpx;
-    font-weight: bold;
-    text-align: center;
+  margin-top: 20rpx;
+  font-size: 40rpx;
+  font-weight: bold;
+  text-align: center;
 }
+
 /* 头部搜索 */
+
 .headSearch {
   height: 88rpx;
   margin-top: 12rpx;
   padding: 0 22rpx;
 }
+
 .headSearch view {
   float: left;
 }
+
 .headSearch-left {
   margin-top: 10rpx;
   width: 66rpx;
   height: 66rpx;
-  /* border-radius: 50%; */
-  /* box-shadow: 0 0 12rpx rgba(0, 0, 0, 0.4); */
+  /* border-radius: 50%; *//* box-shadow: 0 0 12rpx rgba(0, 0, 0, 0.4); */
 }
+
 .headSearch-left image {
   width: 66rpx;
   height: 66rpx;
   /* border-radius: 50%; */
 }
-.headSearch-left1{
-   margin-top: 10rpx;
+
+.headSearch-left1 {
+  margin-top: 10rpx;
   width: 88rpx;
   height: 88rpx;
-  border-radius: 50%; 
+  border-radius: 50%;
   box-shadow: 0 0 12rpx rgba(0, 0, 0, 0.4);
 }
+
 .headSearch-left1 image {
   width: 88rpx;
   height: 88rpx;
   border-radius: 50%;
 }
+
 .headSearch-search {
   position: relative;
   /* width: 52%; */
@@ -68,6 +104,7 @@ page {
   height: 88rpx;
   padding-left: 28rpx;
 }
+
 .headSearch-search .headSearch-search-icon {
   position: absolute;
   left: 28rpx;
@@ -76,11 +113,13 @@ page {
   width: 28rpx;
   height: 28rpx;
 }
+
 .headSearch-search .headSearch-search-icon image {
   width: 28rpx;
   height: 28rpx;
   margin-left: 28rpx;
 }
+
 .headSearch-search input {
   width: 100%;
   height: 59rpx;
@@ -89,75 +128,94 @@ page {
   margin-top: 14rpx;
   padding-left: 64rpx;
 }
+
 .headSearch .headSearch-right {
   float: right;
   width: 160rpx;
   height: 88rpx;
   padding-top: 6rpx;
 }
+
 .headSearch .headSearch-right navigator {
   display: inline-block;
   padding: 17rpx;
   width: 45rpx;
   height: 45rpx;
 }
+
 .headSearch .headSearch-right image {
   width: 45rpx;
   height: 45rpx;
 }
+
 /* 横向滚动开始 */
+
 .scroll {
-    background: #fff;
-    overflow: hidden;
-    width: 100%;
-    white-space: nowrap;
-    display: flex;
-    margin-top:10rpx;
+  background: #fff;
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+  display: flex;
+  margin-top: 10rpx;
 }
 
 .navTitle {
-    font-size: 32rpx;
-    display: inline-block;
-    height: 55rpx;
-    line-height: 50rpx;
-    text-align: center;
-    padding: 10rpx 0;
-    border-bottom: 1rpx solid #e6e6e6;
+  font-size: 32rpx;
+  display: inline-block;
+  height: 55rpx;
+  line-height: 50rpx;
+  text-align: center;
+  padding: 10rpx 0;
+  border-bottom: 1rpx solid #e6e6e6;
 }
 
 .navTitleLine {
-    color: #5bc9d4;
-    font-size: 32rpx;
-    display: inline-block;
-    height: 55rpx;
-    line-height: 50rpx;
-    text-align: center;
-    padding: 10rpx 0;
-    border-bottom: 1rpx solid #5bc9d4;
+  color: #5bc9d4;
+  font-size: 32rpx;
+  display: inline-block;
+  height: 55rpx;
+  line-height: 50rpx;
+  text-align: center;
+  padding: 10rpx 0;
+  border-bottom: 1rpx solid #5bc9d4;
 }
 
 .navTitleCon {
-    padding: 0 60rpx;
-    height: 50rpx;
-    line-height: 50rpx;
-    text-align: center;
-    border-left: 1rpx solid f1f1f1;
-    border-right: 1rpx solid #f1f1f1;
+  padding: 0 60rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  border-left: 1rpx solid f1f1f1;
+  border-right: 1rpx solid #f1f1f1;
 }
 
 /* 横向滚动结束 */
 
 .jiaobiao-img {
-    width: 70rpx !important;
-    height: 50rpx !important;
-    position: absolute;
-    top: 164rpx;
+  width: 70rpx !important;
+  height: 50rpx !important;
+  position: absolute;
+  top: 164rpx;
 }
 
 /* 链接图片 */
+
 .linkImg {
-  padding: 0 31rpx;
-  height: 160rpx;
+  padding: 0 40rpx;
+  height: 320rpx;
+  display: flex;
+  margin-top: 40rpx;
+  justify-content: space-between;
+  flex-flow: wrap
+}
+.card-article{
+  display: inline-block;
+  width: 158rpx;
+  font-size: 26rpx;
+  color: #d8d8d8;
+  position: relative;
+  top: 52rpx;
+  left: -108rpx
 }
 .linkImg .linkImg-box {
   /* float: left; */
@@ -165,11 +223,13 @@ page {
   margin: 0 25rpx;
   text-align: center;
 }
+
 .linkImg .linkImg-box image {
   display: block;
   width: 120rpx;
   height: 120rpx;
 }
+
 .linkImg .linkImg-box text {
   font-size: 20rpx;
 }
@@ -177,49 +237,49 @@ page {
 /* 卡片列表开始 */
 
 .cardList {
-    padding: 32rpx 16rpx;
-    background: #fff;
+  padding: 32rpx 16rpx;
+  background: #fff;
 }
 
 .card {
-    position: relative;
-    height: 350rpx;
-    width: 100%;
-    background-size: 100% 100%;
-    border-radius: 20rpx;
-    overflow: hidden;
-    box-shadow: 0rpx 16rpx 40rpx rgb(194, 194, 194);
-    margin-bottom: 40rpx;
+  position: relative;
+  height: 350rpx;
+  width: 100%;
+  background-size: 100% 100%;
+  border-radius: 20rpx;
+  overflow: hidden;
+  box-shadow: 0rpx 16rpx 40rpx rgb(194, 194, 194);
+  margin-bottom: 40rpx;
 }
 
 .card image {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .cardType {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    box-sizing: border-box;
-    padding: 10rpx 20rpx;
-    font-size: 30rpx;
-    color: #fff;
-    text-align: right;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 10rpx 20rpx;
+  font-size: 30rpx;
+  color: #fff;
+  text-align: right;
 }
 
 .cardTitle {
-    box-sizing: border-box;
-    padding: 20rpx 20rpx;
-    font-size: 32rpx;
-    font-weight: 700;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+  box-sizing: border-box;
+  padding: 20rpx 20rpx;
+  font-size: 32rpx;
+  font-weight: 700;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 /* 卡片列表结束 */
@@ -227,233 +287,236 @@ page {
 /* 列表开始 */
 
 .window {
-    width: 100%;
-    background: #fefefe;
-    margin-top: 20rpx;
-    padding-bottom: 0rpx;
-      margin-bottom:0rpx;
+  width: 100%;
+  background: #fefefe;
+  margin-top: 20rpx;
+  padding-bottom: 0rpx;
+  margin-bottom: 0rpx;
 }
 
 .windone {
-    width: 100%;
-    padding-bottom: 20rpx;
-    background: #fefefe;
-    margin-top: -30rpx;
-    margin-bottom:120rpx;
+  width: 100%;
+  padding-bottom: 20rpx;
+  background: #fefefe;
+  margin-top: -30rpx;
+  margin-bottom: 120rpx;
 }
 
 .shopList {
-    margin: 0 64rpx 64rpx 64rpx;
-    box-shadow: 0rpx 5rpx 30rpx rgb(146, 146, 146);
-    position: relative;
-    border-radius: 10rpx;
+  margin: 0 64rpx 64rpx 64rpx;
+  box-shadow: 0rpx 5rpx 30rpx rgb(146, 146, 146);
+  position: relative;
+  border-radius: 10rpx;
 }
 
 .shopList1 {
-    margin: 0 64rpx 64rpx 64rpx;
-    box-shadow: 0rpx 5rpx 30rpx rgb(146, 146, 146);
-    position: relative;
-    border-radius: 10rpx;
+  margin: 0 64rpx 64rpx 64rpx;
+  box-shadow: 0rpx 5rpx 30rpx rgb(146, 146, 146);
+  position: relative;
+  border-radius: 10rpx;
 }
 
 .ones {
-    width: 90%;
-    height: 100rpx;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 90%;
+  height: 100rpx;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .shopListBottomL {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .shopListPart {
-    width: 110%;
-    height: 300rpx;
-    position: absolute;
-    top: 100rpx;
-    left: -5%;
-    box-shadow: 0rpx 6rpx 16rpx rgb(175, 175, 175);
-    border-radius: 10rpx;
-    overflow: hidden;
+  width: 110%;
+  height: 300rpx;
+  position: absolute;
+  top: 100rpx;
+  left: -5%;
+  box-shadow: 0rpx 6rpx 16rpx rgb(175, 175, 175);
+  border-radius: 10rpx;
+  overflow: hidden;
 }
 
 .shopListPart1 {
-    width: 110%;
-    height: 300rpx;
-    position: absolute;
-    top: 60rpx;
-    left: -5%;
-    box-shadow: 0rpx 6rpx 16rpx rgb(175, 175, 175);
-    border-radius: 10rpx;
-    overflow: hidden;
+  width: 110%;
+  height: 300rpx;
+  position: absolute;
+  top: 60rpx;
+  left: -5%;
+  box-shadow: 0rpx 6rpx 16rpx rgb(175, 175, 175);
+  border-radius: 10rpx;
+  overflow: hidden;
 }
 
 .shopListPart image, .shopListPart1 image {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .shopListTitle {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.4);
-    color: #fff;
-    font-size: 24rpx;
-    font-weight: 700;
-    box-sizing: border-box;
-    padding: 24rpx 20rpx;
-    display: flex;
-    justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-size: 24rpx;
+  font-weight: 700;
+  box-sizing: border-box;
+  padding: 24rpx 20rpx;
+  display: flex;
+  justify-content: space-between;
 }
 
 .shopListTitle :nth-child(1) {
-    width: 70%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+  width: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .shopListTop {
-    box-sizing: border-box;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    padding: 10rpx 30rpx;
-    display: flex;
-    justify-content: space-between;
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 10rpx 30rpx;
+  display: flex;
+  justify-content: space-between;
 }
 
 .shopListTop1 {
-    box-sizing: border-box;
-    position: absolute;
-    width: 100%;
-    /* height: 60rpx; */
-    top: 70rpx;
-    left: 0;
-    /* padding: 10rpx 30rpx; */
-    display: flex;
-    justify-content: space-between;
-    /* background: #5bc9d4; */
-    z-index: 1;
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  /* height: 60rpx; */
+  top: 70rpx;
+  left: 0;
+  /* padding: 10rpx 30rpx; */
+  display: flex;
+  justify-content: space-between;
+  /* background: #5bc9d4; */
+  z-index: 1;
 }
 
 .shopListTopL, .shopListTopL1 {
-    color: #060206;
-    text-align: center;
+  color: #060206;
+  text-align: center;
 }
 
 .year {
-    font-size: 24rpx;
-    letter-spacing: 40rpx;
+  font-size: 24rpx;
+  letter-spacing: 40rpx;
 }
 
 .line {
-    height: 1rpx;
-    background: #969496;
-    width: 85%;
+  height: 1rpx;
+  background: #969496;
+  width: 85%;
 }
 
 .day {
-    font-size: 38rpx;
-    font-weight: 700;
-    padding-right: 15%;
+  font-size: 38rpx;
+  font-weight: 700;
+  padding-right: 15%;
 }
 
 .day1 {
-    font-size: 28rpx;
+  font-size: 28rpx;
 }
 
 .shopListTopR {
-    font-size: 32rpx;
-    line-height: 80rpx;
+  font-size: 32rpx;
+  line-height: 80rpx;
 }
 
 .shopListTopR1 {
-    font-size: 32rpx;
+  font-size: 32rpx;
 }
 
 .shopListTopR image, .shopListTopR1 image {
-    width: 40rpx;
-    height: 40rpx;
-    margin-right: 10rpx;
-    vertical-align: middle;
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+  vertical-align: middle;
 }
 
 .shopListBottom {
-    padding: 30rpx 20rpx;
-    box-sizing: border-box;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    /* background: #5bc9d4; */
+  padding: 30rpx 20rpx;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* background: #5bc9d4; */
 }
 
 .shopListBottom1 {
-    padding: 30rpx 20rpx;
-    margin-top: -25rpx;
-    box-sizing: border-box;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+  padding: 30rpx 20rpx;
+  margin-top: -25rpx;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .shopListBottomL image {
-    width: 30rpx;
-    height: 30rpx;
-    vertical-align: middle;
+  width: 30rpx;
+  height: 30rpx;
+  vertical-align: middle;
 }
 
 .shopListBottomL text {
-    color: #9f9f9f;
-    font-size: 24rpx;
-    margin-right: 16rpx;
-    margin-left: 4rpx;
+  color: #9f9f9f;
+  font-size: 24rpx;
+  margin-right: 16rpx;
+  margin-left: 4rpx;
 }
 
 .shopListBottomR> image:nth-child(1) {
-    margin-left: 20rpx;
-    width: 30rpx;
-    height: 30rpx;
-    vertical-align: middle;
+  margin-left: 20rpx;
+  width: 30rpx;
+  height: 30rpx;
+  vertical-align: middle;
 }
 
 .msgList {
-    box-sizing: border-box;
-    padding: 30rpx;
-    font-size: 22rpx;
-    color: #7d7d7d;
+  box-sizing: border-box;
+  padding: 30rpx;
+  font-size: 22rpx;
+  color: #7d7d7d;
 }
 
 .line {
-    height: 2rpx;
-    background: #e6e6e6;
-    width: 90%;
-    margin: 0 auto;
+  height: 2rpx;
+  background: #e6e6e6;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .fuli {
-    width: 94%;
-    display: block;
-    margin: auto;
-    height: 362rpx;
-    margin-top: 40rpx;
+  width: 94%;
+  display: block;
+  margin: auto;
+  height: 362rpx;
+  margin-top: 40rpx;
 }
-.null{
-    height: 20rpx;
-    background: #F3F3F3;
+
+.null {
+  height: 20rpx;
+  background: #f3f3f3;
 }
 
 /* 弹框 */
+
 page {
   height: 100%;
 }
+
 .dialog {
   position: fixed;
   top: 0;
@@ -462,70 +525,89 @@ page {
   height: 100%;
   background-color: white;
   color: #655d6a;
-  animation:myfirst 0.3s ease-out;
+  animation: myfirst 0.3s ease-out;
 }
 
-@keyframes myfirst
-{
-from {left: -65%;}
-to {left: 0;}
+@keyframes myfirst {
+  from {
+    left: -65%;
+  }
+
+  to {
+    left: 0;
+  }
 }
+
 .diaHead {
   padding: 30rpx;
   height: 88rpx;
 }
+
 .diaHead image {
   vertical-align: middle;
 }
+
 .diaHead view {
   display: inline-block;
 }
+
 .head-name {
   margin-left: 30rpx;
   font-size: 28rpx;
 }
+
 .head-vip {
   margin-left: 30rpx;
   width: 46rpx;
   height: 30rpx;
 }
+
 .diaLink {
   margin: 0 30rpx;
   border-bottom: 1rpx solid #dfdfdf;
 }
+
 .diaLink navigator {
   padding: 46rpx;
   float: left;
 }
+
 .diaLink navigator image {
   width: 35rpx;
   height: 35rpx;
   display: block;
   margin: 0 0 20rpx 8rpx;
 }
+
 .diaLink navigator text {
   font-size: 24rpx;
 }
+
 .setlist {
   display: block;
   padding: 50rpx;
   font-size: 26rpx;
 }
+
 .setlist-item {
   display: block;
   padding: 30rpx 0;
   height: 40rpx;
 }
+
 .setlist-item image {
   width: 30rpx;
   height: 30rpx;
   vertical-align: middle;
 }
+
 .setlist-item text {
   float: right;
   color: #b3aeb7;
 }
+
 /* 遮盖 */
+
 .cover {
   position: fixed;
   top: 0;
@@ -533,21 +615,24 @@ to {left: 0;}
   z-index: 6;
   width: 100%;
   height: 100%;
-  background-color: #000000;
+  background-color: #000;
   opacity: 0.6;
   cursor: default;
 }
+
 /* 清除浮动 */
-.clearfix:after{
-    content:"";				/*设置内容为空*/
-    height:0;				/*高度为0*/
-    line-height:0;			/*行高为0*/
-    display:block;			/*将文本转为块级元素*/
-    visibility:hidden;		/*将元素隐藏*/
-    clear:both;				/*清除浮动*/
+
+.clearfix:after {
+  content: ""; /*设置内容为空*/
+  height: 0; /*高度为0*/
+  line-height: 0; /*行高为0*/
+  display: block; /*将文本转为块级元素*/
+  visibility: hidden; /*将元素隐藏*/
+  clear: both; /*清除浮动*/
 }
 
 /* 客服 */
+
 .kefu {
   width: 100%;
   border: none;
@@ -559,28 +644,31 @@ to {left: 0;}
   font-size: 26rpx;
   text-align: left;
 }
+
 .kefu::after {
   border: none;
 }
+
 .kefu .setlist-item {
   padding: 0;
   margin-top: -40rpx;
 }
-.VIPView image{
+
+.VIPView image {
   margin-left: 10rpx;
   width: 50rpx;
   height: 30rpx;
 }
 
 .fix-iphonex-button {
-  bottom:68rpx!important;
+  bottom: 68rpx !important;
 }
- 
+
 .fix-iphonex-button::after {
   content: ' ';
   position: fixed;
-  bottom: 0!important;
-  height: 68rpx!important;
+  bottom: 0 !important;
+  height: 68rpx !important;
   width: 100%;
   background: #fff;
-} 
+}
