@@ -15,7 +15,8 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-    let item = JSON.parse(decodeURIComponent(options.item));
+    console.log(options)
+    let item = options.item ? JSON.parse(decodeURIComponent(options.item)) : options
     this.setData({
       item: item
     })
@@ -91,7 +92,7 @@ Page({
               console.log(this.data.bottomView)
             }
           })
-        }else{
+        } else {
           wx.showToast({
             title: '评论失败',
           })

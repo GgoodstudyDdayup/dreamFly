@@ -4,7 +4,7 @@
     wx:for="{{dataList}}" 
     wx:key="item" 
     bindtap='toDetails' 
-    data-quan_id='{{item.quan_id}}'> 
+    data-tao_id='{{item.tao_id}}'> 
     <view class='null'></view>
     <view class='listTop'>
         <view class='listTopL'>
@@ -52,15 +52,16 @@
             </my-dianzan>
         </view>
         <!-- 分享按钮组件 -->
-        <my-share 
+        <!-- <my-share 
             shareId="{{item.quan_id}}" 
             shareImg="{{item.img}}" 
             shareTitle="{{item.title}}" 
             sharePath="/pages/Interaction/pengyouquan/details/details?id="
             codepath="pages/Interaction/pengyouquan/details/details">
-        </my-share>
+        </my-share> -->
     </view>
-    <view class='msgList'>
+    <!-- 评论内容 -->
+    <!-- <view class='msgList'>
         <view 
             class='msgListCon' 
             wx:for="{{item.comment_list}}" 
@@ -68,6 +69,6 @@
             wx:for-item="comment_list">
             {{comment_list.nickname}} : {{comment_list.content}}
         </view>
-    </view>
+    </view> -->
 </view>
 <!-- 列表结束 -->

@@ -21,15 +21,15 @@ Component({
         // 跳转详情
         toDetails: function(e) {
             wx.navigateTo({
-                url: '/pages/Interaction/pengyouquan/details/details?quan_id=' + e.currentTarget.dataset.quan_id
+              url: '/pages/goodsDetails/goodsDetails?tao_id=' + e.currentTarget.dataset.tao_id
             })
         },
         // 跳转音乐节
-        toMusic: function (e) {
-            wx.navigateTo({
-                url: '/pages/huodong/xiangqing0/xiangqing0?music_id=' + e.currentTarget.dataset.music_id,
-            })
-        },
+        // toMusic: function (e) {
+        //     wx.navigateTo({
+        //         url: '/pages/huodong/xiangqing0/xiangqing0?music_id=' + e.currentTarget.dataset.music_id,
+        //     })
+        // },
     },
     ready:function(){
         console.log(11111)
