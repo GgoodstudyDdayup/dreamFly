@@ -68,7 +68,7 @@
     </block>
 </view> -->
 <!-- 图文详情开始 -->
-<view class='writ'>
+<view class='writ' style="margin-bottom:30rpx">
     <view class='writing'>
         <text class='wr-top'>演出介绍</text>
     </view>
