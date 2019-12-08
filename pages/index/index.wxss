@@ -24,15 +24,15 @@ box-shadow:  0 1px 1px 0 rgba(0,0,0,0.2), 0 2px 2px 0 rgba(0,0,0,0.19);
   width: 120rpx !important;
   height: 120rpx !important;
   position: relative;
-  left: 195rpx;
-  bottom: 50rpx
+  left: 80rpx;
+  top: 5rpx
 }
 .card-title{
   width: 125rpx;
   position: relative;
   display: inline-block;
-  top: 8rpx;
-  left: 16rpx;
+  bottom: 50rpx;
+  left: 29rpx;
   font-size: 35rpx;
   font-weight: bold;
   color: #333
