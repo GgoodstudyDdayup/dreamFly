@@ -7,15 +7,18 @@
   text-align: center;
   border-radius: 7rpx;
 }
+
 .back-img {
   height: 430rpx;
   /* overflow: hidden; */
 }
+
 .back-img image {
   width: 120%;
   height: 120%;
   margin-left: -15%;
 }
+
 .topPicBg {
   width: 100%;
   height: 314rpx;
@@ -33,6 +36,7 @@
   box-shadow: 0 0 30rpx rgba(0, 0, 0, 0.4);
   background-color: white;
 }
+
 /* .personMsg {
   width: 94%;
   height: 280rpx;
@@ -70,14 +74,18 @@
   margin-left: 10rpx;
   line-height: 50rpx;
 }
+
 /* 二维码 */
+
 .qrcode {
   text-align: center;
   transition: all 0.5s ease-out;
 }
+
 .xiala {
   margin-top: 200rpx;
 }
+
 .qrcode .qrcode-img {
   width: 220rpx;
   height: 220rpx;
@@ -85,18 +93,22 @@
   border-radius: 10rpx;
   box-shadow: 0 0 40rpx rgba(0, 0, 0, 0.4);
 }
+
 .qrcode view {
   margin: 0 auto;
 }
+
 .qrcode view image {
   width: 30rpx;
   height: 30rpx;
   margin: 10rpx auto;
   display: block;
 }
+
 .shengji {
   text-align: center;
 }
+
 .userInfo-right .shengji image {
   display: block;
   margin: 0 auto;
@@ -104,11 +116,13 @@
   width: 45rpx;
   height: 30rpx;
 }
+
 .userInfo-content {
   position: relative;
   padding-top: 100rpx;
 }
-.userInfo-content .userInfo-img {
+
+.userInfo-img {
   position: absolute;
   width: 150rpx;
   height: 150rpx;
@@ -117,6 +131,13 @@
   margin: -75rpx 0 0 -75rpx;
   border-radius: 50%;
   box-shadow: 0 0 30rpx rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+.userInfo-img image {
+  width: 100%;
+  height: 100%;
+  object-fit: fill
 }
 
 .userInfo-right {
@@ -167,22 +188,26 @@
   font-size: 24rpx;
   color: #473e3e;
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
 }
+
 .listbottom-item {
   width: 50%;
   margin-top: 60rpx;
   text-align: center;
 }
+
 .listbottom-item:nth-child(2) {
   border-left: 1px solid #bfbfbf;
 }
+
 .listbottom-item image {
   display: block;
   margin: 10rpx auto 10rpx auto;
   width: 40rpx;
   height: 40rpx;
 }
+
 .empty {
   height: 90rpx;
 }
@@ -218,7 +243,7 @@
 .VIP {
   height: 40rpx;
   margin: 0 140rpx 16rpx;
-  border: 2rpx solid #ee8183 ;
+  border: 2rpx solid #ee8183;
   border-radius: 100rpx;
   text-align: center;
   line-height: 40rpx;
@@ -378,7 +403,6 @@
   width: 100%;
   height: 100%;
 }
-
 
 /* 修改昵称弹窗 */
 

@@ -181,11 +181,12 @@
   margin-left: 5%;
   padding: 10rpx;
   padding-top: 30rpx;
-  width: 108rpx;
+  width: 90rpx;
   border-bottom: 4rpx solid #ea4479;
   color: #4f4747;
   font-size: 36rpx;
   font-weight: 600;
+  text-align: center
 }
 
 .ul {

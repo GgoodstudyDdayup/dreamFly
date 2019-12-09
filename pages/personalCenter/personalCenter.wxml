@@ -1,39 +1,42 @@
-<view class='topPicBg' >
+<view class='topPicBg'>
 
-  <view class="back-img" >
-  <image  class="img-filter" src='{{userInfo2.head_img || "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572174198604&di=8472c9c4600ad04eed9e3051fd8399ae&imgtype=0&src=http%3A%2F%2Fwww.artsbj.com%2Fuploadfile%2F2015%2F0702%2F20150702043014797.jpg" }}' mode='aspectFill'></image>
+  <view class="back-img">
+    <image class="img-filter" src='{{userInfo2.head_img || "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572174198604&di=8472c9c4600ad04eed9e3051fd8399ae&imgtype=0&src=http%3A%2F%2Fwww.artsbj.com%2Fuploadfile%2F2015%2F0702%2F20150702043014797.jpg" }}'
+      mode='aspectFill'></image>
   </view>
 
 
-  <view class='personMsg' >
+  <view class='personMsg'>
     <view class="userinfo">
       <button class="getuserinfo" wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" lang='zh_CN'> 获取头像昵称 </button>
       <block wx:else>
         <view class="userInfo-content">
-          <image bindtap="changeTouxiang" class="userInfo-img" src="{{userInfo2.head_img}}" mode="cover"></image>
+          <view  class="userInfo-img">
+            <image bindtap="changeTouxiang" src="{{userInfo2.head_img}}" mode="aspectFill"></image>
+          </view>
           <view class="userInfo-right">
             <view class='shengji'>
               <text class="userinfo-nickname">{{userInfo2.nickname}}</text>
-<view wx:if="{{userInfo2.level=='0'}}" class='VIP' bindtap='creatorder'>开通VIP会员</view>
+              <view wx:if="{{userInfo2.level=='0'}}" class='VIP' bindtap='creatorder'>开通VIP会员</view>
 
 
-  <view wx:else bindtap="vipUrl">
+              <view wx:else bindtap="vipUrl">
                 <image src="../images/VIP.png"></image>
                 <text style="color:#dfdfdf">(点击详情)</text>
-  </view>            
+              </view>
 
             </view>
           </view>
         </view>
         <view class='listbottom'>
           <view class="listbottom-item">
-          <navigator  url="/pages/personalCenter/gerenzhuye/index/index?type=0">
-            <image src="../images/yifabu.png"></image>
-            <text>我的淘票</text>
-          </navigator>
+            <navigator url="/pages/personalCenter/gerenzhuye/index/index?type=0">
+              <image src="../images/yifabu.png"></image>
+              <text>我的淘票</text>
+            </navigator>
           </view>
           <view class="listbottom-item">
-            <navigator  url="/pages/personalCenter/gerenzhuye/index/index?type=1">
+            <navigator url="/pages/personalCenter/gerenzhuye/index/index?type=1">
               <image src="../images/yiguanzhu.png"></image>
               <text>已关注</text>
             </navigator>
@@ -45,7 +48,7 @@
   </view>
   <view class="{{ xiala ? 'xiala' : '' }} qrcode">
     <image bindlongtap="savePicture" bindtap="xiala" class="qrcode-img" src="{{ erWeiMa }}"></image>
-    <view  bindtap="xiala">
+    <view bindtap="xiala">
       <image src="{{ xiala ? '../images/xialaback.png' : '../images/xiala.png' }}"></image>
       <text>{{ xiala ? '点击隐藏显示门票长按可以保存二维码' : '点击下拉显示门票长按可以保存二维码' }}</text>
     </view>

@@ -5,7 +5,7 @@
   </view>
   <view class="headSearch-search" bindtap="toSearch">
     <view class="headSearch-search-icon">
-      <image src="../images/index/topsearch.png"></image>
+      <image src="../images/index/topsearch.png"  mode="aspectFill"></image>
     </view>
     <input type="text"></input>
   </view>
