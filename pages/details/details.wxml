@@ -6,7 +6,7 @@
 <view class="address">
   <view class="address-icon">
     <!-- <map name="" longitude="" latitude=""></map> -->
-    <image mode="aspectFill" src="../images/positionLink.png"></image>
+    <image mode="aspectFill" src="../images/positionLink.png" bindtap="addressCopy"></image>
   </view>
   <view class="address-title">{{ goodsDetails.data.site }}</view>
   <text>{{ goodsDetails.data.site }}</text>
