@@ -50,7 +50,7 @@
     <image bindlongtap="savePicture" bindtap="xiala" class="qrcode-img" src="{{ erWeiMa }}"></image>
     <view bindtap="xiala">
       <image src="{{ xiala ? '../images/xialaback.png' : '../images/xiala.png' }}"></image>
-      <text>{{ xiala ? '点击隐藏显示门票长按可以保存二维码' : '点击下拉显示门票长按可以保存二维码' }}</text>
+      <text>{{ xiala ? '点击隐藏显示门票长按可以保存二维码(近期场)' : '点击下拉显示门票长按可以保存二维码(近期场)' }}</text>
     </view>
   </view>
 </view>
