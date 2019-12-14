@@ -6,7 +6,7 @@
     data-music_id="{{item.quan_id}}" 
     data-thumb_path="{{item.img}}" 
     data-name="{{item.title}}" 
-    src="/pages/images/weixin2.png">
+    src="/pages/images/shareicon.png">
 </image>
 <!-- 分享弹窗 -->
 <view class="share-friend" wx:if="{{shareFriend}}">

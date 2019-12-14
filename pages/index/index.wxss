@@ -202,7 +202,6 @@ box-shadow:  0 1px 1px 0 rgba(0,0,0,0.2), 0 2px 2px 0 rgba(0,0,0,0.19);
 
 .linkImg {
   padding: 0 40rpx;
-  height: 320rpx;
   display: flex;
   margin-top: 40rpx;
   justify-content: space-between;

@@ -4,6 +4,7 @@
 
 .share {
     margin-left: 20rpx;
+    margin-top: 3rpx;
     width: 50rpx;
     height: 45rpx;
     vertical-align: middle;
