@@ -43,6 +43,6 @@
 
 
 <view class="footer">
-  <input type="text" bindinput="inputedit" cursor-spacing="20px" data-item="message" value="{{ message }}"></input>
+  <input  type="text" bindinput="inputedit" cursor-spacing="20px" data-item="message" value="{{ message }}"></input>
   <image bindtap="addVideoComments" src="../images/yifabu.png"></image>
 </view>

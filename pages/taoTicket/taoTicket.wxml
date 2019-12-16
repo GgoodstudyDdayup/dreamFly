@@ -1,3 +1,7 @@
+<view class="m-tao-fixed" bindtap="fabuT">
+  <text>发布淘票</text>
+</view>
+
 <view class="video">
   <view wx:for="{{ videoList }}" wx:key="{{ index }}" class="video-item">
   <view class="video-itemView" data-item="{{item}}" bindtap="toDetails">

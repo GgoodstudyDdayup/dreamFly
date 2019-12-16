@@ -21,7 +21,6 @@
   height: 90rpx;
   width: 90%;
   padding: 20rpx 5%;
-  text-align: center;
 }
 
 .footer button {
@@ -201,6 +200,7 @@
   width: 100%;
   color: #4f4747;
   font-size: 24rpx;
+  margin-bottom: 20rpx
 }
 
 .li image {

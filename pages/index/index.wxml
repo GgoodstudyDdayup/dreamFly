@@ -5,7 +5,7 @@
   </view>
   <view class="headSearch-search" bindtap="toSearch">
     <view class="headSearch-search-icon">
-      <image src="../images/index/topsearch.png"  mode="aspectFill"></image>
+      <image src="../images/index/topsearch.png" mode="aspectFill"></image>
     </view>
     <input type="text"></input>
   </view>
@@ -40,9 +40,9 @@
 
 <view class="linkImg">
   <navigator url="/pages/goods-list/goods-list?type=电音节" class="card-img">
-    <text class="card-title">电音节</text>
+    <text class="card-title" style="bottom:41rpx">电音节</text>
     <!-- <text class="card-article">再不疯就老了</text> -->
-    <image src="../images/index/search.png"></image>
+    <image style="width: 110rpx!important;height: 110rpx !important;top: 17rpx;" src="../images/index/637d39b14435f7f375bfc50da5e8b34.png"></image>
   </navigator>
   <!-- <navigator url="/pages/video/video?type=现场" class="linkImg-box"> -->
   <!-- /pages/template/video/live-video/live-video -->
@@ -50,14 +50,14 @@
     <text>现场</text>
   </navigator> -->
   <!-- <navigator url="/pages/video/video?type=夜店" class="card-img"> -->
-    <!-- <text class="card-title">夜店</text> -->
-    <!-- <text class="card-article">夜故事</text> -->
-    <!-- <image src="../images/index/club.png"></image>
+  <!-- <text class="card-title">夜店</text> -->
+  <!-- <text class="card-article">夜故事</text> -->
+  <!-- <image src="../images/index/club.png"></image>
   </navigator> -->
   <navigator url="/pages/taoTicket/taoTicket" class="card-img">
     <text class="card-title">淘票</text>
     <!-- <text class="card-article">选一个看看吧</text> -->
-    <image style="width:110rpx!important;height:110rpx!imoortant" src="../images/tao.png"></image>
+    <image style="left:70rpx" src="../images/index/a6eb6543f85013ece056d52d8540db3.png"></image>
   </navigator>
   <!-- <navigator url="/pages/template/video/live-video/live-video?type=直播" class="linkImg-box"> -->
   <!-- <navigator url="/pages/video/video?type=活动" class="linkImg-box"> -->
@@ -67,7 +67,7 @@
   </navigator> -->
 </view>
 <!-- <view class='null'></view> -->
-<view class='tab'  wx:if="{{show==0}}">
+<view class='tab' wx:if="{{show==0}}">
   <!-- 官方推荐列表 -->
   <view class='window'>
     <view class='ones'>
@@ -77,7 +77,7 @@
     <my-yinyuejielist video="{{ tuijianVideo }}" listSize="{{6}}" url="/pages/details/details">
     </my-yinyuejielist>
   </view>
-  
+
   <!-- <view class='null'></view> -->
   <!-- 热门视频列表 -->
   <!-- <view class='windone'>
@@ -115,7 +115,7 @@
 <view class="dialog" wx:if="{{dialog}}">
   <view class="diaHead">
     <view class="headSearch-left1">
-      <image src="{{userInfo.head_img || 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572501533080&di=16bef707756df2998979d003bc459177&imgtype=0&src=http%3A%2F%2Fpic.soutu123.cn%2Felement_origin_min_pic%2F01%2F54%2F05%2F335746fd1e7f644.jpg%2521%2Ffw%2F700%2Fquality%2F90%2Funsharp%2Ftrue%2Fcompress%2Ftrue'}}"></image>
+      <image mode="aspectFill" src="{{userInfo.head_img || 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572501533080&di=16bef707756df2998979d003bc459177&imgtype=0&src=http%3A%2F%2Fpic.soutu123.cn%2Felement_origin_min_pic%2F01%2F54%2F05%2F335746fd1e7f644.jpg%2521%2Ffw%2F700%2Fquality%2F90%2Funsharp%2Ftrue%2Fcompress%2Ftrue'}}"></image>
     </view>
     <text class="head-name">{{ userInfo.nickname || '请先登录' }}</text>
 
@@ -186,4 +186,4 @@
 
 <!-- 遮盖层 -->
 <view class="cover" wx:if="{{dialog}}" bindtap="showDialog" data-isBoolean="{{ false }}"></view>
-<view  style="height:300rpx"></view>
+<view style="height:300rpx"></view>

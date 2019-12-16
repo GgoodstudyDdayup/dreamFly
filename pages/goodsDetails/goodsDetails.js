@@ -103,4 +103,15 @@ Page({
       }
     })
   },
+  onShareAppMessage: function(res) {
+    if (res.from === 'button') {
+      // 来自页面内转发按钮
+      console.log(res.target)
+    }
+    return {
+      title: `${this.data.goodsdetails.name}`,
+      path: `pages/goodsDetails/goodsDetails?tao_id=${this.data.item.tao_id}`
+    }
+
+  }
 })
